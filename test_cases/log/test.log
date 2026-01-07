@@ -1,0 +1,2 @@
+DEBUG 2025-12-09 13:53:41 connectionpool.py connectionpool _new_conn 1049 : Starting new HTTPS connection (1): test.intellibid.cn:443
+DEBUG 2025-12-09 13:53:41 connectionpool.py connectionpool _make_request 544 : https://test.intellibid.cn:443 "POST /prod-api/bid/ua/analysis/tender/sync HTTP/1.1" 200 None

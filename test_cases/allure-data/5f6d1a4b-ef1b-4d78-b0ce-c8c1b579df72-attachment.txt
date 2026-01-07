@@ -1,0 +1,25 @@
+文档路径： E:\pdf_sort\file1747465379083.pdf  开始测试...
+format_change 文件上传成功
+format_change p2d:have downloaded file to: E:\pdf_sort\file1747465379083.docx
+未找到编号样式，直接返回原文档
+call find_outer_parts...
+当前调用模型：qwen-max-latest
+call find_outer_parts...
+当前调用模型：qwen-max-latest
+call find_outer_parts...
+当前调用模型：qwen-max-latest
+未找到编号样式，直接返回原文档
+未找到编号样式，直接返回原文档
+未找到编号样式，直接返回原文档
+未找到编号样式，直接返回原文档
+未找到编号样式，直接返回原文档
+未找到编号样式，直接返回原文档
+未找到编号样式，直接返回原文档
+['前附部分', '第一章 磋商公告（代磋商邀请函）', '第二章 磋商须知', '第三章 项 目技术 、服务及商务要求', '第四章 评审办法及评分标准', '第五章 合同书（参考格式）', '第六章 响应文件格式']
+[6, 6, 6, 6]
+Test Results Counts:
+pdf转化失败: 1
+doc转化失败: 0
+文件格式不支持: 0
+入口文件检测通过: 3
+入口文件检测不通过: 1

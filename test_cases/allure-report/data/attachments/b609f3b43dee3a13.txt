@@ -1,0 +1,26 @@
+文档路径： E:\pdf_sort\file1750830087544.pdf  开始测试...
+format_change 文件上传成功
+format_change p2d:have downloaded file to: E:\pdf_sort\file1750830087544.docx
+未找到编号样式，直接返回原文档
+call find_outer_parts...
+当前调用模型：qwen-max-latest
+call find_outer_parts...
+当前调用模型：qwen-max-latest
+call find_outer_parts...
+当前调用模型：qwen-max-latest
+未找到编号样式，直接返回原文档
+未找到编号样式，直接返回原文档
+未找到编号样式，直接返回原文档
+未找到编号样式，直接返回原文档
+未找到编号样式，直接返回原文档
+未找到编号样式，直接返回原文档
+未找到编号样式，直接返回原文档
+未找到编号样式，直接返回原文档
+['前附部分', '第一章 投标邀请(或招标公告)', '第二章 投标人须知前附表', '第三章 投标人须知', '第四章 采购需求', '第五章 评审内容', '第六章 合同条款草案', '第七章 投标文件格式']
+[7, 7, 7, 7]
+Test Results Counts:
+pdf转化失败: 0
+doc转化失败: 0
+文件格式不支持: 0
+入口文件检测通过: 9
+入口文件检测不通过: 0
