@@ -1,0 +1,35 @@
+-
+  login:
+    method: post
+    path: /prod-api/auth/register/loginByPassword
+    json:
+      loginType: pc
+      phone: 17762546670
+      code: ""
+      password: CkwD9fqEWwxayspKWQIaQJONQynuBb5aN8xZBwC1125Ds4RpidUKrUXoxDJ04EsVrFVr1OzwfvWNTKR/WumVoVXImsvqh71NflkTgjdVXjnKgBYPLNFgOBru0cDJccIz4aktRIm9Ljew1y7z/H/u9NqX+9mVK4d0x+HjF7qlNwoF5O62TOLLn74W4VCE1a/BwUiMcjLrSpf4JpJpixi0WYIDq/C0aH9xU95sepNQkdf2dSFJZv3vF25wTiqWwH/VnLOl/ztUsiUEpr2mdVRb1rSM99pEQQwkRSxdc2ZmxzMeZAwOKSX4dwJTenbx/LeytIr+2KEO8W/0aXF7YW46rg==
+      key: ""
+      value: ""
+      shareCode: ""
+      uuid: ""
+      companyName: ""
+      agreeCheckbox: true
+      verifyEnable: true
+      visitUrl: https://test.intellibid.cn/home
+      username: 17762546670
+
+  upload:
+    method: post
+    path: /prod-api/bid/ua/upload/tender
+    files:
+      file: E:\招标文件\广告设计制作安装服务(招标文件).doc
+    data:
+      type: "服务类"
+
+  check_bid_file:
+    method: get
+    path: /prod-api/bid/ua/check/bid/file
+
+
+  analyze_tender:
+    method: post
+    path: /prod-api/bid/ua/analysis/tender/sync

@@ -1,0 +1,50 @@
+文档路径： E:\pdf_sort\file1740648831895.pdf  开始测试...
+format_change 文件上传成功
+format_change p2d:have downloaded file to: E:\pdf_sort\file1740648831895.docx
+未找到编号样式，直接返回原文档
+call find_outer_parts...
+当前调用模型：qwen-max-latest
+call find_outer_parts...
+当前调用模型：qwen-max-latest
+call find_outer_parts...
+当前调用模型：qwen-max-latest
+未找到编号样式，直接返回原文档
+未找到编号样式，直接返回原文档
+未找到编号样式，直接返回原文档
+['前附部分', '第二章 磋商须知', '第四章 采购项目技术参数、服务要求、商务要求及其他合同内']
+call find_business_part...
+当前调用模型：qwen-max-latest
+call find_business_part...call find_business_part...call find_business_part...
+
+当前调用模型：qwen-max-latest
+
+当前调用模型：qwen-max-latest
+当前调用模型：qwen-max-latest
+[-1, -1, -1, -1]
+提取商务部分失败，尝试重新提取
+call find_business_part...
+当前调用模型：qwen-max-latest
+call find_business_part...
+当前调用模型：qwen-max-latest
+call find_business_part...
+call find_business_part...
+当前调用模型：qwen-max-latest
+当前调用模型：qwen-max-latest
+[-1, -1, -1, -1]
+提取商务部分失败，尝试重新提取
+call find_business_part...
+当前调用模型：qwen-max-latest
+call find_business_part...
+call find_business_part...
+call find_business_part...
+当前调用模型：qwen-max-latest
+当前调用模型：qwen-max-latest
+当前调用模型：qwen-max-latest
+[-1, -1, -1, -1]
+提取商务部分失败，尝试重新提取
+Test Results Counts:
+pdf转化失败: 1
+doc转化失败: 0
+文件格式不支持: 0
+入口文件检测通过: 0
+入口文件检测不通过: 1

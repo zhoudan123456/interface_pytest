@@ -1,0 +1,56 @@
+文档路径： E:\pdf_sort\file1749018555353.pdf  开始测试...
+format_change 文件上传成功
+format_change p2d:have downloaded file to: E:\pdf_sort\file1749018555353.docx
+未找到编号样式，直接返回原文档
+call find_outer_parts...
+当前调用模型：qwen-max-latest
+call find_outer_parts...
+当前调用模型：qwen-max-latest
+call find_outer_parts...
+当前调用模型：qwen-max-latest
+未找到编号样式，直接返回原文档
+未找到编号样式，直接返回原文档
+未找到编号样式，直接返回原文档
+未找到编号样式，直接返回原文档
+未找到编号样式，直接返回原文档
+未找到编号样式，直接返回原文档
+未找到编号样式，直接返回原文档
+未找到编号样式，直接返回原文档
+未找到编号样式，直接返回原文档
+['前附部分', '第一章 招标公告', '第二章 投标人须知', '第三章 评标办法(技术评分最低标价法)', '第四章 合同条款及格式', '第六章 图 纸', '第五章 工程量清单', '第七章 技术规范', '第八章 工程量清单计量规则']
+call find_business_part...
+当前调用模型：qwen-max-latest
+call find_business_part...
+当前调用模型：qwen-max-latest
+call find_business_part...
+当前调用模型：qwen-max-latest
+call find_business_part...
+当前调用模型：qwen-max-latest
+[-1, -1, -1, -1]
+提取商务部分失败，尝试重新提取
+call find_business_part...
+当前调用模型：qwen-max-latest
+call find_business_part...
+当前调用模型：qwen-max-latest
+call find_business_part...
+call find_business_part...
+当前调用模型：qwen-max-latest
+当前调用模型：qwen-max-latest
+[-1, -1, -1, -1]
+提取商务部分失败，尝试重新提取
+call find_business_part...
+当前调用模型：qwen-max-latest
+call find_business_part...
+call find_business_part...
+call find_business_part...
+当前调用模型：qwen-max-latest当前调用模型：qwen-max-latest
+
+当前调用模型：qwen-max-latest
+[-1, -1, -1, -1]
+提取商务部分失败，尝试重新提取
+Test Results Counts:
+pdf转化失败: 0
+doc转化失败: 0
+文件格式不支持: 0
+入口文件检测通过: 7
+入口文件检测不通过: 1
