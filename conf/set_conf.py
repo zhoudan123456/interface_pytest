@@ -14,10 +14,11 @@ def read_conf(section, option):
 
 
 def write_conf(section=None, option=None, value=None):
-    conf.read(file)
-    conf.set(section, option, value)
-    with open(file,'w',encoding='utf-8') as f:
-        conf.write(f)
+    if section is not None and option is not None and value is not None:
+        conf.read(file)
+        conf.set(section, option, value)
+        with open(file,'w',encoding='utf-8') as f:
+            conf.write(f)
 
 
 
@@ -26,3 +27,7 @@ def read_yaml(file):
         values = yaml.safe_load(f)
     return values
 
+def write_yaml(file, data):
+    """Write data to a YAML file"""
+    with open(file, 'w', encoding='utf-8') as f:
+        yaml.dump(data, f, default_flow_style=False, allow_unicode=True, indent=2)
