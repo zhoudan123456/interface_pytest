@@ -1,7 +1,7 @@
 import pytest
 import os
-import requests
-from conf.set_conf import read_yaml, read_conf, write_conf
+from api_keys.api_keys import ApiKeys
+from conf.set_conf import read_yaml, read_conf, write_conf, write_yaml
 
 
 class TestUploadDocument:
@@ -44,12 +44,16 @@ class TestUploadDocument:
             response_data = res.json()
             if response_data.get('code') == 200 and response_data.get('data'):
                 document_id = response_data['data']
-                # 保存文档ID到配置文件，供后续接口使用
-                write_conf('data', 'document_id', str(document_id))
+                # 保存文档ID到extract.yaml文件，供后续接口使用
+                document_data = {'document_id': str(document_id)}
+                write_yaml('../test_data/extract.yaml', document_data)
                 print(f"Document ID saved: {document_id}")
             else:
                 pytest.fail(f"Upload failed with response: {response_data}")
-            
+                
         finally:
-            # 确保文件被关闭
+            # 确保文件句柄被关闭
             files['file'].close()
+
+if __name__ == '__main__':
+    pytest.main(['-sv'])
