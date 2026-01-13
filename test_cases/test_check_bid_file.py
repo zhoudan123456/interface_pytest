@@ -1,16 +1,24 @@
 import pytest
-from conf.set_conf import read_yaml, read_conf
+from conf.set_conf import read_yaml, read_conf, write_conf, read_yaml as read_yaml_util
+import yaml
+import os
 
 
 class TestCheckBidFile:
     @pytest.mark.parametrize('data', read_yaml('../test_data/login.yaml'))
     def test_check_bid_file(self, api, data):
         """检查投标文件"""
-        # 从配置中读取上传后保存的文档ID
-        document_id = read_conf('data', 'document_id')
+        # 从extract.yaml中读取上传后保存的文档ID
+        extract_file_path = '../test_data/extract.yaml'
+        if os.path.exists(extract_file_path):
+            with open(extract_file_path, 'r', encoding='utf-8') as f:
+                extract_data = yaml.safe_load(f)
+                document_id = extract_data.get('document_id') if extract_data else None
+        else:
+            document_id = None
 
         # 确保文档ID存在
-        assert document_id, "Document ID not found. Please run upload test first."
+        assert document_id, "Document ID not found in extract.yaml. Please run upload test first."
 
         print(f"Using document ID: {document_id}")
 
@@ -34,7 +42,6 @@ class TestCheckBidFile:
         # 验证响应状态码
         assert res.status_code == 200, f"Check bid file failed with status code: {res.status_code}"
         
-
 
 
 if __name__ == '__main__':

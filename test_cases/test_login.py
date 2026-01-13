@@ -4,12 +4,13 @@ from conf.set_conf import write_conf, read_yaml, write_yaml
 import os
 
 
-class TestO1Login:
+class TestLogin:
     @pytest.mark.parametrize('data', read_yaml('../test_data/login.yaml'))
+    @pytest.mark.login
+    @pytest.mark.priority_P0
     def test_01_login(self, api, data):
         # 发送登录请求
         res = api.request(save_cookie=True, **data['login'])
-        print(res.json())
         
         # 提取token
         access_token = api.get_values(res.json(), 'access_token')
