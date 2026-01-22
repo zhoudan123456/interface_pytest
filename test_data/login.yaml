@@ -21,7 +21,7 @@
     method: post
     path: /prod-api/bid/ua/upload/tender
     files:
-      file: E:\招标文件\广告设计制作安装服务(招标文件).doc
+      file: E:\招标文件\麻鸡黄鸡产业集群(第一次续建)一-宁都黄鸡肉鸡笼养基地--饲料加工项目.pdf
     data:
       type: "服务类"
 
@@ -33,3 +33,33 @@
   analyze_tender:
     method: post
     path: /prod-api/bid/ua/analysis/tender/sync
+
+  query_tender_progress:
+    method: post
+    path: /prod-api/bid/ua/query/oneTenderProgressUser
+
+  generate_tech_catalogue:
+    method: post
+    path: /prod-api/bid/tech/catalogue
+
+  catalogue_progress:
+    method: post
+    path: /prod-api/bid/query/catalogue/progress
+
+  query_catalogue:
+    method: post
+    path: /prod-api/bid/query/catalogue
+
+  tech_content:
+    method: post
+    path: /prod-api/bid/tech/content
+
+  query_oneTenderUser:
+    method: post
+    path: /prod-api/bid/ua/query/oneTenderUser
+
+  content_progress:
+    method: post
+    path: /prod-api/bid/query/content/progress
+
+
