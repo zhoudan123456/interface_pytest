@@ -1,0 +1,10 @@
+
+==================================================
+步骤21: 查询业务填充公司是否填充
+==================================================
+Using user ID: 399
+Using tender ID: 176904824255300000
+Using company ID: 112233
+Query Busi Fill Company Is Fill Response: {'code': 200, 'msg': '未填充', 'data': -2}
+Successfully queried fill status: -2, message: 未填充 for tenderId: 176904824255300000, userId: 399, companyId: 112233
+Busi fill company status saved: -2

@@ -1,0 +1,9 @@
+
+==================================================
+步骤17: 查询新的投标报价
+==================================================
+Using document ID: 176904824255300000
+Using company ID: 112233
+Query New Bid As Response: {'code': 200, 'msg': None, 'data': {'商务文件': '未生成', '商务文件ID': '', '技术文件': '未生成', '技术文件ID': ''}}
+Successfully queried new bid as for tenderId: 176904824255300000 and companyId: 112233
+New bid as info saved

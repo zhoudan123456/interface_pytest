@@ -1,0 +1,3 @@
+Using type: 服务类
+Using document ID: 176904824255300000
+Analyze Tender Response: {'code': 200, 'msg': None, 'data': '后台正在解析中'}

@@ -1,0 +1,9 @@
+
+==================================================
+步骤14: 初始化业务
+==================================================
+Using document ID: 176904824255300000
+Using company ID: 112233
+Init Business Response: {'code': 200, 'msg': None, 'data': '初始化完成'}
+Successfully initialized business for tenderId: 176904824255300000 and companyId: 112233
+Business init status saved

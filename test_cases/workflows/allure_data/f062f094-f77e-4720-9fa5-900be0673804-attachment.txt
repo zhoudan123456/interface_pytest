@@ -1,0 +1,8 @@
+
+==================================================
+步骤20: 查询新的公司ID
+==================================================
+Using document ID: 176904824255300000
+Query New Company ID Response: {'code': 200, 'msg': None, 'data': None}
+Successfully queried company ID: None for documentId: 176904824255300000
+New company ID saved: None

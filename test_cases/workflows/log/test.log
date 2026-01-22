@@ -1,0 +1,35 @@
+DEBUG 2026-01-22 10:18:13 connectionpool.py connectionpool _new_conn 1049 : Starting new HTTPS connection (1): test.intellibid.cn:443
+DEBUG 2026-01-22 10:18:14 connectionpool.py connectionpool _make_request 544 : https://test.intellibid.cn:443 "POST /prod-api/auth/register/loginByPassword HTTP/1.1" 200 None
+DEBUG 2026-01-22 10:18:14 connectionpool.py connectionpool _new_conn 1049 : Starting new HTTPS connection (1): test.intellibid.cn:443
+DEBUG 2026-01-22 10:18:15 connectionpool.py connectionpool _make_request 544 : https://test.intellibid.cn:443 "POST /prod-api/bid/ua/upload/tender HTTP/1.1" 200 None
+DEBUG 2026-01-22 10:18:17 connectionpool.py connectionpool _make_request 544 : https://test.intellibid.cn:443 "GET /prod-api/bid/ua/check/bid/file?tenderId=176904824255300000 HTTP/1.1" 200 None
+DEBUG 2026-01-22 10:18:17 connectionpool.py connectionpool _make_request 544 : https://test.intellibid.cn:443 "POST /prod-api/bid/ua/analysis/tender/sync HTTP/1.1" 200 None
+DEBUG 2026-01-22 10:18:18 connectionpool.py connectionpool _make_request 544 : https://test.intellibid.cn:443 "POST /prod-api/bid/ua/query/oneTenderProgressUser HTTP/1.1" 200 None
+DEBUG 2026-01-22 10:19:18 connectionpool.py connectionpool _get_conn 289 : Resetting dropped connection: test.intellibid.cn
+DEBUG 2026-01-22 10:19:18 connectionpool.py connectionpool _make_request 544 : https://test.intellibid.cn:443 "POST /prod-api/bid/ua/query/oneTenderProgressUser HTTP/1.1" 200 None
+DEBUG 2026-01-22 10:20:18 connectionpool.py connectionpool _get_conn 289 : Resetting dropped connection: test.intellibid.cn
+DEBUG 2026-01-22 10:20:18 connectionpool.py connectionpool _make_request 544 : https://test.intellibid.cn:443 "POST /prod-api/bid/ua/query/oneTenderProgressUser HTTP/1.1" 200 None
+DEBUG 2026-01-22 10:21:18 connectionpool.py connectionpool _get_conn 289 : Resetting dropped connection: test.intellibid.cn
+DEBUG 2026-01-22 10:21:18 connectionpool.py connectionpool _make_request 544 : https://test.intellibid.cn:443 "POST /prod-api/bid/ua/query/oneTenderProgressUser HTTP/1.1" 200 None
+DEBUG 2026-01-22 10:21:18 connectionpool.py connectionpool _make_request 544 : https://test.intellibid.cn:443 "POST /prod-api/bid/init/busi?tenderId=176904824255300000&companyId=112233 HTTP/1.1" 200 None
+DEBUG 2026-01-22 10:21:19 connectionpool.py connectionpool _make_request 544 : https://test.intellibid.cn:443 "POST /prod-api/bid/ua/query/oneTenderUser HTTP/1.1" 200 None
+DEBUG 2026-01-22 10:21:19 connectionpool.py connectionpool _make_request 544 : https://test.intellibid.cn:443 "POST /prod-api/bid/query/catalogue HTTP/1.1" 200 None
+DEBUG 2026-01-22 10:21:20 connectionpool.py connectionpool _make_request 544 : https://test.intellibid.cn:443 "POST /prod-api/bid/query/new/bidAs HTTP/1.1" 200 None
+DEBUG 2026-01-22 10:21:21 connectionpool.py connectionpool _make_request 544 : https://test.intellibid.cn:443 "POST /prod-api/bid/gen/busi/task?tenderId=176904824255300000&companyId=112233 HTTP/1.1" 200 None
+DEBUG 2026-01-22 10:21:22 connectionpool.py connectionpool _make_request 544 : https://test.intellibid.cn:443 "GET /prod-api/bid/gen/busi/status?tenderId=176904824255300000&companyId=112233 HTTP/1.1" 200 None
+DEBUG 2026-01-22 10:23:22 connectionpool.py connectionpool _new_conn 1049 : Starting new HTTPS connection (2): test.intellibid.cn:443
+DEBUG 2026-01-22 10:23:22 connectionpool.py connectionpool _make_request 544 : https://test.intellibid.cn:443 "GET /prod-api/bid/gen/busi/status?tenderId=176904824255300000&companyId=112233 HTTP/1.1" 200 None
+DEBUG 2026-01-22 10:23:23 connectionpool.py connectionpool _make_request 544 : https://test.intellibid.cn:443 "GET /prod-api/bid/query/new/company/id?busiId=176904824255300000 HTTP/1.1" 200 None
+DEBUG 2026-01-22 10:23:23 connectionpool.py connectionpool _make_request 544 : https://test.intellibid.cn:443 "GET /prod-api/bid/query/busiFillCompanyIsFill?userId=399&tenderId=176904824255300000&companyId=112233 HTTP/1.1" 200 None
+DEBUG 2026-01-22 10:23:24 connectionpool.py connectionpool _make_request 544 : https://test.intellibid.cn:443 "GET /prod-api/bid/query/new/finalGen?isFillCompany=0&tenderId=176904824255300000 HTTP/1.1" 200 None
+DEBUG 2026-01-22 10:23:25 connectionpool.py connectionpool _make_request 544 : https://test.intellibid.cn:443 "GET /prod-api/bid/query/is/down?type=busi_gen&tenderId=176904824255300000 HTTP/1.1" 200 None
+DEBUG 2026-01-22 10:23:25 connectionpool.py connectionpool _make_request 544 : https://test.intellibid.cn:443 "GET /prod-api/bid/company/selectAllCompany HTTP/1.1" 200 None
+DEBUG 2026-01-22 10:23:26 connectionpool.py connectionpool _make_request 544 : https://test.intellibid.cn:443 "GET /prod-api/bid/query/fill/company/list?tenderId=176904824255300000 HTTP/1.1" 200 None
+DEBUG 2026-01-22 10:23:26 connectionpool.py connectionpool _make_request 544 : https://test.intellibid.cn:443 "POST /prod-api/bid/query/allPerson/noPage HTTP/1.1" 200 None
+DEBUG 2026-01-22 10:23:27 connectionpool.py connectionpool _make_request 544 : https://test.intellibid.cn:443 "GET /prod-api/bid/query/bidFillingList?tenderId=176904824255300000&companyId=358 HTTP/1.1" 200 None
+DEBUG 2026-01-22 10:23:28 connectionpool.py connectionpool _make_request 544 : https://test.intellibid.cn:443 "POST /prod-api/bid/query/allCompanyPerformance HTTP/1.1" 200 None
+DEBUG 2026-01-22 10:23:28 connectionpool.py connectionpool _make_request 544 : https://test.intellibid.cn:443 "POST /prod-api/bid/query/companyFilePage HTTP/1.1" 200 None
+DEBUG 2026-01-22 10:23:29 connectionpool.py connectionpool _make_request 544 : https://test.intellibid.cn:443 "POST /prod-api/bid/query/financialPage HTTP/1.1" 200 None
+DEBUG 2026-01-22 10:23:29 connectionpool.py connectionpool _make_request 544 : https://test.intellibid.cn:443 "POST /prod-api/bid/genSaveCompany HTTP/1.1" 200 None
+DEBUG 2026-01-22 10:26:37 connectionpool.py connectionpool _make_request 544 : https://test.intellibid.cn:443 "POST /prod-api/bid/fill/busi/company HTTP/1.1" 200 None
+DEBUG 2026-01-22 10:26:37 connectionpool.py connectionpool _make_request 544 : https://test.intellibid.cn:443 "POST /prod-api/bid/generate/busi/catalogueAndPage/stream HTTP/1.1" 200 None

@@ -1,0 +1,18 @@
+name: “用户登录”
+variables: # 可定义变量，避免硬编码
+  username: "test_user_001"
+request:
+  path: /prod-api/auth/register/loginByPassword
+  method: POST
+  json:
+    username: “${username}”
+    password: “${encrypted_password}“ # 重要：永远不要明文存储
+extract: # 这是核心！定义要从响应中提取哪些数据
+  access_token: “$.data.access_token” # 使用jsonpath提取
+  token_type: “$.data.token_type”
+  user_id: “$.data.user_info.id”
+  refresh_token: “$.data.refresh_token” # 用于刷新
+validate:
+  - eq: [status_code, 200] # 基础断言：状态码
+  - eq: [“$.code“, 0] # 业务断言：业务码
+  - contains: [“$.data.user_info.roles”, “buyer”] # 业务断言：用户角色

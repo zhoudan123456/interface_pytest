@@ -1,0 +1,20 @@
+
+==================================================
+步骤19: 查询业务任务状态
+==================================================
+Using document ID: 176904824255300000
+Using company ID: 112233
+
+轮询尝试 #1/60
+Gen Busi Status Response: {'code': 200, 'msg': '正在生成中', 'data': {'message': '任务已开始,5', 'status': 'pending'}}
+业务任务尚未完成，当前状态: pending
+等待60秒后继续轮询...
+
+轮询尝试 #2/60
+轮询过程中发生异常: HTTPSConnectionPool(host='test.intellibid.cn', port=443): Max retries exceeded with url: /prod-api/bid/gen/busi/status?tenderId=176904824255300000&companyId=112233 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+等待60秒后继续轮询...
+
+轮询尝试 #3/60
+Gen Busi Status Response: {'code': 200, 'msg': '生成成功', 'data': {'message': '任务已开始,5', 'status': 'completed', 'fileId': '176904854981800000'}}
+业务任务已完成，status: completed
+Gen busi status info saved

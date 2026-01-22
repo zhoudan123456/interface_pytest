@@ -1,0 +1,1939 @@
+all_companies:
+- accountFileUrl: account/325/file1753859802925.png
+  accountName: 中联重科股份有限公司
+  accountNumber: '914300007121944054'
+  bankAddress: 湖南省长沙市岳麓区银盆南路361号
+  bankName: 中国建设银行
+  bankPhone: 0731-89751710
+  beginTime: null
+  bidManagerNumber: 50
+  bidStaffNumber: 500
+  bidTechNumber: 50
+  buildTime: '2019-07-03T00:00:00.000+08:00'
+  companyAddress: 注册地址中国(上海)自由贸易试验区张东路1158号,丹桂路1059号幢105室
+  companyAuthCode: null
+  companyECode: '430000'
+  companyEmail: 572038908@qq.com
+  companyFax: 0311-86673856
+  companyId: '325'
+  companyLicenseUrl: companyLicense/325/file1754016687546.png
+  companyName: 上海张江科学之门科技发展有限公司
+  companyPhone: 0731-89751710
+  companyScale: 特大型企业
+  companyScope: 依法颜经批准的项目,......关部门批准后方可开展经营活动,具体经营项目以相关部门我准文件或许可证件为准;除依法须经批准的项目外,凭营业执照依法自主开展经营活动,如用查询经营范围信息,可扫描营业执照中‘二维码或登录“国家企业信用信息公示系统
+  companySocialCode: 91310115MA1K4CW56F
+  companyType: 其他有限责任公司
+  createBy: null
+  createId: '399'
+  createTime: null
+  deptId: '215'
+  dictionaryIds: A,01,012,0121
+  endTime: null
+  industryClassification: 农、林、牧、渔业,农业,豆类、油料和薯类种植,豆类种植
+  input: null
+  isDel: '0'
+  isLongOperation: 有限期
+  juniorNumber: 50
+  legal: 袁涛
+  legalCard: null
+  midNumber: 50
+  note: ''
+  operationDate: '[2025-09-08, 2026-09-25]'
+  organizationalStructureUrl: companyBasicInformation/325/organizationalStructure/organizationalStructure1753859638109.png
+  pageNum: null
+  pageSize: null
+  registerAddress: 11,1101,110101
+  registerAddressStr: 北京市市辖区东城区
+  registerAuthority: 登记机关
+  registerCapital: '347799.8854'
+  registerTime: '2025-07-30T00:00:00.000+08:00'
+  remark: null
+  safeFileTime: null
+  safeProductionPermitBeginTime: '2026-08-02T00:00:00.000+08:00'
+  safeProductionPermitEndTime: '2026-09-17T00:00:00.000+08:00'
+  safeProductionPermitUrl: companyBasicInformation/325/safeProductionPermit/safeProductionPermit1753859638235.png
+  seniorNumber: 50
+  updateBy: null
+  updateTime: null
+  webAddress: https://www.baidu.com/?tn=48021271_6_hao_pg
+- accountFileUrl: null
+  accountName: null
+  accountNumber: null
+  bankAddress: null
+  bankName: null
+  bankPhone: null
+  beginTime: null
+  bidManagerNumber: null
+  bidStaffNumber: null
+  bidTechNumber: null
+  buildTime: '2019-07-03T00:00:00.000+08:00'
+  companyAddress: 中国(上海)自由贸易试验区张东路1158号,丹桂路1059号幢105室
+  companyAuthCode: null
+  companyECode: null
+  companyEmail: 445561203@qq.com
+  companyFax: null
+  companyId: '336'
+  companyLicenseUrl: companyLicense/336/file1754294777789.png
+  companyName: 百度1
+  companyPhone: null
+  companyScale: null
+  companyScope: 依法颜经批准的项目,......关部门批准后方可开展经营活动,具体经营项目以相关部门我准文件或许可证件为准;除依法须经批准的项目外,凭营业执照依法自主开展经营活动,如用查询经营范围信息,可扫描营业执照中‘二维码或登录“国家企业信用信息公示系统
+  companySocialCode: 91310115MA1K4CW56Y
+  companyType: 其他有限责任公司
+  createBy: null
+  createId: '399'
+  createTime: null
+  deptId: '215'
+  dictionaryIds: null
+  endTime: null
+  industryClassification: null
+  input: null
+  isDel: '0'
+  isLongOperation: 有限期
+  juniorNumber: null
+  legal: 袁涛
+  legalCard: null
+  midNumber: null
+  note: 备注信息1
+  operationDate: '[2025-10-30, 2028-11-30]'
+  organizationalStructureUrl: null
+  pageNum: null
+  pageSize: null
+  registerAddress: 11,1101,110101
+  registerAddressStr: 北京市市辖区东城区
+  registerAuthority: 登记机关
+  registerCapital: '1000'
+  registerTime: '2025-08-04T00:00:00.000+08:00'
+  remark: null
+  safeFileTime: null
+  safeProductionPermitBeginTime: null
+  safeProductionPermitEndTime: null
+  safeProductionPermitUrl: null
+  seniorNumber: null
+  updateBy: null
+  updateTime: null
+  webAddress: null
+- accountFileUrl: null
+  accountName: null
+  accountNumber: null
+  bankAddress: null
+  bankName: null
+  bankPhone: null
+  beginTime: null
+  bidManagerNumber: null
+  bidStaffNumber: null
+  bidTechNumber: null
+  buildTime: '2024-08-21T00:00:00.000+08:00'
+  companyAddress: 湖北省武汉市东湖新技术开发区光谷大道特1号国际企业中心三期1栋4层03号J235
+  companyAuthCode: null
+  companyECode: null
+  companyEmail: 572038908@qq.com
+  companyFax: null
+  companyId: '357'
+  companyLicenseUrl: null
+  companyName: 智标领航 (武汉) 信息技术有限公司
+  companyPhone: null
+  companyScale: null
+  companyScope: 一般项目：信息技术咨询服务,技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广,计算机系统服务,数据处理服务,软件开发,软件销售,计算机软硬件及辅助设备零售,通讯设备销售,工业工程设计服务,工业控制计算机及系统销售,工业互联网数据服务,智能控制系统集成。（除许可业务外，可自主依法经营法律法规非禁止或限制的项目）许可项目：互联网信息服务,基础电信业务,建设工程施工。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）
+  companySocialCode: 91420112MADMYUNK8N
+  companyType: 有限责任公司
+  createBy: null
+  createId: '399'
+  createTime: null
+  deptId: '215'
+  dictionaryIds: null
+  endTime: null
+  industryClassification: null
+  input: null
+  isDel: '0'
+  isLongOperation: 长期
+  juniorNumber: null
+  legal: 高明刚
+  legalCard: null
+  midNumber: null
+  note: 智标领航 (武汉) 信息技术有限公司的备注信息
+  operationDate: '[2024-06-13, 2999-12-31]'
+  organizationalStructureUrl: null
+  pageNum: null
+  pageSize: null
+  registerAddress: 42,4201,420105
+  registerAddressStr: 湖北省武汉市汉阳区
+  registerAuthority: 武汉东湖新技术开发区市场监督管理局
+  registerCapital: '1000'
+  registerTime: '2024-08-22T00:00:00.000+08:00'
+  remark: null
+  safeFileTime: null
+  safeProductionPermitBeginTime: null
+  safeProductionPermitEndTime: null
+  safeProductionPermitUrl: null
+  seniorNumber: null
+  updateBy: null
+  updateTime: null
+  webAddress: null
+- accountFileUrl: account/358/file1761892475587.png
+  accountName: 湖北峡谷柔情建设工程有限公司
+  accountNumber: '82010070003819500'
+  bankAddress: 农村商业银行洪山支行135号
+  bankName: 农村商业银行洪山支行
+  bankPhone: 027-84289999
+  beginTime: null
+  bidManagerNumber: 10
+  bidStaffNumber: 300
+  bidTechNumber: 180
+  buildTime: '2024-06-13T00:00:00.000+08:00'
+  companyAddress: 杭州市清泰街160号
+  companyAuthCode: null
+  companyECode: '333666'
+  companyEmail: 445538908@qq.com
+  companyFax: 027-84695599
+  companyId: '358'
+  companyLicenseUrl: companyLicense/358/file1761891842967.png
+  companyName: 湖北峡谷柔情建设工程有限公司
+  companyPhone: 027-84695588
+  companyScale: 中型
+  companyScope: 娃哈哈系列产品的生产、销售。 按经贸部批准的目录，以原杭州娃哈哈集团公司名义经营集团公司及成员企业自产产品、相关技术出口业务和生产所需原辅材料、机械设备、仪器仪表、零配件等商品及相关技术的进口业务，开展“三来一补”业务。商业、饮食业、服务业的投资开发；建筑材料、金属材料、机电设备、家用电器、化工产品（不含危险品及易制毒品）、计算机软硬件及外部设备、电子元器件、仪器仪表的销售；生物工程技术、机电产品、计算机技术开发及咨询服务，物资仓储（不含危险品）,旅游接待服务。
+  companySocialCode: 91330000142916567N
+  companyType: 有限责任公司
+  createBy: null
+  createId: '399'
+  createTime: null
+  deptId: '215'
+  dictionaryIds: I,65,651,6511
+  endTime: null
+  industryClassification: 信息传输、软件和信息技术服务业,软件和信息技术服务业,软件开发,基础软件开发
+  input: null
+  isDel: '0'
+  isLongOperation: 长期
+  juniorNumber: 100
+  legal: 曹志勇
+  legalCard: null
+  midNumber: 50
+  note: ''
+  operationDate: '[2025-10-01, 2999-12-31]'
+  organizationalStructureUrl: companyBasicInformation/358/organizationalStructure/organizationalStructure1761892236750.png
+  pageNum: null
+  pageSize: null
+  registerAddress: 11,1101,110101
+  registerAddressStr: 北京市市辖区东城区
+  registerAuthority: 浙江省市场监督管理局
+  registerCapital: '100000'
+  registerTime: '2024-06-13T00:00:00.000+08:00'
+  remark: null
+  safeFileTime: null
+  safeProductionPermitBeginTime: '2024-04-10T00:00:00.000+08:00'
+  safeProductionPermitEndTime: '2027-05-29T00:00:00.000+08:00'
+  safeProductionPermitUrl: companyBasicInformation/358/safeProductionPermit/safeProductionPermit1761892236880.png
+  seniorNumber: 30
+  updateBy: null
+  updateTime: null
+  webAddress: https://manage.zblh.cn/login?redirect=%2Findex
+all_company_performance:
+  code: 200
+  msg: 查询成功
+  rows:
+  - acceptanceReportFileName: 验收报告.pdf
+    acceptanceReportRes: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/companyPerformance/358/%E6%B5%99%E5%B7%9D%E5%8E%BF%E6%98%8C%E6%B1%87%E5%95%86%E8%B4%B8%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E9%97%A8%E7%AA%97%E5%AE%89%E8%A3%85%E5%B7%A5%E7%A8%8B/acceptanceReport/acceptanceReport1762139394796.pdf?Expires=1769091755&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=LOe68PWahyG72eMZBv0I4j6Kj1o%3D
+    actualArea: '4500'
+    amountRange: null
+    beginDate: '2024-10-01'
+    beginTime: null
+    bidAmount: '178'
+    companyId: '358'
+    completionRegistrationNumber: NY-JSBF-2023-06721
+    constructionOrganizationName: 浙川县昌汇商贸有限公司
+    constructionOrganizationPerson: '13807336666'
+    constructionOrganizationPhone: '13807337777'
+    constructionPermitRes: null
+    contractAmount: '178'
+    contractFileName: 供货合同1.pdf
+    contractRes: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/companyPerformance/358/%E6%B5%99%E5%B7%9D%E5%8E%BF%E6%98%8C%E6%B1%87%E5%95%86%E8%B4%B8%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E9%97%A8%E7%AA%97%E5%AE%89%E8%A3%85%E5%B7%A5%E7%A8%8B/contract/contract1762135246801.pdf?Expires=1769091755&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=SURp%2FNaLRQe39QG3sOSBxBOIUQg%3D
+    createBy: null
+    createTime: '2025-10-31 14:17:38'
+    endDate: '2026-11-30'
+    endTime: null
+    note: 浙川县昌汇商贸有限公司门窗安装工程的备注信息
+    noticeOfSuccessfulBidResultFileName: 中标结果通知书.png
+    noticeOfSuccessfulBidResultRes: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/companyPerformance/358/%E6%B5%99%E5%B7%9D%E5%8E%BF%E6%98%8C%E6%B1%87%E5%95%86%E8%B4%B8%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E9%97%A8%E7%AA%97%E5%AE%89%E8%A3%85%E5%B7%A5%E7%A8%8B/noticeOfSuccessfulBidResult/noticeOfSuccessfulBidResult1761896532902.png?Expires=1769091755&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=Ps1mMmoZPtOam2ZAH%2BavRKzpxzg%3D
+    otherEngineeringFeatures: 使用80系列断桥铝合金型材，中空钢化玻璃。
+    pageNum: null
+    pageSize: null
+    performanceClassification: 民用建筑/商业设施
+    projectAddress: 南阳市浙川县昌汇商贸
+    projectCode: '111222666'
+    projectCost: '178'
+    projectDate:
+    - '2024-10-01'
+    - '2026-11-30'
+    projectId: '108'
+    projectLead: '187'
+    projectLeadName: 曹志勇
+    projectName: 浙川县昌汇商贸有限公司门窗安装工程
+    projectQuality: 优良
+    remark: null
+    settlementAmount: '178'
+    status: 已验
+    technicalLead: '188'
+    technicalLeadName: 方继京
+    tenderAmount: '185'
+    updateBy: null
+    updateTime: null
+  total: '1'
+all_persons_list:
+- 人员ID: 187
+  人员所属: 注册类
+  人员状态: 在职
+  创建时间: '2025-10-31'
+  劳务合同:
+  - companyId: null
+    createTime: '2025-11-03'
+    fileCode: null
+    fileLicenseType: null
+    fileName: 劳动合同1.pdf
+    fileStatus: null
+    fileType: 劳务合同
+    fileUrl: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/person/358/187/%E5%8A%B3%E5%8A%A1%E5%90%88%E5%90%8C/file1762135064098.pdf?Expires=1769091753&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=6ke3Z46BJZ%2BWLE24%2FdKRScZ0mN0%3D
+    isValid: null
+    issueAuthority: null
+    issueTime: null
+    laborDuration:
+    - '2024-10-09'
+    - '2026-11-26'
+    personFileId: 276
+    personId: 187
+    validTime: null
+  姓名: 曹志勇
+  性别: 男
+  是否法人: 是
+  社保资料:
+  - companyId: null
+    createTime: '2025-10-31'
+    fileCode: null
+    fileLicenseType: null
+    fileName: 社保资料.png
+    fileStatus: null
+    fileType: 社保资料
+    fileUrl: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/person/358/187/%E7%A4%BE%E4%BF%9D%E8%B5%84%E6%96%99/file1761893320012.png?Expires=1769091753&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=VVa%2BTwGoDotgoi8OkC1wRAF9ufk%3D
+    isValid: null
+    issueAuthority: null
+    issueTime: null
+    laborDuration: null
+    personFileId: 261
+    personId: 187
+    validTime: null
+  职务: 项目经理
+  联系电话: '17711116666'
+  证书资料:
+  - companyId: null
+    createTime: '2025-12-01'
+    fileCode: 鄂242109590
+    fileLicenseType: 资质证书
+    fileName: 二级建造师证书.png
+    fileStatus: 已过期
+    fileType: 证书资料
+    fileUrl: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/person/358/187/%E8%AF%81%E4%B9%A6%E8%B5%84%E6%96%99/file1761893523757.png?Expires=1769091753&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=sdWch4bBv%2BEV6u5Cpx5F%2FwgBoPc%3D
+    isValid: 有限期
+    issueAuthority: 湖北省住房和城乡建没厅
+    issueTime: '2024-12-21'
+    laborDuration: null
+    personFileId: 262
+    personId: 187
+    validTime: '2025-11-30'
+  详情: 曹志勇详细信息
+  身份证明号码: '420281199106070014'
+  身份证正面: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/person/358/%E6%9B%B9%E5%BF%97%E5%8B%87/cardFileFront/frontCardFile1761893269651.png?Expires=1769091753&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=60GFNNBCSp%2BwdrGfIs7ozTaaAlY%3D
+  身份证背面: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/person/358/%E6%9B%B9%E5%BF%97%E5%8B%87/cardFileBack/backCardFile1761893269770.png?Expires=1769091753&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=2zReSo1MZENszV59nFIkyEnvGCc%3D
+- 人员ID: 188
+  人员所属: 岗位类
+  人员状态: 在职
+  创建时间: '2025-10-31'
+  劳务合同:
+  - companyId: null
+    createTime: '2025-11-03'
+    fileCode: null
+    fileLicenseType: null
+    fileName: 劳动合同1.pdf
+    fileStatus: null
+    fileType: 劳务合同
+    fileUrl: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/person/358/188/%E5%8A%B3%E5%8A%A1%E5%90%88%E5%90%8C/file1762135094601.pdf?Expires=1769091753&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=1uHr3NeC%2F2%2B%2B5jtvvma1KV%2BQsoU%3D
+    isValid: null
+    issueAuthority: null
+    issueTime: null
+    laborDuration:
+    - '2024-11-27'
+    - '2026-12-31'
+    personFileId: 277
+    personId: 188
+    validTime: null
+  姓名: 方继京
+  性别: 男
+  是否法人: 否
+  社保资料:
+  - companyId: null
+    createTime: '2025-10-31'
+    fileCode: null
+    fileLicenseType: null
+    fileName: 社保资料.png
+    fileStatus: null
+    fileType: 社保资料
+    fileUrl: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/person/358/188/%E7%A4%BE%E4%BF%9D%E8%B5%84%E6%96%99/file1761894427277.png?Expires=1769091753&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=v73sKuFCCHaHTF4uGisEc22U68Y%3D
+    isValid: null
+    issueAuthority: null
+    issueTime: null
+    laborDuration: null
+    personFileId: 264
+    personId: 188
+    validTime: null
+  职务: 产品经理
+  联系电话: '17722229999'
+  证书资料:
+  - companyId: null
+    createTime: '2025-10-31'
+    fileCode: '123123123'
+    fileLicenseType: 资质证书
+    fileName: 安全生产考核合格证书.png
+    fileStatus: 有效
+    fileType: 证书资料
+    fileUrl: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/person/358/188/%E8%AF%81%E4%B9%A6%E8%B5%84%E6%96%99/file1761894655302.png?Expires=1769091753&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=Ke6JO4kbkMm7WMjZW%2FUGT36TXw4%3D
+    isValid: 有限期
+    issueAuthority: 国家认证与许可总局
+    issueTime: '2025-09-01'
+    laborDuration: null
+    personFileId: 265
+    personId: 188
+    validTime: '2026-10-31'
+  详情: 方继京的详细信息
+  身份证明号码: '420281199205026211'
+  身份证正面: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/person/358/%E6%96%B9%E7%BB%A7%E4%BA%AC/cardFileFront/frontCardFile1761894366662.png?Expires=1769091753&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=sywJqUNfko7V62lIlg9xg%2FSkXdQ%3D
+  身份证背面: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/person/358/%E6%96%B9%E7%BB%A7%E4%BA%AC/cardFileBack/backCardFile1761894366760.png?Expires=1769091753&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=5As%2BA4rG6SKZ%2FjmTUtR1%2BrCgS3s%3D
+- 人员ID: 189
+  人员所属: 注册类
+  人员状态: 在职
+  创建时间: '2025-10-31'
+  劳务合同:
+  - companyId: null
+    createTime: '2025-11-03'
+    fileCode: null
+    fileLicenseType: null
+    fileName: 劳动合同1.pdf
+    fileStatus: null
+    fileType: 劳务合同
+    fileUrl: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/person/358/189/%E5%8A%B3%E5%8A%A1%E5%90%88%E5%90%8C/file1762135130157.pdf?Expires=1769091753&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=aDwpMoO5aDlHa56R0aGsGwDX5BU%3D
+    isValid: null
+    issueAuthority: null
+    issueTime: null
+    laborDuration:
+    - '2024-11-28'
+    - '2026-12-31'
+    personFileId: 278
+    personId: 189
+    validTime: null
+  姓名: 甘凯
+  性别: 男
+  是否法人: 否
+  社保资料:
+  - companyId: null
+    createTime: '2025-10-31'
+    fileCode: null
+    fileLicenseType: null
+    fileName: 社保资料.png
+    fileStatus: null
+    fileType: 社保资料
+    fileUrl: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/person/358/189/%E7%A4%BE%E4%BF%9D%E8%B5%84%E6%96%99/file1761894801493.png?Expires=1769091753&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=rbyjazBqL7EbD1HYKcXy5k1a3BA%3D
+    isValid: null
+    issueAuthority: null
+    issueTime: null
+    laborDuration: null
+    personFileId: 267
+    personId: 189
+    validTime: null
+  职务: 产品经理
+  联系电话: '17722226666'
+  证书资料:
+  - companyId: null
+    createTime: '2025-10-31'
+    fileCode: '147258369'
+    fileLicenseType: 资质证书
+    fileName: 二级建造师证书.png
+    fileStatus: 有效
+    fileType: 证书资料
+    fileUrl: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/person/358/189/%E8%AF%81%E4%B9%A6%E8%B5%84%E6%96%99/file1761895270390.png?Expires=1769091753&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=E9JDyc0%2Fwpm1wiVsEh72h%2BIhw80%3D
+    isValid: 有限期
+    issueAuthority: 住房和城乡建设厅
+    issueTime: '2025-10-01'
+    laborDuration: null
+    personFileId: 268
+    personId: 189
+    validTime: '2026-10-31'
+  详情: 甘凯的详细信息
+  身份证明号码: '420281199201108412'
+  身份证正面: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/person/358/%E7%94%98%E5%87%AF/cardFileFront/frontCardFile1761894782623.png?Expires=1769091753&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=nj%2FuzUaPoZe3x8PkREmaOEWVpag%3D
+  身份证背面: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/person/358/%E7%94%98%E5%87%AF/cardFileBack/backCardFile1761894782738.png?Expires=1769091753&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=3S1iSBXt80EAWkTxOeVWrMun5Sc%3D
+- 人员ID: 190
+  人员所属: 岗位类
+  人员状态: 在职
+  创建时间: '2025-10-31'
+  劳务合同:
+  - companyId: null
+    createTime: '2025-11-03'
+    fileCode: null
+    fileLicenseType: null
+    fileName: 劳动合同1.pdf
+    fileStatus: null
+    fileType: 劳务合同
+    fileUrl: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/person/358/190/%E5%8A%B3%E5%8A%A1%E5%90%88%E5%90%8C/file1762139262445.pdf?Expires=1769091753&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=vhkVqt8MZselheKoSNXRj8rBQEc%3D
+    isValid: null
+    issueAuthority: null
+    issueTime: null
+    laborDuration:
+    - '2024-11-07'
+    - '2027-12-23'
+    personFileId: 280
+    personId: 190
+    validTime: null
+  姓名: 王梦
+  性别: 女
+  是否法人: 否
+  社保资料:
+  - companyId: null
+    createTime: '2025-10-31'
+    fileCode: null
+    fileLicenseType: null
+    fileName: 社保资料.png
+    fileStatus: null
+    fileType: 社保资料
+    fileUrl: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/person/358/190/%E7%A4%BE%E4%BF%9D%E8%B5%84%E6%96%99/file1761895448547.png?Expires=1769091753&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=3EGvOkS10S3HjMxiVvqswDaxsi8%3D
+    isValid: null
+    issueAuthority: null
+    issueTime: null
+    laborDuration: null
+    personFileId: 270
+    personId: 190
+    validTime: null
+  职务: 普通员工
+  联系电话: '17733335555'
+  证书资料:
+  - companyId: null
+    createTime: '2025-10-31'
+    fileCode: '123456123'
+    fileLicenseType: 资质证书
+    fileName: 安全生产考核合格证书.png
+    fileStatus: 有效
+    fileType: 证书资料
+    fileUrl: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/person/358/190/%E8%AF%81%E4%B9%A6%E8%B5%84%E6%96%99/file1761895532562.png?Expires=1769091753&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=wN3at1VWsUFDqgvldEnABfUszAw%3D
+    isValid: 有限期
+    issueAuthority: 京北市行政审批局
+    issueTime: '2024-10-01'
+    laborDuration: null
+    personFileId: 271
+    personId: 190
+    validTime: '2027-10-31'
+  详情: 王梦的详细信息
+  身份证明号码: '420281199207098446'
+  身份证正面: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/person/358/%E7%8E%8B%E6%A2%A6/cardFileFront/frontCardFile1761895431957.png?Expires=1769091753&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=3FzND1CBhUVZ5t0ylB%2BpXPHvPZE%3D
+  身份证背面: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/person/358/%E7%8E%8B%E6%A2%A6/cardFileBack/backCardFile1761895432081.png?Expires=1769091753&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=pz4KPZ2S17mQLrnFTOUusjbkrRE%3D
+- 人员ID: 191
+  人员所属: 岗位类
+  人员状态: 在职
+  创建时间: '2025-10-31'
+  劳务合同:
+  - companyId: null
+    createTime: '2025-11-03'
+    fileCode: null
+    fileLicenseType: null
+    fileName: 劳动合同1.pdf
+    fileStatus: null
+    fileType: 劳务合同
+    fileUrl: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/person/358/191/%E5%8A%B3%E5%8A%A1%E5%90%88%E5%90%8C/file1762135168439.pdf?Expires=1769091753&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=S1VmFlOJELff5uI%2Fl3n%2BxehhhLU%3D
+    isValid: null
+    issueAuthority: null
+    issueTime: null
+    laborDuration:
+    - '2024-11-28'
+    - '2026-12-31'
+    personFileId: 279
+    personId: 191
+    validTime: null
+  姓名: 袁媛
+  性别: 女
+  是否法人: 否
+  社保资料:
+  - companyId: null
+    createTime: '2025-10-31'
+    fileCode: null
+    fileLicenseType: null
+    fileName: 社保资料.png
+    fileStatus: null
+    fileType: 社保资料
+    fileUrl: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/person/358/191/%E7%A4%BE%E4%BF%9D%E8%B5%84%E6%96%99/file1761895663006.png?Expires=1769091753&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=DyyD%2BRfhpxscFcV10Wk%2BUfGucOM%3D
+    isValid: null
+    issueAuthority: null
+    issueTime: null
+    laborDuration: null
+    personFileId: 273
+    personId: 191
+    validTime: null
+  职务: 普通员工
+  联系电话: '17766668888'
+  证书资料:
+  - companyId: null
+    createTime: '2025-10-31'
+    fileCode: '123456789123'
+    fileLicenseType: 资质证书
+    fileName: 安全生产考核合格证书.png
+    fileStatus: 有效
+    fileType: 证书资料
+    fileUrl: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/person/358/191/%E8%AF%81%E4%B9%A6%E8%B5%84%E6%96%99/file1761895740973.png?Expires=1769091753&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=8z7U7LK31VPI0%2FVlbd5E9qF4McU%3D
+    isValid: 有限期
+    issueAuthority: 国家专业技能标准委员会
+    issueTime: '2024-10-31'
+    laborDuration: null
+    personFileId: 274
+    personId: 191
+    validTime: '2028-10-31'
+  详情: 袁媛的详细信息
+  身份证明号码: '420281199206026168'
+  身份证正面: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/person/358/%E8%A2%81%E5%AA%9B/cardFileFront/frontCardFile1761895638786.png?Expires=1769091753&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=yU4f62DHr7EoQDb0Bs9wXiXT%2Fls%3D
+  身份证背面: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/person/358/%E8%A2%81%E5%AA%9B/cardFileBack/backCardFile1761895638868.png?Expires=1769091753&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=y1nwRWAZnvksX6Eg8BUIuzmMV0s%3D
+bidType: 2
+bid_filling_list:
+  companyFileList: []
+  entCerRequire:
+  - 供应商为本项目提供的服务团队负责人资质、与本项目类似的从业经验等。
+  - 供应商律师团队情况及拟提供给本项目的律师团队人员数量、人员资质、与本项目类似的从业经验、角色分配等。
+  entFinanceRequire: []
+  entPerRequire: []
+  financialList: []
+  performanceList: []
+busiId: '176904874336100000'
+busi_fill_company_message: 未填充
+busi_fill_company_status: -2
+busi_status: 未生成
+business_init_response: 初始化完成
+business_init_status: success
+catalogue: "{\r\n    \"生成模式\": \"智能分章节生成\",\r\n    \"生成时间\": \"2026-01-15 16:10:53\"\
+  ,\r\n    \"任务信息\": {\r\n        \"任务ID\": \"tech_index_8f337337-663f-410a-b81a-0cd651750e21\"\
+  ,\r\n        \"开始时间\": \"2026-01-15 16:10:13\",\r\n        \"结束时间\": \"2026-01-15\
+  \ 16:10:53\",\r\n        \"任务耗时\": \"39.63秒\"\r\n    },\r\n    \"目录\": [\r\n   \
+  \     {\r\n            \"name\": \"拟派本项目负责人\",\r\n            \"id\": \"1\",\r\n\
+  \            \"parentid\": \"0\",\r\n            \"point\": \"拟派本项目负责人\",\r\n  \
+  \          \"count\": 1800,\r\n            \"children\": [\r\n                {\r\
+  \n                    \"name\": \"近三年主持的同类饲料设备项目业绩\",\r\n                    \"\
+  id\": \"1-1\",\r\n                    \"parentid\": \"1\",\r\n                 \
+  \   \"point\": \"\",\r\n                    \"count\": 1800,\r\n               \
+  \     \"children\": [\r\n                        {\r\n                         \
+  \   \"name\": \"项目一：年产20万吨畜禽饲料生产线建设项目负责人履历\",\r\n                            \"\
+  id\": \"1-1-1\",\r\n                            \"parentid\": \"1-1\",\r\n     \
+  \                       \"point\": \"\",\r\n                            \"count\"\
+  : 1800,\r\n                            \"children\": []\r\n                    \
+  \    },\r\n                        {\r\n                            \"name\": \"\
+  项目二：水产饲料加工设备安装与调试项目管理实绩\",\r\n                            \"id\": \"1-1-2\",\r\n\
+  \                            \"parentid\": \"1-1\",\r\n                        \
+  \    \"point\": \"\",\r\n                            \"count\": 1800,\r\n      \
+  \                      \"children\": []\r\n                        },\r\n      \
+  \                  {\r\n                            \"name\": \"项目三：特种饲料车间成套设备集成项目执行情况\"\
+  ,\r\n                            \"id\": \"1-1-3\",\r\n                        \
+  \    \"parentid\": \"1-1\",\r\n                            \"point\": \"\",\r\n\
+  \                            \"count\": 1800,\r\n                            \"\
+  children\": []\r\n                        },\r\n                        {\r\n  \
+  \                          \"name\": \"类似项目技术难点应对与成果交付说明\",\r\n                \
+  \            \"id\": \"1-1-4\",\r\n                            \"parentid\": \"\
+  1-1\",\r\n                            \"point\": \"\",\r\n                     \
+  \       \"count\": 1800,\r\n                            \"children\": []\r\n   \
+  \                     },\r\n                        {\r\n                      \
+  \      \"name\": \"同类项目客户评价及验收证明材料\",\r\n                            \"id\": \"\
+  1-1-5\",\r\n                            \"parentid\": \"1-1\",\r\n             \
+  \               \"point\": \"\",\r\n                            \"count\": 1800,\r\
+  \n                            \"children\": []\r\n                        }\r\n\
+  \                    ]\r\n                },\r\n                {\r\n          \
+  \          \"name\": \"项目负责人基本信息与职称资质\",\r\n                    \"id\": \"1-2\"\
+  ,\r\n                    \"parentid\": \"1\",\r\n                    \"point\":\
+  \ \"\",\r\n                    \"count\": 1800,\r\n                    \"children\"\
+  : [\r\n                        {\r\n                            \"name\": \"个人基本信息与从业年限说明\"\
+  ,\r\n                            \"id\": \"1-2-1\",\r\n                        \
+  \    \"parentid\": \"1-2\",\r\n                            \"point\": \"\",\r\n\
+  \                            \"count\": 1800,\r\n                            \"\
+  children\": []\r\n                        },\r\n                        {\r\n  \
+  \                          \"name\": \"高级工程师职称证书及执业资格证明\",\r\n                 \
+  \           \"id\": \"1-2-2\",\r\n                            \"parentid\": \"1-2\"\
+  ,\r\n                            \"point\": \"\",\r\n                          \
+  \  \"count\": 1800,\r\n                            \"children\": []\r\n        \
+  \                },\r\n                        {\r\n                           \
+  \ \"name\": \"饲料机械相关专业教育背景与培训经历\",\r\n                            \"id\": \"1-2-3\"\
+  ,\r\n                            \"parentid\": \"1-2\",\r\n                    \
+  \        \"point\": \"\",\r\n                            \"count\": 1800,\r\n  \
+  \                          \"children\": []\r\n                        },\r\n  \
+  \                      {\r\n                            \"name\": \"行业认证资质\",\r\n\
+  \                            \"id\": \"1-2-4\",\r\n                            \"\
+  parentid\": \"1-2\",\r\n                            \"point\": \"\",\r\n       \
+  \                     \"count\": 1800,\r\n                            \"children\"\
+  : []\r\n                        },\r\n                        {\r\n            \
+  \                \"name\": \"获奖情况与专业技术荣誉\",\r\n                            \"id\"\
+  : \"1-2-5\",\r\n                            \"parentid\": \"1-2\",\r\n         \
+  \                   \"point\": \"\",\r\n                            \"count\": 1800,\r\
+  \n                            \"children\": []\r\n                        }\r\n\
+  \                    ]\r\n                },\r\n                {\r\n          \
+  \          \"name\": \"在本项目中的职责分工与驻场计划\",\r\n                    \"id\": \"1-3\"\
+  ,\r\n                    \"parentid\": \"1\",\r\n                    \"point\":\
+  \ \"\",\r\n                    \"count\": 1800,\r\n                    \"children\"\
+  : [\r\n                        {\r\n                            \"name\": \"项目全过程管理职责划分\"\
+  ,\r\n                            \"id\": \"1-3-1\",\r\n                        \
+  \    \"parentid\": \"1-3\",\r\n                            \"point\": \"\",\r\n\
+  \                            \"count\": 1800,\r\n                            \"\
+  children\": []\r\n                        },\r\n                        {\r\n  \
+  \                          \"name\": \"施工现场日常协调与指挥机制\",\r\n                    \
+  \        \"id\": \"1-3-2\",\r\n                            \"parentid\": \"1-3\"\
+  ,\r\n                            \"point\": \"\",\r\n                          \
+  \  \"count\": 1800,\r\n                            \"children\": []\r\n        \
+  \                },\r\n                        {\r\n                           \
+  \ \"name\": \"关键节点到场计划与驻场时间安排\",\r\n                            \"id\": \"1-3-3\"\
+  ,\r\n                            \"parentid\": \"1-3\",\r\n                    \
+  \        \"point\": \"\",\r\n                            \"count\": 1800,\r\n  \
+  \                          \"children\": []\r\n                        },\r\n  \
+  \                      {\r\n                            \"name\": \"与业主、监理及施工团队对接流程\"\
+  ,\r\n                            \"id\": \"1-3-4\",\r\n                        \
+  \    \"parentid\": \"1-3\",\r\n                            \"point\": \"\",\r\n\
+  \                            \"count\": 1800,\r\n                            \"\
+  children\": []\r\n                        },\r\n                        {\r\n  \
+  \                          \"name\": \"进度、质量、安全三大控制责任落实\",\r\n                 \
+  \           \"id\": \"1-3-5\",\r\n                            \"parentid\": \"1-3\"\
+  ,\r\n                            \"point\": \"\",\r\n                          \
+  \  \"count\": 1800,\r\n                            \"children\": []\r\n        \
+  \                }\r\n                    ]\r\n                },\r\n          \
+  \      {\r\n                    \"name\": \"技术决策与应急响应机制\",\r\n                 \
+  \   \"id\": \"1-4\",\r\n                    \"parentid\": \"1\",\r\n           \
+  \         \"point\": \"\",\r\n                    \"count\": 1800,\r\n         \
+  \           \"children\": [\r\n                        {\r\n                   \
+  \         \"name\": \"重大技术方案内部评审与确认流程\",\r\n                            \"id\":\
+  \ \"1-4-1\",\r\n                            \"parentid\": \"1-4\",\r\n         \
+  \                   \"point\": \"\",\r\n                            \"count\": 1800,\r\
+  \n                            \"children\": []\r\n                        },\r\n\
+  \                        {\r\n                            \"name\": \"现场突发问题快速响应小组组建\"\
+  ,\r\n                            \"id\": \"1-4-2\",\r\n                        \
+  \    \"parentid\": \"1-4\",\r\n                            \"point\": \"\",\r\n\
+  \                            \"count\": 1800,\r\n                            \"\
+  children\": []\r\n                        },\r\n                        {\r\n  \
+  \                          \"name\": \"设备安装调试阶段应急预案制定\",\r\n                   \
+  \         \"id\": \"1-4-3\",\r\n                            \"parentid\": \"1-4\"\
+  ,\r\n                            \"point\": \"\",\r\n                          \
+  \  \"count\": 1800,\r\n                            \"children\": []\r\n        \
+  \                },\r\n                        {\r\n                           \
+  \ \"name\": \"跨专业协同技术争议解决机制\",\r\n                            \"id\": \"1-4-4\"\
+  ,\r\n                            \"parentid\": \"1-4\",\r\n                    \
+  \        \"point\": \"\",\r\n                            \"count\": 1800,\r\n  \
+  \                          \"children\": []\r\n                        },\r\n  \
+  \                      {\r\n                            \"name\": \"质量安全事故处理与报告程序\"\
+  ,\r\n                            \"id\": \"1-4-5\",\r\n                        \
+  \    \"parentid\": \"1-4\",\r\n                            \"point\": \"\",\r\n\
+  \                            \"count\": 1800,\r\n                            \"\
+  children\": []\r\n                        }\r\n                    ]\r\n       \
+  \         }\r\n            ]\r\n        },\r\n        {\r\n            \"name\"\
+  : \"企业优势\",\r\n            \"id\": \"2\",\r\n            \"parentid\": \"0\",\r\n\
+  \            \"point\": \"企业优势\",\r\n            \"count\": 1800,\r\n          \
+  \  \"children\": [\r\n                {\r\n                    \"name\": \"企业行业地位与产能规模\"\
+  ,\r\n                    \"id\": \"2-1\",\r\n                    \"parentid\": \"\
+  2\",\r\n                    \"point\": \"\",\r\n                    \"count\": 1800,\r\
+  \n                    \"children\": [\r\n                        {\r\n         \
+  \                   \"name\": \"饲料机械制造行业排名与资质认证\",\r\n                         \
+  \   \"id\": \"2-1-1\",\r\n                            \"parentid\": \"2-1\",\r\n\
+  \                            \"point\": \"\",\r\n                            \"\
+  count\": 1800,\r\n                            \"children\": []\r\n             \
+  \           },\r\n                        {\r\n                            \"name\"\
+  : \"生产基地布局与年产能情况\",\r\n                            \"id\": \"2-1-2\",\r\n      \
+  \                      \"parentid\": \"2-1\",\r\n                            \"\
+  point\": \"\",\r\n                            \"count\": 1800,\r\n             \
+  \               \"children\": []\r\n                        },\r\n             \
+  \           {\r\n                            \"name\": \"主要生产设备与智能制造投入\",\r\n  \
+  \                          \"id\": \"2-1-3\",\r\n                            \"\
+  parentid\": \"2-1\",\r\n                            \"point\": \"\",\r\n       \
+  \                     \"count\": 1800,\r\n                            \"children\"\
+  : []\r\n                        },\r\n                        {\r\n            \
+  \                \"name\": \"规模化生产保障交付能力说明\",\r\n                            \"\
+  id\": \"2-1-4\",\r\n                            \"parentid\": \"2-1\",\r\n     \
+  \                       \"point\": \"\",\r\n                            \"count\"\
+  : 1800,\r\n                            \"children\": []\r\n                    \
+  \    }\r\n                    ]\r\n                },\r\n                {\r\n \
+  \                   \"name\": \"自主研发与技术创新能力\",\r\n                    \"id\": \"\
+  2-2\",\r\n                    \"parentid\": \"2\",\r\n                    \"point\"\
+  : \"\",\r\n                    \"count\": 1800,\r\n                    \"children\"\
+  : [\r\n                        {\r\n                            \"name\": \"省级以上研发平台建设情况\"\
+  ,\r\n                            \"id\": \"2-2-1\",\r\n                        \
+  \    \"parentid\": \"2-2\",\r\n                            \"point\": \"\",\r\n\
+  \                            \"count\": 1800,\r\n                            \"\
+  children\": []\r\n                        },\r\n                        {\r\n  \
+  \                          \"name\": \"核心专利技术及软件著作权清单\",\r\n                   \
+  \         \"id\": \"2-2-2\",\r\n                            \"parentid\": \"2-2\"\
+  ,\r\n                            \"point\": \"\",\r\n                          \
+  \  \"count\": 1800,\r\n                            \"children\": []\r\n        \
+  \                },\r\n                        {\r\n                           \
+  \ \"name\": \"自动化饲料生产线集成技术优势\",\r\n                            \"id\": \"2-2-3\"\
+  ,\r\n                            \"parentid\": \"2-2\",\r\n                    \
+  \        \"point\": \"\",\r\n                            \"count\": 1800,\r\n  \
+  \                          \"children\": []\r\n                        },\r\n  \
+  \                      {\r\n                            \"name\": \"国产化关键部件研发与应用成果\"\
+  ,\r\n                            \"id\": \"2-2-4\",\r\n                        \
+  \    \"parentid\": \"2-2\",\r\n                            \"point\": \"\",\r\n\
+  \                            \"count\": 1800,\r\n                            \"\
+  children\": []\r\n                        },\r\n                        {\r\n  \
+  \                          \"name\": \"持续研发投入与技术团队构成\",\r\n                    \
+  \        \"id\": \"2-2-5\",\r\n                            \"parentid\": \"2-2\"\
+  ,\r\n                            \"point\": \"\",\r\n                          \
+  \  \"count\": 1800,\r\n                            \"children\": []\r\n        \
+  \                }\r\n                    ]\r\n                },\r\n          \
+  \      {\r\n                    \"name\": \"典型成功案例与客户评价\",\r\n                 \
+  \   \"id\": \"2-3\",\r\n                    \"parentid\": \"2\",\r\n           \
+  \         \"point\": \"\",\r\n                    \"count\": 1800,\r\n         \
+  \           \"children\": [\r\n                        {\r\n                   \
+  \         \"name\": \"近三年大型饲料企业项目实施案例\",\r\n                            \"id\":\
+  \ \"2-3-1\",\r\n                            \"parentid\": \"2-3\",\r\n         \
+  \                   \"point\": \"\",\r\n                            \"count\": 1800,\r\
+  \n                            \"children\": []\r\n                        },\r\n\
+  \                        {\r\n                            \"name\": \"代表性自动化饲料线集成项目展示\"\
+  ,\r\n                            \"id\": \"2-3-2\",\r\n                        \
+  \    \"parentid\": \"2-3\",\r\n                            \"point\": \"\",\r\n\
+  \                            \"count\": 1800,\r\n                            \"\
+  children\": []\r\n                        },\r\n                        {\r\n  \
+  \                          \"name\": \"客户使用反馈与满意度调查结果\",\r\n                   \
+  \         \"id\": \"2-3-3\",\r\n                            \"parentid\": \"2-3\"\
+  ,\r\n                            \"point\": \"\",\r\n                          \
+  \  \"count\": 1800,\r\n                            \"children\": []\r\n        \
+  \                },\r\n                        {\r\n                           \
+  \ \"name\": \"项目验收报告与运行效率数据佐证\",\r\n                            \"id\": \"2-3-4\"\
+  ,\r\n                            \"parentid\": \"2-3\",\r\n                    \
+  \        \"point\": \"\",\r\n                            \"count\": 1800,\r\n  \
+  \                          \"children\": []\r\n                        }\r\n   \
+  \                 ]\r\n                },\r\n                {\r\n             \
+  \       \"name\": \"本地化服务与快速响应能力\",\r\n                    \"id\": \"2-4\",\r\n\
+  \                    \"parentid\": \"2\",\r\n                    \"point\": \"\"\
+  ,\r\n                    \"count\": 1800,\r\n                    \"children\": [\r\
+  \n                        {\r\n                            \"name\": \"区域技术服务网点分布情况\"\
+  ,\r\n                            \"id\": \"2-4-1\",\r\n                        \
+  \    \"parentid\": \"2-4\",\r\n                            \"point\": \"\",\r\n\
+  \                            \"count\": 1800,\r\n                            \"\
+  children\": []\r\n                        },\r\n                        {\r\n  \
+  \                          \"name\": \"小时应急响应机制与流程\",\r\n                      \
+  \      \"id\": \"2-4-2\",\r\n                            \"parentid\": \"2-4\",\r\
+  \n                            \"point\": \"\",\r\n                            \"\
+  count\": 1800,\r\n                            \"children\": []\r\n             \
+  \           },\r\n                        {\r\n                            \"name\"\
+  : \"备品备件库存保障与供应周期\",\r\n                            \"id\": \"2-4-3\",\r\n     \
+  \                       \"parentid\": \"2-4\",\r\n                            \"\
+  point\": \"\",\r\n                            \"count\": 1800,\r\n             \
+  \               \"children\": []\r\n                        },\r\n             \
+  \           {\r\n                            \"name\": \"定制化安装调试与操作培训服务\",\r\n \
+  \                           \"id\": \"2-4-4\",\r\n                            \"\
+  parentid\": \"2-4\",\r\n                            \"point\": \"\",\r\n       \
+  \                     \"count\": 1800,\r\n                            \"children\"\
+  : []\r\n                        }\r\n                    ]\r\n                }\r\
+  \n            ]\r\n        },\r\n        {\r\n            \"name\": \"体系认证\",\r\n\
+  \            \"id\": \"3\",\r\n            \"parentid\": \"0\",\r\n            \"\
+  point\": \"体系认证\",\r\n            \"count\": 1800,\r\n            \"children\":\
+  \ [\r\n                {\r\n                    \"name\": \"质量管理体系认证（ISO9001）\"\
+  ,\r\n                    \"id\": \"3-1\",\r\n                    \"parentid\": \"\
+  3\",\r\n                    \"point\": \"\",\r\n                    \"count\": 1800,\r\
+  \n                    \"children\": [\r\n                        {\r\n         \
+  \                   \"name\": \"9001认证证书有效性说明\",\r\n                           \
+  \ \"id\": \"3-1-1\",\r\n                            \"parentid\": \"3-1\",\r\n \
+  \                           \"point\": \"\",\r\n                            \"count\"\
+  : 1800,\r\n                            \"children\": []\r\n                    \
+  \    },\r\n                        {\r\n                            \"name\": \"\
+  质量方针与目标管理机制\",\r\n                            \"id\": \"3-1-2\",\r\n           \
+  \                 \"parentid\": \"3-1\",\r\n                            \"point\"\
+  : \"\",\r\n                            \"count\": 1800,\r\n                    \
+  \        \"children\": []\r\n                        },\r\n                    \
+  \    {\r\n                            \"name\": \"设计与制造过程质量控制流程\",\r\n         \
+  \                   \"id\": \"3-1-3\",\r\n                            \"parentid\"\
+  : \"3-1\",\r\n                            \"point\": \"\",\r\n                 \
+  \           \"count\": 1800,\r\n                            \"children\": []\r\n\
+  \                        },\r\n                        {\r\n                   \
+  \         \"name\": \"成套饲料设备全周期质量管理覆盖\",\r\n                            \"id\":\
+  \ \"3-1-4\",\r\n                            \"parentid\": \"3-1\",\r\n         \
+  \                   \"point\": \"\",\r\n                            \"count\": 1800,\r\
+  \n                            \"children\": []\r\n                        },\r\n\
+  \                        {\r\n                            \"name\": \"内部审核与管理评审实施情况\"\
+  ,\r\n                            \"id\": \"3-1-5\",\r\n                        \
+  \    \"parentid\": \"3-1\",\r\n                            \"point\": \"\",\r\n\
+  \                            \"count\": 1800,\r\n                            \"\
+  children\": []\r\n                        }\r\n                    ]\r\n       \
+  \         },\r\n                {\r\n                    \"name\": \"环境管理体系认证（ISO14001）\"\
+  ,\r\n                    \"id\": \"3-2\",\r\n                    \"parentid\": \"\
+  3\",\r\n                    \"point\": \"\",\r\n                    \"count\": 1800,\r\
+  \n                    \"children\": [\r\n                        {\r\n         \
+  \                   \"name\": \"14001认证证书有效性说明\",\r\n                          \
+  \  \"id\": \"3-2-1\",\r\n                            \"parentid\": \"3-2\",\r\n\
+  \                            \"point\": \"\",\r\n                            \"\
+  count\": 1800,\r\n                            \"children\": []\r\n             \
+  \           },\r\n                        {\r\n                            \"name\"\
+  : \"环境因素识别与评价机制\",\r\n                            \"id\": \"3-2-2\",\r\n       \
+  \                     \"parentid\": \"3-2\",\r\n                            \"point\"\
+  : \"\",\r\n                            \"count\": 1800,\r\n                    \
+  \        \"children\": []\r\n                        },\r\n                    \
+  \    {\r\n                            \"name\": \"生产过程中污染物控制措施\",\r\n          \
+  \                  \"id\": \"3-2-3\",\r\n                            \"parentid\"\
+  : \"3-2\",\r\n                            \"point\": \"\",\r\n                 \
+  \           \"count\": 1800,\r\n                            \"children\": []\r\n\
+  \                        },\r\n                        {\r\n                   \
+  \         \"name\": \"资源能源消耗管理与持续改进\",\r\n                            \"id\": \"\
+  3-2-4\",\r\n                            \"parentid\": \"3-2\",\r\n             \
+  \               \"point\": \"\",\r\n                            \"count\": 1800,\r\
+  \n                            \"children\": []\r\n                        },\r\n\
+  \                        {\r\n                            \"name\": \"环境应急准备与响应方案\"\
+  ,\r\n                            \"id\": \"3-2-5\",\r\n                        \
+  \    \"parentid\": \"3-2\",\r\n                            \"point\": \"\",\r\n\
+  \                            \"count\": 1800,\r\n                            \"\
+  children\": []\r\n                        }\r\n                    ]\r\n       \
+  \         },\r\n                {\r\n                    \"name\": \"职业健康安全管理体系认证（ISO45001）\"\
+  ,\r\n                    \"id\": \"3-3\",\r\n                    \"parentid\": \"\
+  3\",\r\n                    \"point\": \"\",\r\n                    \"count\": 1800,\r\
+  \n                    \"children\": [\r\n                        {\r\n         \
+  \                   \"name\": \"45001认证证书有效性说明\",\r\n                          \
+  \  \"id\": \"3-3-1\",\r\n                            \"parentid\": \"3-3\",\r\n\
+  \                            \"point\": \"\",\r\n                            \"\
+  count\": 1800,\r\n                            \"children\": []\r\n             \
+  \           },\r\n                        {\r\n                            \"name\"\
+  : \"危险源辨识与风险评估流程\",\r\n                            \"id\": \"3-3-2\",\r\n      \
+  \                      \"parentid\": \"3-3\",\r\n                            \"\
+  point\": \"\",\r\n                            \"count\": 1800,\r\n             \
+  \               \"children\": []\r\n                        },\r\n             \
+  \           {\r\n                            \"name\": \"安全生产责任制与培训体系\",\r\n   \
+  \                         \"id\": \"3-3-3\",\r\n                            \"parentid\"\
+  : \"3-3\",\r\n                            \"point\": \"\",\r\n                 \
+  \           \"count\": 1800,\r\n                            \"children\": []\r\n\
+  \                        },\r\n                        {\r\n                   \
+  \         \"name\": \"个人防护与作业场所安全管理\",\r\n                            \"id\": \"\
+  3-3-4\",\r\n                            \"parentid\": \"3-3\",\r\n             \
+  \               \"point\": \"\",\r\n                            \"count\": 1800,\r\
+  \n                            \"children\": []\r\n                        },\r\n\
+  \                        {\r\n                            \"name\": \"事故预防与应急管理机制\"\
+  ,\r\n                            \"id\": \"3-3-5\",\r\n                        \
+  \    \"parentid\": \"3-3\",\r\n                            \"point\": \"\",\r\n\
+  \                            \"count\": 1800,\r\n                            \"\
+  children\": []\r\n                        }\r\n                    ]\r\n       \
+  \         },\r\n                {\r\n                    \"name\": \"认证范围覆盖成套饲料设备设计与制造\"\
+  ,\r\n                    \"id\": \"3-4\",\r\n                    \"parentid\": \"\
+  3\",\r\n                    \"point\": \"\",\r\n                    \"count\": 1800,\r\
+  \n                    \"children\": [\r\n                        {\r\n         \
+  \                   \"name\": \"认证证书中覆盖业务范围的说明\",\r\n                          \
+  \  \"id\": \"3-4-1\",\r\n                            \"parentid\": \"3-4\",\r\n\
+  \                            \"point\": \"\",\r\n                            \"\
+  count\": 1800,\r\n                            \"children\": []\r\n             \
+  \           },\r\n                        {\r\n                            \"name\"\
+  : \"设计阶段合规性与标准化控制\",\r\n                            \"id\": \"3-4-2\",\r\n     \
+  \                       \"parentid\": \"3-4\",\r\n                            \"\
+  point\": \"\",\r\n                            \"count\": 1800,\r\n             \
+  \               \"children\": []\r\n                        },\r\n             \
+  \           {\r\n                            \"name\": \"设备制造全过程认证覆盖证明\",\r\n  \
+  \                          \"id\": \"3-4-3\",\r\n                            \"\
+  parentid\": \"3-4\",\r\n                            \"point\": \"\",\r\n       \
+  \                     \"count\": 1800,\r\n                            \"children\"\
+  : []\r\n                        },\r\n                        {\r\n            \
+  \                \"name\": \"关键工艺环节的体系融合实施\",\r\n                            \"\
+  id\": \"3-4-4\",\r\n                            \"parentid\": \"3-4\",\r\n     \
+  \                       \"point\": \"\",\r\n                            \"count\"\
+  : 1800,\r\n                            \"children\": []\r\n                    \
+  \    },\r\n                        {\r\n                            \"name\": \"\
+  客户现场安装与调试服务纳入认证管理\",\r\n                            \"id\": \"3-4-5\",\r\n     \
+  \                       \"parentid\": \"3-4\",\r\n                            \"\
+  point\": \"\",\r\n                            \"count\": 1800,\r\n             \
+  \               \"children\": []\r\n                        }\r\n              \
+  \      ]\r\n                }\r\n            ]\r\n        },\r\n        {\r\n  \
+  \          \"name\": \"项目实施方案\",\r\n            \"id\": \"4\",\r\n            \"\
+  parentid\": \"0\",\r\n            \"point\": \"项目实施方案\",\r\n            \"count\"\
+  : 1800,\r\n            \"children\": [\r\n                {\r\n                \
+  \    \"name\": \"项目实施计划方案\",\r\n                    \"id\": \"4-1\",\r\n       \
+  \             \"parentid\": \"4\",\r\n                    \"point\": \"\",\r\n \
+  \                   \"count\": 1800,\r\n                    \"children\": [\r\n\
+  \                        {\r\n                            \"name\": \"总体实施进度安排与阶段划分\"\
+  ,\r\n                            \"id\": \"4-1-1\",\r\n                        \
+  \    \"parentid\": \"4-1\",\r\n                            \"point\": \"\",\r\n\
+  \                            \"count\": 1800,\r\n                            \"\
+  children\": []\r\n                        },\r\n                        {\r\n  \
+  \                          \"name\": \"关键里程碑节点及交付成果\",\r\n                     \
+  \       \"id\": \"4-1-2\",\r\n                            \"parentid\": \"4-1\"\
+  ,\r\n                            \"point\": \"\",\r\n                          \
+  \  \"count\": 1800,\r\n                            \"children\": []\r\n        \
+  \                },\r\n                        {\r\n                           \
+  \ \"name\": \"进度控制措施与动态调整机制\",\r\n                            \"id\": \"4-1-3\"\
+  ,\r\n                            \"parentid\": \"4-1\",\r\n                    \
+  \        \"point\": \"\",\r\n                            \"count\": 1800,\r\n  \
+  \                          \"children\": []\r\n                        },\r\n  \
+  \                      {\r\n                            \"name\": \"施工资源投入计划与保障\"\
+  ,\r\n                            \"id\": \"4-1-4\",\r\n                        \
+  \    \"parentid\": \"4-1\",\r\n                            \"point\": \"\",\r\n\
+  \                            \"count\": 1800,\r\n                            \"\
+  children\": []\r\n                        },\r\n                        {\r\n  \
+  \                          \"name\": \"工期风险识别与应急预案\",\r\n                      \
+  \      \"id\": \"4-1-5\",\r\n                            \"parentid\": \"4-1\",\r\
+  \n                            \"point\": \"\",\r\n                            \"\
+  count\": 1800,\r\n                            \"children\": []\r\n             \
+  \           }\r\n                    ]\r\n                },\r\n               \
+  \ {\r\n                    \"name\": \"组织管理方案\",\r\n                    \"id\":\
+  \ \"4-2\",\r\n                    \"parentid\": \"4\",\r\n                    \"\
+  point\": \"\",\r\n                    \"count\": 1800,\r\n                    \"\
+  children\": [\r\n                        {\r\n                            \"name\"\
+  : \"项目组织架构与岗位设置\",\r\n                            \"id\": \"4-2-1\",\r\n       \
+  \                     \"parentid\": \"4-2\",\r\n                            \"point\"\
+  : \"\",\r\n                            \"count\": 1800,\r\n                    \
+  \        \"children\": []\r\n                        },\r\n                    \
+  \    {\r\n                            \"name\": \"项目经理及核心团队职责分工\",\r\n         \
+  \                   \"id\": \"4-2-2\",\r\n                            \"parentid\"\
+  : \"4-2\",\r\n                            \"point\": \"\",\r\n                 \
+  \           \"count\": 1800,\r\n                            \"children\": []\r\n\
+  \                        },\r\n                        {\r\n                   \
+  \         \"name\": \"协同工作机制与沟通汇报流程\",\r\n                            \"id\": \"\
+  4-2-3\",\r\n                            \"parentid\": \"4-2\",\r\n             \
+  \               \"point\": \"\",\r\n                            \"count\": 1800,\r\
+  \n                            \"children\": []\r\n                        },\r\n\
+  \                        {\r\n                            \"name\": \"现场管理制度与执行监督\"\
+  ,\r\n                            \"id\": \"4-2-4\",\r\n                        \
+  \    \"parentid\": \"4-2\",\r\n                            \"point\": \"\",\r\n\
+  \                            \"count\": 1800,\r\n                            \"\
+  children\": []\r\n                        },\r\n                        {\r\n  \
+  \                          \"name\": \"人力资源配置与培训计划\",\r\n                      \
+  \      \"id\": \"4-2-5\",\r\n                            \"parentid\": \"4-2\",\r\
+  \n                            \"point\": \"\",\r\n                            \"\
+  count\": 1800,\r\n                            \"children\": []\r\n             \
+  \           }\r\n                    ]\r\n                },\r\n               \
+  \ {\r\n                    \"name\": \"工艺流程优化建议方案\",\r\n                    \"id\"\
+  : \"4-3\",\r\n                    \"parentid\": \"4\",\r\n                    \"\
+  point\": \"\",\r\n                    \"count\": 1800,\r\n                    \"\
+  children\": [\r\n                        {\r\n                            \"name\"\
+  : \"现有工艺流程分析与瓶颈识别\",\r\n                            \"id\": \"4-3-1\",\r\n     \
+  \                       \"parentid\": \"4-3\",\r\n                            \"\
+  point\": \"\",\r\n                            \"count\": 1800,\r\n             \
+  \               \"children\": []\r\n                        },\r\n             \
+  \           {\r\n                            \"name\": \"优化工艺路线设计与效率提升措施\",\r\n\
+  \                            \"id\": \"4-3-2\",\r\n                            \"\
+  parentid\": \"4-3\",\r\n                            \"point\": \"\",\r\n       \
+  \                     \"count\": 1800,\r\n                            \"children\"\
+  : []\r\n                        },\r\n                        {\r\n            \
+  \                \"name\": \"关键工序衔接与产能匹配方案\",\r\n                            \"\
+  id\": \"4-3-3\",\r\n                            \"parentid\": \"4-3\",\r\n     \
+  \                       \"point\": \"\",\r\n                            \"count\"\
+  : 1800,\r\n                            \"children\": []\r\n                    \
+  \    },\r\n                        {\r\n                            \"name\": \"\
+  设备布局优化与物流路径改进\",\r\n                            \"id\": \"4-3-4\",\r\n         \
+  \                   \"parentid\": \"4-3\",\r\n                            \"point\"\
+  : \"\",\r\n                            \"count\": 1800,\r\n                    \
+  \        \"children\": []\r\n                        },\r\n                    \
+  \    {\r\n                            \"name\": \"持续改进机制与技术验证方法\",\r\n         \
+  \                   \"id\": \"4-3-5\",\r\n                            \"parentid\"\
+  : \"4-3\",\r\n                            \"point\": \"\",\r\n                 \
+  \           \"count\": 1800,\r\n                            \"children\": []\r\n\
+  \                        }\r\n                    ]\r\n                },\r\n  \
+  \              {\r\n                    \"name\": \"节能设计方案\",\r\n              \
+  \      \"id\": \"4-4\",\r\n                    \"parentid\": \"4\",\r\n        \
+  \            \"point\": \"\",\r\n                    \"count\": 1800,\r\n      \
+  \              \"children\": [\r\n                        {\r\n                \
+  \            \"name\": \"能耗现状评估与节能目标设定\",\r\n                            \"id\"\
+  : \"4-4-1\",\r\n                            \"parentid\": \"4-4\",\r\n         \
+  \                   \"point\": \"\",\r\n                            \"count\": 1800,\r\
+  \n                            \"children\": []\r\n                        },\r\n\
+  \                        {\r\n                            \"name\": \"高效节能设备选型与能效标准\"\
+  ,\r\n                            \"id\": \"4-4-2\",\r\n                        \
+  \    \"parentid\": \"4-4\",\r\n                            \"point\": \"\",\r\n\
+  \                            \"count\": 1800,\r\n                            \"\
+  children\": []\r\n                        },\r\n                        {\r\n  \
+  \                          \"name\": \"能量回收利用与余热利用方案\",\r\n                    \
+  \        \"id\": \"4-4-3\",\r\n                            \"parentid\": \"4-4\"\
+  ,\r\n                            \"point\": \"\",\r\n                          \
+  \  \"count\": 1800,\r\n                            \"children\": []\r\n        \
+  \                },\r\n                        {\r\n                           \
+  \ \"name\": \"系统运行优化与负荷调节策略\",\r\n                            \"id\": \"4-4-4\"\
+  ,\r\n                            \"parentid\": \"4-4\",\r\n                    \
+  \        \"point\": \"\",\r\n                            \"count\": 1800,\r\n  \
+  \                          \"children\": []\r\n                        },\r\n  \
+  \                      {\r\n                            \"name\": \"节能效果预测与监测评估方法\"\
+  ,\r\n                            \"id\": \"4-4-5\",\r\n                        \
+  \    \"parentid\": \"4-4\",\r\n                            \"point\": \"\",\r\n\
+  \                            \"count\": 1800,\r\n                            \"\
+  children\": []\r\n                        }\r\n                    ]\r\n       \
+  \         },\r\n                {\r\n                    \"name\": \"自动化控制升级方案\"\
+  ,\r\n                    \"id\": \"4-5\",\r\n                    \"parentid\": \"\
+  4\",\r\n                    \"point\": \"\",\r\n                    \"count\": 1800,\r\
+  \n                    \"children\": [\r\n                        {\r\n         \
+  \                   \"name\": \"自动化控制系统架构设计\",\r\n                            \"\
+  id\": \"4-5-1\",\r\n                            \"parentid\": \"4-5\",\r\n     \
+  \                       \"point\": \"\",\r\n                            \"count\"\
+  : 1800,\r\n                            \"children\": []\r\n                    \
+  \    },\r\n                        {\r\n                            \"name\": \"\
+  /DCS系统配置与网络拓扑\",\r\n                            \"id\": \"4-5-2\",\r\n         \
+  \                   \"parentid\": \"4-5\",\r\n                            \"point\"\
+  : \"\",\r\n                            \"count\": 1800,\r\n                    \
+  \        \"children\": []\r\n                        },\r\n                    \
+  \    {\r\n                            \"name\": \"关键参数实时监控与报警功能\",\r\n         \
+  \                   \"id\": \"4-5-3\",\r\n                            \"parentid\"\
+  : \"4-5\",\r\n                            \"point\": \"\",\r\n                 \
+  \           \"count\": 1800,\r\n                            \"children\": []\r\n\
+  \                        },\r\n                        {\r\n                   \
+  \         \"name\": \"数据采集与生产信息化集成\",\r\n                            \"id\": \"\
+  4-5-4\",\r\n                            \"parentid\": \"4-5\",\r\n             \
+  \               \"point\": \"\",\r\n                            \"count\": 1800,\r\
+  \n                            \"children\": []\r\n                        },\r\n\
+  \                        {\r\n                            \"name\": \"远程控制与智能运维支持\"\
+  ,\r\n                            \"id\": \"4-5-5\",\r\n                        \
+  \    \"parentid\": \"4-5\",\r\n                            \"point\": \"\",\r\n\
+  \                            \"count\": 1800,\r\n                            \"\
+  children\": []\r\n                        }\r\n                    ]\r\n       \
+  \         },\r\n                {\r\n                    \"name\": \"粉尘治理强化方案\"\
+  ,\r\n                    \"id\": \"4-6\",\r\n                    \"parentid\": \"\
+  4\",\r\n                    \"point\": \"\",\r\n                    \"count\": 1800,\r\
+  \n                    \"children\": [\r\n                        {\r\n         \
+  \                   \"name\": \"粉尘产生源识别与排放特征分析\",\r\n                          \
+  \  \"id\": \"4-6-1\",\r\n                            \"parentid\": \"4-6\",\r\n\
+  \                            \"point\": \"\",\r\n                            \"\
+  count\": 1800,\r\n                            \"children\": []\r\n             \
+  \           },\r\n                        {\r\n                            \"name\"\
+  : \"高效除尘系统选型与布置方案\",\r\n                            \"id\": \"4-6-2\",\r\n     \
+  \                       \"parentid\": \"4-6\",\r\n                            \"\
+  point\": \"\",\r\n                            \"count\": 1800,\r\n             \
+  \               \"children\": []\r\n                        },\r\n             \
+  \           {\r\n                            \"name\": \"密闭输送与负压收尘技术应用\",\r\n  \
+  \                          \"id\": \"4-6-3\",\r\n                            \"\
+  parentid\": \"4-6\",\r\n                            \"point\": \"\",\r\n       \
+  \                     \"count\": 1800,\r\n                            \"children\"\
+  : []\r\n                        },\r\n                        {\r\n            \
+  \                \"name\": \"粉尘浓度在线监测与联动控制\",\r\n                            \"\
+  id\": \"4-6-4\",\r\n                            \"parentid\": \"4-6\",\r\n     \
+  \                       \"point\": \"\",\r\n                            \"count\"\
+  : 1800,\r\n                            \"children\": []\r\n                    \
+  \    },\r\n                        {\r\n                            \"name\": \"\
+  清灰系统维护与环保达标保障\",\r\n                            \"id\": \"4-6-5\",\r\n         \
+  \                   \"parentid\": \"4-6\",\r\n                            \"point\"\
+  : \"\",\r\n                            \"count\": 1800,\r\n                    \
+  \        \"children\": []\r\n                        }\r\n                    ]\r\
+  \n                },\r\n                {\r\n                    \"name\": \"质量保障方案\"\
+  ,\r\n                    \"id\": \"4-7\",\r\n                    \"parentid\": \"\
+  4\",\r\n                    \"point\": \"\",\r\n                    \"count\": 1800,\r\
+  \n                    \"children\": [\r\n                        {\r\n         \
+  \                   \"name\": \"全过程质量控制体系建立\",\r\n                            \"\
+  id\": \"4-7-1\",\r\n                            \"parentid\": \"4-7\",\r\n     \
+  \                       \"point\": \"\",\r\n                            \"count\"\
+  : 1800,\r\n                            \"children\": []\r\n                    \
+  \    },\r\n                        {\r\n                            \"name\": \"\
+  原材料与设备进场检验制度\",\r\n                            \"id\": \"4-7-2\",\r\n          \
+  \                  \"parentid\": \"4-7\",\r\n                            \"point\"\
+  : \"\",\r\n                            \"count\": 1800,\r\n                    \
+  \        \"children\": []\r\n                        },\r\n                    \
+  \    {\r\n                            \"name\": \"关键工序质量控制点设置\",\r\n           \
+  \                 \"id\": \"4-7-3\",\r\n                            \"parentid\"\
+  : \"4-7\",\r\n                            \"point\": \"\",\r\n                 \
+  \           \"count\": 1800,\r\n                            \"children\": []\r\n\
+  \                        },\r\n                        {\r\n                   \
+  \         \"name\": \"施工安装质量验收标准与程序\",\r\n                            \"id\": \"\
+  4-7-4\",\r\n                            \"parentid\": \"4-7\",\r\n             \
+  \               \"point\": \"\",\r\n                            \"count\": 1800,\r\
+  \n                            \"children\": []\r\n                        },\r\n\
+  \                        {\r\n                            \"name\": \"质量问题追溯与整改闭环机制\"\
+  ,\r\n                            \"id\": \"4-7-5\",\r\n                        \
+  \    \"parentid\": \"4-7\",\r\n                            \"point\": \"\",\r\n\
+  \                            \"count\": 1800,\r\n                            \"\
+  children\": []\r\n                        }\r\n                    ]\r\n       \
+  \         }\r\n            ]\r\n        },\r\n        {\r\n            \"name\"\
+  : \"产品优势\",\r\n            \"id\": \"5\",\r\n            \"parentid\": \"0\",\r\n\
+  \            \"point\": \"产品优势\",\r\n            \"count\": 1800,\r\n          \
+  \  \"children\": [\r\n                {\r\n                    \"name\": \"主要设备技术参数全面响应与优于招标要求\"\
+  ,\r\n                    \"id\": \"5-1\",\r\n                    \"parentid\": \"\
+  5\",\r\n                    \"point\": \"\",\r\n                    \"count\": 1800,\r\
+  \n                    \"children\": [\r\n                        {\r\n         \
+  \                   \"name\": \"核心性能指标对标及超越说明\",\r\n                           \
+  \ \"id\": \"5-1-1\",\r\n                            \"parentid\": \"5-1\",\r\n \
+  \                           \"point\": \"\",\r\n                            \"count\"\
+  : 1800,\r\n                            \"children\": []\r\n                    \
+  \    },\r\n                        {\r\n                            \"name\": \"\
+  关键运行参数优化设计\",\r\n                            \"id\": \"5-1-2\",\r\n            \
+  \                \"parentid\": \"5-1\",\r\n                            \"point\"\
+  : \"\",\r\n                            \"count\": 1800,\r\n                    \
+  \        \"children\": []\r\n                        },\r\n                    \
+  \    {\r\n                            \"name\": \"环境适应性与工况匹配能力\",\r\n          \
+  \                  \"id\": \"5-1-3\",\r\n                            \"parentid\"\
+  : \"5-1\",\r\n                            \"point\": \"\",\r\n                 \
+  \           \"count\": 1800,\r\n                            \"children\": []\r\n\
+  \                        },\r\n                        {\r\n                   \
+  \         \"name\": \"整机效率与负载响应优势\",\r\n                            \"id\": \"5-1-4\"\
+  ,\r\n                            \"parentid\": \"5-1\",\r\n                    \
+  \        \"point\": \"\",\r\n                            \"count\": 1800,\r\n  \
+  \                          \"children\": []\r\n                        }\r\n   \
+  \                 ]\r\n                },\r\n                {\r\n             \
+  \       \"name\": \"关键部件品牌化配置\",\r\n                    \"id\": \"5-2\",\r\n   \
+  \                 \"parentid\": \"5\",\r\n                    \"point\": \"\",\r\
+  \n                    \"count\": 1800,\r\n                    \"children\": [\r\n\
+  \                        {\r\n                            \"name\": \"高可靠性传动部件选型\"\
+  ,\r\n                            \"id\": \"5-2-1\",\r\n                        \
+  \    \"parentid\": \"5-2\",\r\n                            \"point\": \"\",\r\n\
+  \                            \"count\": 1800,\r\n                            \"\
+  children\": []\r\n                        },\r\n                        {\r\n  \
+  \                          \"name\": \"高效节能电机品牌与性能保障\",\r\n                    \
+  \        \"id\": \"5-2-2\",\r\n                            \"parentid\": \"5-2\"\
+  ,\r\n                            \"point\": \"\",\r\n                          \
+  \  \"count\": 1800,\r\n                            \"children\": []\r\n        \
+  \                },\r\n                        {\r\n                           \
+  \ \"name\": \"工业级PLC控制系统配置方案\",\r\n                            \"id\": \"5-2-3\"\
+  ,\r\n                            \"parentid\": \"5-2\",\r\n                    \
+  \        \"point\": \"\",\r\n                            \"count\": 1800,\r\n  \
+  \                          \"children\": []\r\n                        },\r\n  \
+  \                      {\r\n                            \"name\": \"关键元器件原厂供货与质保承诺\"\
+  ,\r\n                            \"id\": \"5-2-4\",\r\n                        \
+  \    \"parentid\": \"5-2\",\r\n                            \"point\": \"\",\r\n\
+  \                            \"count\": 1800,\r\n                            \"\
+  children\": []\r\n                        }\r\n                    ]\r\n       \
+  \         },\r\n                {\r\n                    \"name\": \"结构耐用性设计\",\r\
+  \n                    \"id\": \"5-3\",\r\n                    \"parentid\": \"5\"\
+  ,\r\n                    \"point\": \"\",\r\n                    \"count\": 1800,\r\
+  \n                    \"children\": [\r\n                        {\r\n         \
+  \                   \"name\": \"主体结构高强度Q345钢板应用\",\r\n                         \
+  \   \"id\": \"5-3-1\",\r\n                            \"parentid\": \"5-3\",\r\n\
+  \                            \"point\": \"\",\r\n                            \"\
+  count\": 1800,\r\n                            \"children\": []\r\n             \
+  \           },\r\n                        {\r\n                            \"name\"\
+  : \"易损部位耐磨衬板模块化设计\",\r\n                            \"id\": \"5-3-2\",\r\n     \
+  \                       \"parentid\": \"5-3\",\r\n                            \"\
+  point\": \"\",\r\n                            \"count\": 1800,\r\n             \
+  \               \"children\": []\r\n                        },\r\n             \
+  \           {\r\n                            \"name\": \"防腐处理与长效防护工艺\",\r\n    \
+  \                        \"id\": \"5-3-3\",\r\n                            \"parentid\"\
+  : \"5-3\",\r\n                            \"point\": \"\",\r\n                 \
+  \           \"count\": 1800,\r\n                            \"children\": []\r\n\
+  \                        },\r\n                        {\r\n                   \
+  \         \"name\": \"疲劳强度校核与结构寿命验证\",\r\n                            \"id\": \"\
+  5-3-4\",\r\n                            \"parentid\": \"5-3\",\r\n             \
+  \               \"point\": \"\",\r\n                            \"count\": 1800,\r\
+  \n                            \"children\": []\r\n                        }\r\n\
+  \                    ]\r\n                },\r\n                {\r\n          \
+  \          \"name\": \"智能化与维护便捷性设计\",\r\n                    \"id\": \"5-4\",\r\n\
+  \                    \"parentid\": \"5\",\r\n                    \"point\": \"\"\
+  ,\r\n                    \"count\": 1800,\r\n                    \"children\": [\r\
+  \n                        {\r\n                            \"name\": \"模块化快拆结构与不停机更换设计\"\
+  ,\r\n                            \"id\": \"5-4-1\",\r\n                        \
+  \    \"parentid\": \"5-4\",\r\n                            \"point\": \"\",\r\n\
+  \                            \"count\": 1800,\r\n                            \"\
+  children\": []\r\n                        },\r\n                        {\r\n  \
+  \                          \"name\": \"智能监控系统与故障自诊断功能\",\r\n                   \
+  \         \"id\": \"5-4-2\",\r\n                            \"parentid\": \"5-4\"\
+  ,\r\n                            \"point\": \"\",\r\n                          \
+  \  \"count\": 1800,\r\n                            \"children\": []\r\n        \
+  \                },\r\n                        {\r\n                           \
+  \ \"name\": \"人机交互界面操作便捷性优化\",\r\n                            \"id\": \"5-4-3\"\
+  ,\r\n                            \"parentid\": \"5-4\",\r\n                    \
+  \        \"point\": \"\",\r\n                            \"count\": 1800,\r\n  \
+  \                          \"children\": []\r\n                        },\r\n  \
+  \                      {\r\n                            \"name\": \"远程运维支持与数据可视化配置\"\
+  ,\r\n                            \"id\": \"5-4-4\",\r\n                        \
+  \    \"parentid\": \"5-4\",\r\n                            \"point\": \"\",\r\n\
+  \                            \"count\": 1800,\r\n                            \"\
+  children\": []\r\n                        }\r\n                    ]\r\n       \
+  \         },\r\n                {\r\n                    \"name\": \"整线匹配性与运行能效优势\"\
+  ,\r\n                    \"id\": \"5-5\",\r\n                    \"parentid\": \"\
+  5\",\r\n                    \"point\": \"\",\r\n                    \"count\": 1800,\r\
+  \n                    \"children\": [\r\n                        {\r\n         \
+  \                   \"name\": \"设备间协同控制与流程优化\",\r\n                            \"\
+  id\": \"5-5-1\",\r\n                            \"parentid\": \"5-5\",\r\n     \
+  \                       \"point\": \"\",\r\n                            \"count\"\
+  : 1800,\r\n                            \"children\": []\r\n                    \
+  \    },\r\n                        {\r\n                            \"name\": \"\
+  系统级能耗分析与节能模式设置\",\r\n                            \"id\": \"5-5-2\",\r\n        \
+  \                    \"parentid\": \"5-5\",\r\n                            \"point\"\
+  : \"\",\r\n                            \"count\": 1800,\r\n                    \
+  \        \"children\": []\r\n                        },\r\n                    \
+  \    {\r\n                            \"name\": \"物料流通顺畅性与堵料预防设计\",\r\n        \
+  \                    \"id\": \"5-5-3\",\r\n                            \"parentid\"\
+  : \"5-5\",\r\n                            \"point\": \"\",\r\n                 \
+  \           \"count\": 1800,\r\n                            \"children\": []\r\n\
+  \                        },\r\n                        {\r\n                   \
+  \         \"name\": \"全生命周期运行成本对比分析\",\r\n                            \"id\": \"\
+  5-5-4\",\r\n                            \"parentid\": \"5-5\",\r\n             \
+  \               \"point\": \"\",\r\n                            \"count\": 1800,\r\
+  \n                            \"children\": []\r\n                        }\r\n\
+  \                    ]\r\n                }\r\n            ]\r\n        }\r\n  \
+  \  ],\r\n    \"目录统计\": {\r\n        \"目录\": {\r\n            \"章节数量\": 5,\r\n  \
+  \          \"最内层目录数量\": 112\r\n        }\r\n    },\r\n    \"概览\": \"项目介绍: \\\"本项目为麻鸡黄鸡产业集群（第一次续建）——宁都黄鸡肉鸡笼养基地的饲料加工系统建设项目，旨在通过现代化、自动化饲料加工设备的引进与集成，全面提升宁都盛羽黄鸡专业合作社在肉鸡养殖产业链中的核心竞争力。该项目是宁都县推动农业产业化升级、促进地方特色禽类养殖高质量发展的重要组成部分。随着消费者对高品质禽肉需求的增长以及养殖规模化趋势的加快，传统粗放式饲料加工模式已难以满足高效、精准、安全和环保的生产要求。因此，建设一套集原料接收清理、粉碎、配料混合、制粒、冷却、分级、包装及储存于一体的全自动化饲料加工系统，成为实现养殖标准化、降本增效的关键环节。项目建设地点位于江西省赣州市宁都县，依托当地丰富的粮食资源和成熟的黄鸡养殖基础，打造区域性现代化饲料供应中心，服务于本地及周边养殖场户，形成‘种养加’一体化发展的产业闭环。项目建成后，将显著提升饲料生产的自动化水平和产品质量稳定性，降低人工干预带来的误差与污染风险，提高能源利用效率，并通过科学配比实现营养精准供给，从而增强肉鸡健康水平与出栏品质。同时，项目还将带动相关设备制造、安装调试、电气控制、运维服务等上下游产业发展，创造就业岗位，助力乡村振兴战略实施。整个系统设计注重工艺流程的合理性、设备运行的可靠性与后期维护的便捷性，充分考虑了未来产能扩展的可能性，具备良好的可延展性和智能化升级空间，为后续接入数字化管理系统、实现远程监控与数据采集奠定硬件基础。\\\
+  \",\\n\\n项目技术背景: \\\"饲料加工作为现代畜禽养殖业的核心支撑环节，其技术水平直接关系到动物营养摄入的均衡性、生长性能的发挥以及最终产品的食品安全。本项目所构建的饲料加工系统采用当前国内成熟先进的成套设备集成方案，涵盖从原料进厂到成品包装出厂的全流程自动化作业。系统以PLC为核心控制单元，结合变频调速、气动执行机构、称重传感反馈、脉冲除尘净化等多种技术手段，实现了各工段之间的联动控制与稳定运行。整体工艺布局遵循‘垂直布置、分区管理、顺向流动’的原则，减少物料交叉污染风险，优化车间空间利用率。在原料处理阶段，配置有斗式提升机、初清筛、永磁筒、刮板输送机等设备，确保原料在进入粉碎前完成除杂、去铁、除尘等预处理工序，保障后续设备安全运行与饲料纯净度。粉碎系统采用大功率锤片式粉碎机配合负压风网系统，实现高效细碎，并通过缓冲仓暂存调节供料节奏。配料混合系统则以多仓配料、失重称量、双轴桨叶高效混合为主要技术特征，确保配方精度与混合均匀度达到行业领先水平。制粒系统包括调质器、保质器、环模制粒机、逆流冷却器及碎粒装置，通过对温度、湿度、压力等参数的精确控制，提升颗粒硬度、耐久性与消化吸收率。成品包装系统配备定量包装秤与自动缝包输送线，实现无人化操作与高速包装能力。全系统配备完善的电控体系，包含MCC动力柜、CCP中央控制台、UPS不间断电源及模拟屏显示系统，支持手动/自动切换操作与故障报警提示，具备较强的抗干扰能力和运行安全性。此外，系统还设置了液体添加装置，可用于油脂、酶制剂等功能性添加剂的精准喷注，进一步拓展产品功能多样性。所有设备选型均基于长期工业应用验证，材料选用符合食品级安全标准，结构设计兼顾耐磨、防堵、易清洁等实际工况需求，体现了较高的工程化与实用化水平。整套系统的建设标志着宁都地区饲料加工由传统作坊式向现代化、集约化、智能化方向转型迈出关键一步。\\\
+  \",\\n\\n货物需求: [\\\"麻鸡黄鸡产业集群（第一次续建）--宁都黄鸡肉鸡笼养基地--饲料加工项目, 1项\\\"],\\n\\n项目需求: \\\"\
+  投标人须提供一套完整的饲料加工系统，包含但不限于原料接收清理系统、原料粉碎系统、配料混合系统、制粒系统、成品包装系统、主体设备电控系统、辅助系统以及玉米与豆粕储存仓系统等八大子系统。所有设备必须为全新原装产品，符合国家相关质量标准和技术规范。系统应具备连续稳定生产能力，能够适应多种饲料配方调整需求，满足年产一定规模成品饲料的生产目标。设备安装需严格按照设计图纸进行，保证各工段衔接顺畅、无泄漏、无堵塞。控制系统应实现集中监控与分区操作功能，具备故障自诊断与报警提示能力。现场施工过程中应遵守安全生产规定，做好防护措施，避免对周边环境造成粉尘或噪声污染。系统调试完成后需进行带料试运行，确保各项性能指标达标并通过采购人验收。\\\
+  \",\\n\\n项目技术: \\\"本项目主要采用机械输送技术、气力输送辅助技术、粉碎研磨技术、动态称重计量技术、双轴桨叶强制混合技术、高温高压制粒成型技术、逆流冷却散热技术、振动筛分分级技术、自动定量包装技术、PLC可编程逻辑控制技术、变频调速控制技术、脉冲袋式除尘净化技术、磁选除铁技术、气动执行控制技术以及模块化集成安装技术。系统通过多点位阻旋式料位器实现物料位置监测，采用高分子耐磨材料制作畚斗、刮片及内衬板以延长使用寿命，关键传动部件使用硬齿面减速机与品牌轴承保障运行平稳。电气控制系统采用欧姆龙PLC为核心控制器，配合威纶通级别触摸屏实现人机交互操作，支持模拟屏状态显示与打印输出功能。全系统电缆敷设采用开放式T型镀锌桥架，布线规范整齐并配有标识牌便于后期维护。\\\
+  \",\\n\\n质量标准和认证要求: \\\"所有设备及材料必须符合国家现行有关标准和规范要求，满足《中华人民共和国产品质量法》及相关行业标准。设备制造应符合GB/T系列通用技术条件，电气系统应符合GB/T\
+  \ 5226.1《机械电气安全 机械电气设备 第1部分：通用技术条件》等国家标准。涉及压力容器或特种设备的部件应具备相应资质证书。投标产品不得为国家明令淘汰或禁止使用的产品。若属于政府强制采购节能产品目录范围内的设备，必须提供有效的节能产品认证证书。所有外购配套件应来自正规渠道并附有合格证明文件。整套系统在交付时应通过第三方检测机构的安全性能测试，并出具检测报告。\\\
+  \",\\n\\n供货期限和交货方式: \\\"收到合同款定金后40天内开始分批交付设备，所有设备应在约定时间内运抵项目现场，运输过程中应采取有效防护措施防止损坏。设备到达现场后由中标人负责卸货、搬运至指定安装位置，并承担由此产生的全部费用。成套设备安装工期不超过60天，调试时间为10天。安装期间中标人应派遣专业技术人员驻场指导，确保施工进度与质量。\\\
+  \",\\n\\n售后服务要求: \\\"中标人须提供不少于一年的免费质保期，自系统安装调试验收合格之日起计算。质保期内因设备本身质量问题导致的故障，中标人应在接到通知后24小时内响应，48小时内派出维修人员到场处理，并承担全部维修费用。质保期内提供至少两次定期巡检服务，检查设备运行状况并出具书面报告。质保期满后，中标人应继续提供终身技术支持与有偿维修服务，响应时间不超过72小时。中标人须提供全套设备的操作手册、维护保养指南、电气原理图、PLC程序备份等技术资料，并对采购人指定操作人员进行不少于两天的免费培训，确保其能独立完成日常操作与基本维护工作。\\\
+  \",\\n\\n技术文件要求: \\\"投标人应在投标文件中提交完整的技术方案说明，包括但不限于系统总体布局图、工艺流程图、设备清单明细表、主要设备技术参数说明、电控系统配置说明、安装基础图建议、管道连接示意图、电缆走向图等内容。中标后应在合同签订后7日内提交全套深化设计图纸和技术文档，经采购人确认后方可实施。所有技术文件应采用中文编写，格式清晰、内容完整、签字盖章齐全。竣工验收时须提交完整的竣工资料一套，含设备合格证、出厂检验报告、安装记录、调试记录、试运行报告、培训记录等。\\\
+  \",\\n\\n验收标准: \\\"项目验收分为工厂预验收、到货验收、安装验收、调试验收和最终带料生产验收五个阶段。工厂预验收可在制造商处进行，重点核查设备外观、结构尺寸、主要配置是否符合要求；到货验收由采购人组织，对照发货清单逐项核对数量、型号、规格及随机附件完整性；安装验收检查设备安装位置、固定方式、连接密封性、电气接线正确性等是否符合规范；调试验收评估单机试车与联动运行情况，确认控制系统功能正常、各传感器信号准确、动作逻辑正确；最终验收在完成带料连续生产不少于8小时后进行，考核系统产能、混合均匀度、颗粒成型率、包装精度等关键性能指标是否达到招标文件要求。验收合格后双方签署验收报告，作为付款依据之一。如任一环节未达标，中标人须限期整改直至满足要求。\\\
+  \"\"\r\n}"
+catalogue_and_page_stream_result:
+- data: 任务已启动
+  event: info
+- data: 任务已开始,5
+  event: status
+- data: 商务标偏离内容生成
+  event: status
+- data: 正在添加目录
+  event: status
+- data: 文件处理完成
+  event: status
+- data: '176904878197900000'
+  event: "ç\x94\x9Fæ\x88\x90æ\x88\x90å\x8A\x9F"
+catalogue_info:
+  商务标:
+    catalogue: '{"blocks":[{"block_id":"2","title_idx":"1","title_content":"第六部分 附件－－供应商应答文件的格式","level":1,"docx_path":"块1_第六部分
+      附件－－供应商应答文件的.docx","children":[{"block_id":"3","title_idx":"1-1","title_content":"附件1——谈判报价函（统一格式）","level":2,"docx_path":"块1-1_附件1——谈判报价函（统一格式.docx","children":[],"fileId":"176904839606300000","id":"176904839606300000"},{"block_id":"4","title_idx":"1-2","title_content":"附件2——谈判/分项报价一览表（统一格式）","level":2,"docx_path":"块1-2_附件2——谈判_分项报价一览表.docx","children":[],"fileId":"176904839609500000","id":"176904839609500000"},{"block_id":"5","title_idx":"1-3","title_content":"附件3——技术需求偏离表（统一格式）","level":2,"docx_path":"块1-3_附件3——技术需求偏离表（统一.docx","children":[],"fileId":"176904839612700000","id":"176904839612700000"},{"block_id":"6","title_idx":"1-4","title_content":"附件4——商务条款偏离表（统一格式）","level":2,"docx_path":"块1-4_附件4——商务条款偏离表（统一.docx","children":[],"fileId":"176904839615800000","id":"176904839615800000"},{"block_id":"7","title_idx":"1-5","title_content":"附件5——资格证明文件","level":2,"docx_path":"块1-5_附件5——资格证明文件.docx","children":[],"fileId":"176904839619800000","id":"176904839619800000"},{"block_id":"8","title_idx":"1-6","title_content":"附件6——技术规格及要求及点对点应答","level":2,"docx_path":"块1-6_附件6——技术规格及要求及点对.docx","children":[],"fileId":"176904839623100000","id":"176904839623100000"},{"block_id":"9","title_idx":"1-7","title_content":"附件7——保密承诺书（统一格式）","level":2,"docx_path":"块1-7_附件7——保密承诺书（统一格式.docx","children":[],"fileId":"176904839626800000","id":"176904839626800000"},{"block_id":"10","title_idx":"1-8","title_content":"附件8——优于采购需求的供应商承诺","level":2,"docx_path":"块1-8_附件8——优于采购需求的供应商.docx","children":[],"fileId":"176904839630000000","id":"176904839630000000"},{"block_id":"11","title_idx":"1-9","title_content":"附件9——采购信息公开渠道社会披露承诺书","level":2,"docx_path":"块1-9_附件9——采购信息公开渠道社会.docx","children":[],"fileId":"176904839633500000","id":"176904839633500000"},{"block_id":"12","title_idx":"1-10","title_content":"附件10——中小企业规模类型告知函","level":2,"docx_path":"块1-10_附件10——中小企业规模类型.docx","children":[],"fileId":"176904839637000000","id":"176904839637000000"},{"block_id":"13","title_idx":"1-11","title_content":"附件11——信用中国网站截图","level":2,"docx_path":"块1-11_附件11——信用中国网站截图.docx","children":[],"fileId":"176904839640700000","id":"176904839640700000"},{"block_id":"14","title_idx":"1-12","title_content":"附件12——合规承诺函","level":2,"docx_path":"块1-12_附件12——合规承诺函.docx","children":[],"fileId":"176904839644400000","id":"176904839644400000"},{"block_id":"15","title_idx":"1-13","title_content":"附件13——关联关系情况表","level":2,"docx_path":"块1-13_附件13——关联关系情况表.docx","children":[],"fileId":"176904839648600000","id":"176904839648600000"},{"block_id":"16","title_idx":"1-14","title_content":"附件14——项目人员一览表","level":2,"docx_path":"块1-14_附件14——项目人员一览表.docx","children":[],"fileId":"176904839652000000","id":"176904839652000000"},{"block_id":"17","title_idx":"1-15","title_content":"附件15——供应商承诺函","level":2,"docx_path":"块1-15_附件15——供应商承诺函.docx","children":[],"fileId":"176904839655100000","id":"176904839655100000"},{"block_id":"18","title_idx":"1-16","title_content":"附件16——供应商递交保证金证明材料","level":2,"docx_path":"块1-16_附件16——供应商递交保证金.docx","children":[],"fileId":"176904839658200000","id":"176904839658200000"},{"block_id":"19","title_idx":"1-17","title_content":"附件17——供应商退保证金/授予合同后开取服务费发票信息","level":2,"docx_path":"块1-17_附件17——供应商退保证金_.docx","children":[],"fileId":"176904839662200000","id":"176904839662200000"},{"block_id":"20","title_idx":"1-18","title_content":"附件18——中国银行股份有限公司采购供应商廉洁从业行为承诺书（统一格式）","level":2,"docx_path":"块1-18_附件18——中国银行股份有限.docx","children":[],"fileId":"176904839665400000","id":"176904839665400000"}],"fileId":"176904839601800000","id":"176904839601800000"},{"block_id":"21","title_idx":"2","title_content":"附件1
+      谈判报价函（统一格式）","level":1,"docx_path":"块2_附件1 谈判报价函（统一格式）.docx","children":[],"fileId":"176904839670000000","id":"176904839670000000"},{"block_id":"22","title_idx":"3","title_content":"附件2-1
+      谈判报价一览表","level":1,"docx_path":"块3_附件2-1 谈判报价一览表.docx","children":[],"fileId":"176904839673200000","id":"176904839673200000"},{"block_id":"23","title_idx":"4","title_content":"附件3
+      技术需求偏离表（统一格式）","level":1,"docx_path":"块4_附件3 技术需求偏离表（统一格式）.docx","children":[],"fileId":"176904839676700000","id":"176904839676700000"},{"block_id":"24","title_idx":"5","title_content":"附件4
+      商务条款偏离表（统一格式）","level":1,"docx_path":"块5_附件4 商务条款偏离表（统一格式）.docx","children":[],"fileId":"176904839680100000","id":"176904839680100000"},{"block_id":"25","title_idx":"6","title_content":"附件5–1
+      企业法人营业执照、事业单位法人证书或登记证","level":1,"docx_path":"块6_附件5–1 企业法人营业执照、事业.docx","children":[],"fileId":"176904839683700000","id":"176904839683700000"},{"block_id":"26","title_idx":"7","title_content":"附件5–2
+      法定代表人（或单位负责人）授权书 (统一格式，附身份证复印件)","level":1,"docx_path":"块7_附件5–2 法定代表人（或单位负责.docx","children":[],"fileId":"176904839687100000","id":"176904839687100000"},{"block_id":"27","title_idx":"8","title_content":"附件5–3
+      会计师事务所出具的上一年度财务审计报告或新设企业当年验资报告的复印件（报告须具有出具单位公章），或银行出具的资信证明","level":1,"docx_path":"块8_附件5–3
+      会计师事务所出具的上一.docx","children":[],"fileId":"176904839690400000","id":"176904839690400000"},{"block_id":"28","title_idx":"9","title_content":"附件5-4
+      供应商业绩案例","level":1,"docx_path":"块9_附件5-4 供应商业绩案例.docx","children":[],"fileId":"176904839693800000","id":"176904839693800000"},{"block_id":"29","title_idx":"10","title_content":"附件5-5
+      供应商资格声明","level":1,"docx_path":"块10_附件5-5 供应商资格声明.docx","children":[],"fileId":"176904839697100000","id":"176904839697100000"},{"block_id":"30","title_idx":"11","title_content":"附件5-6
+      供应商提交的证明其满足合格供应商的基本资质要求的文件（供应商注册专职执业律师人数在10人及以上人员名单及后附律师执业证书）","level":1,"docx_path":"块11_附件5-6
+      供应商提交的证明其满.docx","children":[],"fileId":"176904839700100000","id":"176904839700100000"},{"block_id":"31","title_idx":"12","title_content":"附件6
+      技术规格及要求和应答文件点对点应答（对第四部分《采购需求书》要求予以点对点应答）","level":1,"docx_path":"块12_附件6 技术规格及要求和应答文件.docx","children":[],"fileId":"176904839703700000","id":"176904839703700000"},{"block_id":"32","title_idx":"13","title_content":"附件7
+      保密承诺书（统一格式）","level":1,"docx_path":"块13_附件7 保密承诺书（统一格式）.docx","children":[],"fileId":"176904839707500000","id":"176904839707500000"},{"block_id":"33","title_idx":"14","title_content":"附件8
+      磋商报价函及优于采购需求的供应商承诺","level":1,"docx_path":"块14_附件8 磋商报价函及优于采购需求.docx","children":[{"block_id":"34","title_idx":"14-1","title_content":"项目（二次.....最终）报价函","level":2,"docx_path":"块14-1_项目（二次.....最终）报.docx","children":[],"fileId":"176904839713900000","id":"176904839713900000"}],"fileId":"176904839710800000","id":"176904839710800000"},{"block_id":"35","title_idx":"15","title_content":"附件9
+      采购信息公开渠道社会披露承诺书","level":1,"docx_path":"块15_附件9 采购信息公开渠道社会披露.docx","children":[{"block_id":"36","title_idx":"15-1","title_content":"采购信息公开渠道社会披露承诺书","level":2,"docx_path":"块15-1_采购信息公开渠道社会披露承诺.docx","children":[],"fileId":"176904839722100000","id":"176904839722100000"}],"fileId":"176904839718000000","id":"176904839718000000"},{"block_id":"37","title_idx":"16","title_content":"附件10
+      中小企业规模类型告知函","level":1,"docx_path":"块16_附件10 中小企业规模类型告知函.docx","children":[{"block_id":"38","title_idx":"16-1","title_content":"中小企业规模类型告知函","level":2,"docx_path":"块16-1_中小企业规模类型告知函.docx","children":[],"fileId":"176904839730700000","id":"176904839730700000"}],"fileId":"176904839725800000","id":"176904839725800000"},{"block_id":"39","title_idx":"17","title_content":"附件11
+      信用中国网站截图","level":1,"docx_path":"块17_附件11 信用中国网站截图.docx","children":[],"fileId":"176904839740400000","id":"176904839740400000"},{"block_id":"40","title_idx":"18","title_content":"附件12
+      合规承诺函","level":1,"docx_path":"块18_附件12 合规承诺函.docx","children":[{"block_id":"41","title_idx":"18-1","title_content":"合规承诺函","level":2,"docx_path":"块18-1_合规承诺函.docx","children":[],"fileId":"176904839748000000","id":"176904839748000000"}],"fileId":"176904839744200000","id":"176904839744200000"},{"block_id":"42","title_idx":"19","title_content":"附件13
+      关联关系情况表","level":1,"docx_path":"块19_附件13 关联关系情况表.docx","children":[],"fileId":"176904839751400000","id":"176904839751400000"},{"block_id":"43","title_idx":"20","title_content":"附件14项目人员一览表","level":1,"docx_path":"块20_附件14项目人员一览表.docx","children":[{"block_id":"44","title_idx":"20-1","title_content":"附件14-1
+      人员简历表","level":2,"docx_path":"块20-1_附件14-1 人员简历表.docx","children":[],"fileId":"176904839757800000","id":"176904839757800000"}],"fileId":"176904839754900000","id":"176904839754900000"},{"block_id":"45","title_idx":"21","title_content":"附件15
+      供应商承诺函","level":1,"docx_path":"块21_附件15 供应商承诺函.docx","children":[{"block_id":"46","title_idx":"21-1","title_content":"中国银行外聘律师服务利益冲突回避承诺书","level":2,"docx_path":"块21-1_中国银行外聘律师服务利益冲突.docx","children":[],"fileId":"176904839764400000","id":"176904839764400000"}],"fileId":"176904839761200000","id":"176904839761200000"},{"block_id":"47","title_idx":"22","title_content":"附件16
+      供应商递交保证金证明材料","level":1,"docx_path":"块22_附件16 供应商递交保证金证明材.docx","children":[],"fileId":"176904839767700000","id":"176904839767700000"},{"block_id":"48","title_idx":"23","title_content":"附件17
+      供应商退保证金/授予合同后开取服务费发票信息","level":1,"docx_path":"块23_附件17 供应商退保证金_授予合.docx","children":[],"fileId":"176904839771000000","id":"176904839771000000"},{"block_id":"49","title_idx":"24","title_content":"附件18
+      中国银行股份有限公司采购供应商廉洁从业行为承诺书（统一格式）","level":1,"docx_path":"块24_附件18 中国银行股份有限公司采.docx","children":[],"fileId":"176904839773800000","id":"176904839773800000"}]}'
+    catalogueId: 5049
+    status: '1'
+  技术标:
+    catalogue: 该投标文件未生成技术标目录
+    status: '3'
+companyId: '112233'
+company_file_page_data:
+  code: 200
+  msg: 查询成功
+  rows: &id001
+  - authority: 武汉市城乡建设局
+    companyFileCode: '123456123'
+    companyFileId: '199'
+    companyFileName: 建筑业企业资质证书
+    companyFileType: 资质证书
+    companyFileUrl: companyFile/358/资质证书/file1761895938694.png
+    companyId: '358'
+    createId: '399'
+    fileName: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/companyFile/358/%E8%B5%84%E8%B4%A8%E8%AF%81%E4%B9%A6/file1761895938694.png?Expires=1769091755&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=u1NVqC%2FaDRXOM7zGd50Ao2d7W%2B4%3D
+    isValid: 有限期
+    issueDate: '2025-10-01 08:00:00'
+    status: 有效
+    updateTime: null
+    validDate: '2026-10-31 08:00:00'
+  - authority: 国家专业技能标准委员会
+    companyFileCode: '123456789333'
+    companyFileId: '200'
+    companyFileName: 高新技术企业证书
+    companyFileType: 资质证书
+    companyFileUrl: companyFile/358/资质证书/file1761896002370.png
+    companyId: '358'
+    createId: '399'
+    fileName: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/companyFile/358/%E8%B5%84%E8%B4%A8%E8%AF%81%E4%B9%A6/file1761896002370.png?Expires=1769091755&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=Vv7L5%2BVXp1lYx5g1Foi6T4UEmk0%3D
+    isValid: 有限期
+    issueDate: '2025-09-01 08:00:00'
+    status: 有效
+    updateTime: null
+    validDate: '2027-10-31 08:00:00'
+  total: '2'
+company_file_rows_count: 2
+company_file_rows_list: *id001
+company_file_total_count: '2'
+document_id: '176889529916000000'
+download_status: false
+download_type: busi_gen
+fill_company_count: 0
+fill_company_list: []
+fill_company_request_data:
+  authPersonId: 188
+  bidDate: '2026-01-22'
+  companyFileIds:
+  - '199'
+  - '200'
+  companyFileList:
+  - authority: 武汉市城乡建设局
+    companyFileCode: '123456123'
+    companyFileId: '199'
+    companyFileName: 建筑业企业资质证书
+    companyFileType: 资质证书
+    companyFileUrl: companyFile/358/资质证书/file1761895938694.png
+    companyId: '358'
+    createId: '399'
+    fileName: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/companyFile/358/%E8%B5%84%E8%B4%A8%E8%AF%81%E4%B9%A6/file1761895938694.png?Expires=1769020194&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=F3UXuI9UXlButRPesXZKYFoNOFE%3D
+    isValid: 有限期
+    issueDate: '2025-10-01 08:00:00'
+    status: 有效
+    updateTime: null
+    validDate: '2026-10-31 08:00:00'
+  - authority: 国家专业技能标准委员会
+    companyFileCode: '123456789333'
+    companyFileId: '200'
+    companyFileName: 高新技术企业证书
+    companyFileType: 资质证书
+    companyFileUrl: companyFile/358/资质证书/file1761896002370.png
+    companyId: '358'
+    createId: '399'
+    fileName: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/companyFile/358/%E8%B5%84%E8%B4%A8%E8%AF%81%E4%B9%A6/file1761896002370.png?Expires=1769020194&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=RrQ5GTgQPcWt0F3b0O4V4Jtg6i4%3D
+    isValid: 有限期
+    issueDate: '2025-09-01 08:00:00'
+    status: 有效
+    updateTime: null
+    validDate: '2027-10-31 08:00:00'
+  companyId: '112233'
+  companyName: 湖北峡谷柔情建设工程有限公司
+  constructPersonId: 189
+  designPersonId: 190
+  financialIds:
+  - '187'
+  - '186'
+  - '185'
+  financialList:
+  - companyId: '358'
+    createId: '399'
+    entryTime: '2025-10-31 15:47:03'
+    financialFileName: 缴纳社保证明.pdf
+    financialFileUrl: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/financialFile/358/%E7%BC%B4%E7%BA%B3%E7%A4%BE%E4%BF%9D%E8%AF%81%E6%98%8E/file1762135002782.pdf?Expires=1769020198&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=VNPJTEwFByTVImCOxnQYs6qH2Xo%3D
+    financialId: '187'
+    financialName: 2025-11缴纳社保证明
+    financialTime: 2025-11
+    financialType: 缴纳社保证明
+    note: 2025-11缴纳社保证明的备注信息
+    updateTime: '2025-11-03 09:56:43'
+  - companyId: '358'
+    createId: '399'
+    entryTime: '2025-10-31 15:18:15'
+    financialFileName: 税收完税证明.pdf
+    financialFileUrl: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/financialFile/358/%E7%BC%B4%E7%BA%B3%E7%A8%8E%E6%94%B6%E8%AF%81%E6%98%8E/file1762134460684.pdf?Expires=1769020198&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=vmrGA5%2B7HRDxooKH%2FUef2p%2FN%2FGI%3D
+    financialId: '186'
+    financialName: 2025-06缴纳税收证明
+    financialTime: 2025-06
+    financialType: 缴纳税收证明
+    note: 2025-06缴纳税收证明的备注信息
+    updateTime: '2025-11-03 09:47:41'
+  - companyId: '358'
+    createId: '399'
+    entryTime: '2025-10-31 14:38:39'
+    financialFileName: 财务审计报告.pdf
+    financialFileUrl: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/financialFile/358/%E8%B4%A2%E5%8A%A1%E5%AE%A1%E8%AE%A1%E6%8A%A5%E5%91%8A/file1762134390679.pdf?Expires=1769020198&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=DhsgZ7uk8E%2B7xgN0kDYcunLHXMs%3D
+    financialId: '185'
+    financialName: 2019年财务审计报告
+    financialTime: '2025'
+    financialType: 财务审计报告
+    note: 2019年财务审计报告的备注
+    updateTime: '2025-11-03 09:46:31'
+  legal: 曹志勇
+  legalCard: null
+  newCompanyId: '358'
+  performanceList:
+  - acceptanceReportFileName: 验收报告.pdf
+    acceptanceReportRes: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/companyPerformance/358/%E6%B5%99%E5%B7%9D%E5%8E%BF%E6%98%8C%E6%B1%87%E5%95%86%E8%B4%B8%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E9%97%A8%E7%AA%97%E5%AE%89%E8%A3%85%E5%B7%A5%E7%A8%8B/acceptanceReport/acceptanceReport1762139394796.pdf?Expires=1769020190&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=CX09N%2BZo89DrRMH4GzQgrniZ8O8%3D
+    actualArea: '4500'
+    amountRange: null
+    beginDate: '2024-10-01'
+    beginTime: null
+    bidAmount: '178'
+    companyId: '358'
+    completionRegistrationNumber: NY-JSBF-2023-06721
+    constructionOrganizationName: 浙川县昌汇商贸有限公司
+    constructionOrganizationPerson: '13807336666'
+    constructionOrganizationPhone: '13807337777'
+    constructionPermitRes: null
+    contractAmount: '178'
+    contractFileName: 供货合同1.pdf
+    contractRes: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/companyPerformance/358/%E6%B5%99%E5%B7%9D%E5%8E%BF%E6%98%8C%E6%B1%87%E5%95%86%E8%B4%B8%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E9%97%A8%E7%AA%97%E5%AE%89%E8%A3%85%E5%B7%A5%E7%A8%8B/contract/contract1762135246801.pdf?Expires=1769020190&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=QYQs3vioL1iElBCSn2mCVyaLJVw%3D
+    createBy: null
+    createTime: '2025-10-31 14:17:38'
+    endDate: '2026-11-30'
+    endTime: null
+    note: 浙川县昌汇商贸有限公司门窗安装工程的备注信息
+    noticeOfSuccessfulBidResultFileName: 中标结果通知书.png
+    noticeOfSuccessfulBidResultRes: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/companyPerformance/358/%E6%B5%99%E5%B7%9D%E5%8E%BF%E6%98%8C%E6%B1%87%E5%95%86%E8%B4%B8%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E9%97%A8%E7%AA%97%E5%AE%89%E8%A3%85%E5%B7%A5%E7%A8%8B/noticeOfSuccessfulBidResult/noticeOfSuccessfulBidResult1761896532902.png?Expires=1769020190&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=lAV2G0D6RVDkhqwSDOEKLeTRKqo%3D
+    otherEngineeringFeatures: 使用80系列断桥铝合金型材，中空钢化玻璃。
+    pageNum: null
+    pageSize: null
+    performanceClassification: 民用建筑/商业设施
+    projectAddress: 南阳市浙川县昌汇商贸
+    projectCode: '111222666'
+    projectCost: '178'
+    projectDate:
+    - '2024-10-01'
+    - '2026-11-30'
+    projectId: '108'
+    projectLead: '187'
+    projectLeadName: 曹志勇
+    projectName: 浙川县昌汇商贸有限公司门窗安装工程
+    projectQuality: 优良
+    remark: null
+    settlementAmount: '178'
+    status: 已验
+    technicalLead: '188'
+    technicalLeadName: 方继京
+    tenderAmount: '185'
+    updateBy: null
+    updateTime: null
+  personIds:
+  - 187
+  - 188
+  - 189
+  - 190
+  - 191
+  projectIds:
+  - '108'
+  projectPersonId: 187
+  skipCompany: '1'
+  techPersonId: 188
+  tenderCompanyName: 中国邮政集团有限公司贵州省分公司
+  tenderId: '176904824255300000'
+  tenderProjectBudget: '1000000'
+  tenderProjectCode: JLZX-JSHT-ZBCG-24173-14-V
+  tenderProjectName: 中国邮政集团有限公司贵州省分公司2025年全省广告制作安装印制和会展服务供应商采购项目
+filled_company_id: '176898541334700000'
+filled_company_info:
+  code: 200
+  data: '176904874336100000'
+  msg: null
+final_gen_status:
+  busi: null
+  busiStatus: 未生成
+  tech: null
+  techStatus: 未生成
+financial_page_data:
+  code: 200
+  msg: 查询成功
+  rows: &id002
+  - companyId: '358'
+    createId: '399'
+    entryTime: '2025-10-31 15:47:03'
+    financialFileName: 缴纳社保证明.pdf
+    financialFileUrl: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/financialFile/358/%E7%BC%B4%E7%BA%B3%E7%A4%BE%E4%BF%9D%E8%AF%81%E6%98%8E/file1762135002782.pdf?Expires=1769091756&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=%2B8kLVimQsw0gpA6cLeZykgUdmrw%3D
+    financialId: '187'
+    financialName: 2025-11缴纳社保证明
+    financialTime: 2025-11
+    financialType: 缴纳社保证明
+    note: 2025-11缴纳社保证明的备注信息
+    updateTime: '2025-11-03 09:56:43'
+  - companyId: '358'
+    createId: '399'
+    entryTime: '2025-10-31 15:18:15'
+    financialFileName: 税收完税证明.pdf
+    financialFileUrl: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/financialFile/358/%E7%BC%B4%E7%BA%B3%E7%A8%8E%E6%94%B6%E8%AF%81%E6%98%8E/file1762134460684.pdf?Expires=1769091756&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=CfQkWJ02oG3wldy9tw95Y8LOSFk%3D
+    financialId: '186'
+    financialName: 2025-06缴纳税收证明
+    financialTime: 2025-06
+    financialType: 缴纳税收证明
+    note: 2025-06缴纳税收证明的备注信息
+    updateTime: '2025-11-03 09:47:41'
+  - companyId: '358'
+    createId: '399'
+    entryTime: '2025-10-31 14:38:39'
+    financialFileName: 财务审计报告.pdf
+    financialFileUrl: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/financialFile/358/%E8%B4%A2%E5%8A%A1%E5%AE%A1%E8%AE%A1%E6%8A%A5%E5%91%8A/file1762134390679.pdf?Expires=1769091756&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=3IhYxH2POw3b39JGyQMKniDqvNU%3D
+    financialId: '185'
+    financialName: 2019年财务审计报告
+    financialTime: '2025'
+    financialType: 财务审计报告
+    note: 2019年财务审计报告的备注
+    updateTime: '2025-11-03 09:46:31'
+  total: '3'
+financial_rows_count: 3
+financial_rows_list: *id002
+financial_total_count: '3'
+first_company_file_name: 建筑业企业资质证书
+first_company_file_status: 有效
+first_company_file_type: 资质证书
+first_company_id: '325'
+first_company_name: 上海张江科学之门科技发展有限公司
+first_financial_name: 2025-11缴纳社保证明
+first_financial_time: 2025-11
+first_financial_type: 缴纳社保证明
+first_performance_acceptance_filename: null
+first_performance_acceptance_report_url: null
+first_performance_actual_area: null
+first_performance_begin_date: null
+first_performance_classification: null
+first_performance_construction_org_name: null
+first_performance_contract_amount: null
+first_performance_contract_filename: null
+first_performance_contract_url: null
+first_performance_end_date: null
+first_performance_notice_filename: null
+first_performance_notice_url: null
+first_performance_project_address: null
+first_performance_project_code: null
+first_performance_project_lead_name: null
+first_performance_project_name: null
+first_performance_quality: null
+first_performance_settlement_amount: null
+first_performance_status: null
+first_performance_technical_lead_name: null
+gen_busi_status_info:
+  fileId: '176904854981800000'
+  message: 任务已开始,5
+  status: completed
+gen_busi_task_info: export_combine_docx_34722309-4b9c-4cc9-9e23-3f33eb610979
+generated_document_id: '176904878197900000'
+imageText: 2
+isInterImg: '3'
+isTable: 1
+new_bid_as_info:
+  商务文件: 未生成
+  商务文件ID: ''
+  技术文件: 未生成
+  技术文件ID: ''
+new_company_id: null
+parse_result: 'True'
+performance_rows_count: 1
+performance_rows_list: []
+performance_total_count: '1'
+persons_count: 5
+queried_busi_id: '176887645626100000'
+queried_company_id_for_company_files: '358'
+queried_company_id_for_filling_list: '358'
+queried_company_id_for_financial: '358'
+queried_company_id_for_performance: '358'
+queried_company_id_for_persons: '358'
+queried_document_id: '176904824255300000'
+queried_tender_id_for_fill_list: '176904824255300000'
+queried_tender_id_for_filling_list: '176904824255300000'
+save_company_request_data:
+  authPersonId: 187
+  bidDate: '2026-01-22'
+  companyFileList:
+  - authority: 武汉市城乡建设局
+    companyFileCode: '123456123'
+    companyFileId: '199'
+    companyFileName: 建筑业企业资质证书
+    companyFileType: 资质证书
+    companyFileUrl: companyFile/358/资质证书/file1761895938694.png
+    companyId: '358'
+    createId: '399'
+    fileName: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/companyFile/358/%E8%B5%84%E8%B4%A8%E8%AF%81%E4%B9%A6/file1761895938694.png?Expires=1769011545&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=S1tD2dgmPIftEzB1zoG8d1iLEQQ%3D
+    isValid: 有限期
+    issueDate: '2025-10-01 08:00:00'
+    status: 有效
+    updateTime: null
+    validDate: '2026-10-31 08:00:00'
+  - authority: 国家专业技能标准委员会
+    companyFileCode: '123456789333'
+    companyFileId: '200'
+    companyFileName: 高新技术企业证书
+    companyFileType: 资质证书
+    companyFileUrl: companyFile/358/资质证书/file1761896002370.png
+    companyId: '358'
+    createId: '399'
+    fileName: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/companyFile/358/%E8%B5%84%E8%B4%A8%E8%AF%81%E4%B9%A6/file1761896002370.png?Expires=1769011546&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=aFhNRYK%2FCa3jyqoz9AmPXFkwg3Y%3D
+    isValid: 有限期
+    issueDate: '2025-09-01 08:00:00'
+    status: 有效
+    updateTime: null
+    validDate: '2027-10-31 08:00:00'
+  companyId: '358'
+  companyName: 湖北峡谷柔情建设工程有限公司
+  constructPersonId: 189
+  designPersonId: 190
+  entCerRequire:
+  - 投标人拟派本项目负责人具有机械设备、机械设计或电气类中级及以上的技术职称的得3分，投标人拟派本项目负责人具有机械设备  、机械设计或电气类初级职称得1.5分，本项最高得3分。评审依据：提供项目负责人职称证书、劳动合同原件彩色复印件、开标前连续3个月社保证明（不含开标当月），未提供或提供不符不得分。
+  - 获得有效的“高新技术企业证书 ”得2分;2、获得“安全生产标准化认证证书 ”三级及以上得2.5分;3、获得省级及以上“科学技术奖 ”的得2.5分;评审依据：投标人提供以上证书彩色复印件加盖投标人公章，未提供或提供不符不得分；
+  - 投标人同时提供有效期内的质量管理体系认证、环境管理体系认证、职业健康安全管理体系认证的得6分，每少一个证扣2分；本项最高得6分；未提供或提供不符不得分。评审依据：投标人提供以上证书彩色复印件加盖投标人公章，未提供或提供不符不得分；
+  - 投标人具有脉冲滤尘器、高效混合机同时具有实用新型专利证书的得12分；具有其中一项专利证书的得6分；本项最高得12分；未提供或提供不符不得分。评审依据：须提供国家知识产权局审核通过的证书原件加盖投标人公章佐证。
+  entFinanceRequire:
+  - 开标前连续3个月社保证明（不含开标当月）
+  entPerRequire:
+  - 投标人提供自2023年1月15日至2026年1月15日前（以签订合同时间为准）的同类业绩，每提供1个业绩得3分，本项最高得9分。评审依据：投标文件中须提供同类业绩合同或中标（成交）通知书彩色复印件并加盖投标人公章，原件现场备查；未提供或提供不符不得分。
+  financialList:
+  - companyId: '358'
+    createId: '399'
+    entryTime: '2025-10-31 15:47:03'
+    financialFileName: 缴纳社保证明.pdf
+    financialFileUrl: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/financialFile/358/%E7%BC%B4%E7%BA%B3%E7%A4%BE%E4%BF%9D%E8%AF%81%E6%98%8E/file1762135002782.pdf?Expires=1769016723&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=SjC5ifVmoU1s51uPnKrElYZbe1c%3D
+    financialId: '187'
+    financialName: 2025-11缴纳社保证明
+    financialTime: 2025-11
+    financialType: 缴纳社保证明
+    note: 2025-11缴纳社保证明的备注信息
+    updateTime: '2025-11-03 09:56:43'
+  - companyId: '358'
+    createId: '399'
+    entryTime: '2025-10-31 15:18:15'
+    financialFileName: 税收完税证明.pdf
+    financialFileUrl: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/financialFile/358/%E7%BC%B4%E7%BA%B3%E7%A8%8E%E6%94%B6%E8%AF%81%E6%98%8E/file1762134460684.pdf?Expires=1769016723&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=Lw%2BHkr2pccnrkburN17VC89ixRA%3D
+    financialId: '186'
+    financialName: 2025-06缴纳税收证明
+    financialTime: 2025-06
+    financialType: 缴纳税收证明
+    note: 2025-06缴纳税收证明的备注信息
+    updateTime: '2025-11-03 09:47:41'
+  - companyId: '358'
+    createId: '399'
+    entryTime: '2025-10-31 14:38:39'
+    financialFileName: 财务审计报告.pdf
+    financialFileUrl: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/financialFile/358/%E8%B4%A2%E5%8A%A1%E5%AE%A1%E8%AE%A1%E6%8A%A5%E5%91%8A/file1762134390679.pdf?Expires=1769016723&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=EoAddPBppkFBBKfA83KFRn%2BtY4c%3D
+    financialId: '185'
+    financialName: 2019年财务审计报告
+    financialTime: '2025'
+    financialType: 财务审计报告
+    note: 2019年财务审计报告的备注
+    updateTime: '2025-11-03 09:46:31'
+  legal: 曹志勇
+  legalCard: null
+  performanceList:
+  - acceptanceReportFileName: 验收报告.pdf
+    acceptanceReportRes: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/companyPerformance/358/%E6%B5%99%E5%B7%9D%E5%8E%BF%E6%98%8C%E6%B1%87%E5%95%86%E8%B4%B8%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E9%97%A8%E7%AA%97%E5%AE%89%E8%A3%85%E5%B7%A5%E7%A8%8B/acceptanceReport/acceptanceReport1762139394796.pdf?Expires=1769011055&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=K2WTb5PT2mevltKAUcERBqI%2BMt4%3D
+    actualArea: '4500'
+    amountRange: null
+    beginDate: '2024-10-01'
+    beginTime: null
+    bidAmount: '178'
+    companyId: '358'
+    completionRegistrationNumber: NY-JSBF-2023-06721
+    constructionOrganizationName: 浙川县昌汇商贸有限公司
+    constructionOrganizationPerson: '13807336666'
+    constructionOrganizationPhone: '13807337777'
+    constructionPermitRes: null
+    contractAmount: '178'
+    contractFileName: 供货合同1.pdf
+    contractRes: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/companyPerformance/358/%E6%B5%99%E5%B7%9D%E5%8E%BF%E6%98%8C%E6%B1%87%E5%95%86%E8%B4%B8%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E9%97%A8%E7%AA%97%E5%AE%89%E8%A3%85%E5%B7%A5%E7%A8%8B/contract/contract1762135246801.pdf?Expires=1769011055&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=IskRRybuPfMI4Bj73Wi8IRWYZCw%3D
+    createBy: null
+    createTime: '2025-10-31 14:17:38'
+    endDate: '2026-11-30'
+    endTime: null
+    note: 浙川县昌汇商贸有限公司门窗安装工程的备注信息
+    noticeOfSuccessfulBidResultFileName: 中标结果通知书.png
+    noticeOfSuccessfulBidResultRes: https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/companyPerformance/358/%E6%B5%99%E5%B7%9D%E5%8E%BF%E6%98%8C%E6%B1%87%E5%95%86%E8%B4%B8%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E9%97%A8%E7%AA%97%E5%AE%89%E8%A3%85%E5%B7%A5%E7%A8%8B/noticeOfSuccessfulBidResult/noticeOfSuccessfulBidResult1761896532902.png?Expires=1769011055&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=H%2B9f5y0kVjGiynVHOiPKDqUuAG0%3D
+    otherEngineeringFeatures: 使用80系列断桥铝合金型材，中空钢化玻璃。
+    pageNum: null
+    pageSize: null
+    performanceClassification: 民用建筑/商业设施
+    projectAddress: 南阳市浙川县昌汇商贸
+    projectCode: '111222666'
+    projectCost: '178'
+    projectDate:
+    - '2024-10-01'
+    - '2026-11-30'
+    projectId: '108'
+    projectLead: '187'
+    projectLeadName: 曹志勇
+    projectName: 浙川县昌汇商贸有限公司门窗安装工程
+    projectQuality: 优良
+    remark: null
+    settlementAmount: '178'
+    status: 已验
+    technicalLead: '188'
+    technicalLeadName: 方继京
+    tenderAmount: '185'
+    updateBy: null
+    updateTime: null
+  personIds:
+  - 187
+  - 188
+  - 189
+  - 190
+  - 191
+  - 192
+  projectPersonId: 187
+  techPersonId: 188
+  tenderId: '176904824255300000'
+saved_company_id: '358'
+saved_company_info:
+  code: 200
+  data: '358'
+  msg: null
+tech_catalogue_id: 4916
+tech_status: 未生成
+tenderCompanyName: 建筑业企业资质证书
+tenderProjectBudget: '2343000'
+tenderProjectCode: GZZH2025-ND-ZG004
+tenderProjectName: 2025-11缴纳社保证明
+tender_user_info:
+  addition: 空
+  anId: '176904824507500000'
+  anUrl: null
+  analysisEndTime: '2026-01-22 10:19:56'
+  analysisStartTime: '2026-01-22 10:17:25'
+  beginTime: null
+  beginTimeStr: null
+  bidBond: '6000'
+  bidCompanyName: null
+  bidDate: '2026-01-22 09:30:00'
+  billOfQuantitiesName: null
+  billOfQuantitiesUrl: null
+  boqAttach: '[]'
+  constructionDesignName: null
+  constructionDesignUrl: null
+  constructionPeriod: 空
+  constructionQuality: 空
+  createBy: null
+  createTime: '2026-01-22 10:17:24'
+  deadline: '2026-01-22 09:30:00'
+  deleteFlag: 0
+  deleteTime: null
+  deviationTable: '{}'
+  endTime: null
+  endTimeStr: null
+  evalCriteriaBiz: '{"data": {"商务评分": {"商务评分(20分)": {"供应商实力(5分)": [{"评分": "5分", "要求":
+    "供应商实力、企业规模、组织机构及场地设施环境、资信状况，和公司财务报表情况等。优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。"}],
+    "合作案例(15分)": [{"评分": "15分", "要求": "供应商与银行同业自2022年12月1日以来有类似项目的合作案例。其中在邯郸地区代理银行诉讼案件（终审胜诉）合作案例一个得3分；为银行同业提供非诉服务或代理邯郸地区外诉讼案例（终审胜诉）每个2分，最高分15分。（响应文件中提供合同复印件并加盖公章，诉讼案件需提供委托协议和案件终审胜诉判决书）"}]},
+    "投标报价评分(15分)": {"价格(15分)": [{"评分": "15分", "要求": "供应商报价得分=原告类风险代理费率价格得分+被告类代理费率价格得分\n1.1原告类风险代理费率价格得分=(基准价/供应商报价）*15*50%。\n1.2被告类代理费率价格得分=(基准价/供应商报价）*15*50%。\n为基准价为进入评审阶段供应商最低报价（以不含税价格计算），其中原告类风险代理费率、被告类代理费率价格分权重分别占50%。"}]}}}}'
+  evalCriteriaTech: '{"original": "第三部分  评分办法\n一、磋商评审原则\n根据《中国银行股份有限公司河北省分行采购管理实施细则》等相关的法律法规，以及本采购邀请文件载明的磋商办法和标准，坚持公正、公平和科学合理的原则，反对不正当竞争。评审方式采用综合评分法择优选取拟授予合同供应商。\n二、磋商组织\n评审由采购人依法组建的评分专家组负责，评分专家组由采购人按其规定选聘的人员组成，成员人数为7人。评分专家组通过民主方式推选一名评分专家组负责人，评分专家组负责人对评审活动担负组织领导工作，并具有同等的评审权利。评分专家组成员应当客观、公正地履行职责，遵守职业道德，对所提出的评审意见承担个人责任。\n1、评分专家组成员不得与任何供应商或者与成交结果有利害关系的人进行私下接触，不得收受供应商、中介人、其他利害关系人的财物或者其他好处。\n2、评分专家组应当根据采购邀请文件规定的磋商标准和办法，对响应文件进行系统地评审和比较。采购邀请文件中没有规定的办法和标准不得作为评审的依据。\n3、在评审过程中，评分专家组发现供应商以他人的名义、串通、以行贿手段谋取成交结果或者以其他弄虚作假方式成交的，该供应商的成交结果应作响应文件无效处理。\n4、有下列情形之一的，不得担任评分专家组成员：\n①
+    供应商或者供应商主要负责人的近亲属；\n② 项目主管部门或者行政监督部门的人员；\n③ 与供应商有经济利益关系，可能影响对磋商公正评审的；\n评分专家组成员有前款规定情形之一的，应当主动提出回避。\n三、评审内容与方法\n（一）资格审查\n评分专家组对各供应商进行资格审查，通过资格审查的供应商进行下一步评审，未通过的供应商将按不进入下一步评审。\n（二）符合性评审\n1、在详细评审前评分专家组根据采购邀请文件，按照符合性评审表的形式，对所有响应文件进行审查并逐项列出每一份响应文件的全部偏差，审定每份响应文件是否响应采购邀请文件的实质性要求和条件。\n2、不响应采购邀请文件的实质性要求和条件的响应文件将被拒绝，并且不允许相关供应商通过修正或撤消其不符合要求的差异或保留而使其成为实质上响应性。初步评审被拒绝的响应文件，不再参与任何后续评审。\n（三）商务部分评审\n对经初步评审合格响应文件进行商务部分评审：\n商务部分评审过程中，如果评分专家组认为必要，可以根据情况需要个别地要求供应商澄清其响应文件的某些细节，以及对其磋商报价依据说明，澄清、说明应以书面方式进行，并不得超出响应文件的范围或者改变响应文件的实质性内容。\n如果评分专家组对供应商提交的澄清、说明依然存在疑问，评分专家组可以进一步质疑。供应商对这种进一步质疑应相应地进一步澄清、说明，直至评分专家组认为全部质疑都得到澄清、说明。\n（四）服务部分评审\n评分专家组根据采购邀请文件中的要求及供应商递交的响应文件对服务部分进行评审，并按服务部分评审表设定的评审内容进行评审打分。\n（五）磋商报价\n1、评分专家组与评议合格的供应商作技术和商务磋商。对评议通过的响应文件，由评分专家组与供应商作进一步的技术和商务磋商。在磋商中，磋商的任何一方不得透露与磋商有关的其他供应商的技术资料、价格和其他信息。采购邀请文件有实质性变动的，评分专家组应当以书面形式通知所有参加磋商的供应商。\n2、评分专家组应当按照采购邀请文件约定的程序（不低于两轮）分别与单一供应商进行技术和商务磋商。评分专家组将对响应文件中有关问题分别向供应商进行询问，并要求各供应商予以答复。重要或复杂问题澄清后，需补充以书面形式，并经法定代表人或其被授权代表签署。澄清文件将作为响应文件的组成部分。评分专家组在与单一供应商磋商结束时，由该供应商出具经法定代表人或其被授权代表签署的项目最终报价函。\n响应文件初审，分资格性检查和符合性检查。\n（六）响应文件初审，分资格性检查和符合性检查。\n1.资格性审查\n|序号|审查内容|审查标准|通  过（√）\n不通过（×）|\n|---|---|---|---|\n|1|《律师事务所执业许可证》|有效，复印件加盖供应商公章|符合要求：通过\n否则：不通过|\n|2|供应商承诺函（附件15）|有效，加盖供应商公章。|符合要求：通过\n否则：不通过|\n|3|供应商注册专职执业律师人数在10人及以上。承诺入围后在邯郸地区有固定办公场所。|提供人员名单、执业证书及盖章承诺函，能够满足要求。|符合要求：通过\n否则：不通过|\n|4|响应保证金|按规定要求缴纳，并提供缴费证明|符合要求：通过\n否则：不通过|\n|5|自2022年12月1日至应答文件递交截止时间前，供应商需具备与银行签订的法律服务的合作案例合同。|有效，复印件加盖供应商公章。|符合要求：通过\n否则：不通过|\n|6|截至应答文件递交截止日（含）,供应商未被“信用中国”网站（http://www.creditchina.gov.cn）列入失信被执行人、重大税收违法失信主体和政府采购严重违法失信行为记录名单|供应商需按附件要求提供查询截图。评审委员会在谈判当日进行查询，如查询结果与应答文件不同，以评审委员会查询结果为准|符合要求：通过\n否则：不通过|\n|7|不存在单位法定代表人/负责人为同一人或者存在控股、管理关系的不同单位，同时参加本项目|由招标代理机构评审时现场查询|符合要求：通过\n否则：不通过|\n|结    论（“通过”或者“不通过”）|结    论（“通过”或者“不通过”）|结    论（“通过”或者“不通过”）||\n说明：上表各项必须全部通过，才能通过资格审查。\n2.符合性评审标准\n|序号|审查内容|审查标准|通  过（√）\n不通过（×）|\n|---|---|---|---|\n|1|采购文件规定要求签署、盖章|按要求签署盖章齐全：通过\n否则：不通过||\n|2|响应文件完整性|响应文件完整：通过\n否则：不通过||\n|3|响应文件对采购文件的响应程度|实质响应：通过\n未实质响应：不通过||\n|4|响应函中的服务期限等|实质响应：通过\n否则：不通过||\n|5|不存在采购文件中规定的采购文件被否决的其他情形|不存在被否决的其他情形：通过\n否则：不通过||\n|结    论（“通过”或者“不通过”）|结    论（“通过”或者“不通过”）|结    论（“通过”或者“不通过”）||\n说明：上表各项必须全部通过，才能通过符合性审查。\n3.
+    分值构成与评分标准\n|序号|评分项目|评分项目|评分标准|得分|\n|---|---|---|---|---|\n|1|价格\n(15分）|价格\n(15分）|供应商报价得分=原告类风险代理费率价格得分+被告类代理费率价格得分\n1.1原告类风险代理费率价格得分=(基准价/供应商报价）*15*50%。\n1.2被告类代理费率价格得分=(基准价/供应商报价）*15*50%。\n为基准价为进入评审阶段供应商最低报价（以不含税价格计算），其中原告类风险代理费率、被告类代理费率价格分权重分别占50%。|15|\n|2|商务\n（20分）|供应商实力\n（5分）|供应商实力、企业规模、组织机构及场地设施环境、资信状况，和公司财务报表情况等。\n优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。|5|\n|2|商务\n（20分）|合作\n案例\n（15分）|供应商与银行同业自2022年12月1日以来有类似项目的合作案例。其中在邯郸地区代理银行诉讼案件（终审胜诉）合作案例一个得3分；为银行同业提供非诉服务或代理邯郸地区外诉讼案例（终审胜诉）每个2分，最高分15分。（响应文件中提供合同复印件并加盖公章，诉讼案件需提供委托协议和案件终审胜诉判决书）|15|\n|3|服务\n部分\n（65分）|服务\n方案\n（30分）|供应商为本项目提供的服务团队负责人资质、与本项目类似的从业经验等。\n优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。|5|\n|3|服务\n部分\n（65分）|服务\n方案\n（30分）|供应商律师团队情况及拟提供给本项目的律师团队人员数量、人员资质、与本项目类似的从业经验、角色分配等。\n优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。|5|\n|3|服务\n部分\n（65分）|服务\n方案\n（30分）|综合考虑供应商诉讼服务方案的完整性、合理性、可操作性。\n优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。|5|\n|3|服务\n部分\n（65分）|服务\n方案\n（30分）|综合考虑供应商非诉服务方案的完整性、合理性、可操作性。\n优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。|5|\n|3|服务\n部分\n（65分）|服务\n方案\n（30分）|综合考虑供应商与有权机关进行有效沟通的能力等对项目的有利程度。\n优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。|5|\n|3|服务\n部分\n（65分）|服务\n方案\n（30分）|综合考虑供应商在邯郸市内、河北省内分支机构设置及人员情况等。\n优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。|5|\n|3|服务\n部分\n（65分）|项目管理与实施\n（20分）|综合考虑供应商项目管理实施方案的科学性、合理性及对项目有利程度。\n优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。|5|\n|3|服务\n部分\n（65分）|项目管理与实施\n（20分）|综合考虑供应商质量控制措施的科学性、有效性。\n优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。|5|\n|3|服务\n部分\n（65分）|项目管理与实施\n（20分）|综合考虑供应商保密管理方案及措施的合理性和有效性。；\n优秀得8-10分，良好得5-7.99分，一般得0-4.99分。|5|\n|3|服务\n部分\n（65分）|项目管理与实施\n（20分）|供应商应急处理预案的科学性、合理性、可行性及对项目的有利程度，包括但不限于人员变更等突发事件出现后对业务连续性的保证措施。\n优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。|5|\n|3|服务\n部分\n（65分）|知识\n转移\n（5分）|综合考虑案件资料转移方案，包括相关文档、项目实施过程中产生的相关文档、报告等。\n优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。|5|\n|3|服务\n部分\n（65分）|培训\n服务\n（5分）|对内部人员的培训计划及对业主方的基础培训，考虑培训方案的针对性、可行性、有效性，考虑培训内容、方式和水平等。\n优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。|5|\n|3|服务\n部分\n（65分）|优于需求的服务承诺\n（5分）|供应商优于技术需求的服务承诺，包括但不限于服务质量承诺、其他更好的技术支持等。\n优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。|5|\n|合计|合计|合计|合计|100|\n注：\n1.
+    计算得分应四舍五入，精确到小数点后两位。\n2.如供应商开具可抵扣的增值税专用发票，按不含增值税报价计算评审价格，否则按含增值税报价计算评审价格。\n3.在谈判及评审过程中，评审委员会认为供应商的报价明显低于其他合格供应商的报价，有可能影响产品质量或者不能诚信履约的，有权要求该供应商在评审委员会规定合理的时间内提供书面说明，必要时提交相关证明材料；供应商不能证明其报价合理性的，评审委员会有权将其作为无效应答处理。\n4.供应商按本章中的评分要求逐项说明在应答文件中的装订页码，并将该页装订在应答文件的首页。\n",
+    "tbls": ["<table><tr><td >序号</td><td colspan=\"2\">评分项目</td><td >评分标准</td><td
+    >得分</td></tr><tr><td >1</td><td colspan=\"2\">价格\n(15分）</td><td >供应商报价得分=原告类风险代理费率价格得分+被告类代理费率价格得分\n1.1原告类风险代理费率价格得分=(基准价/供应商报价）*15*50%。\n1.2被告类代理费率价格得分=(基准价/供应商报价）*15*50%。\n为基准价为进入评审阶段供应商最低报价（以不含税价格计算），其中原告类风险代理费率、被告类代理费率价格分权重分别占50%。</td><td
+    >15</td></tr><tr><td rowspan=\"2\">2</td><td rowspan=\"2\">商务\n（20分）</td><td >供应商实力\n（5分）</td><td
+    >供应商实力、企业规模、组织机构及场地设施环境、资信状况，和公司财务报表情况等。\n优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。</td><td
+    >5</td></tr><tr><td >合作\n案例\n（15分）</td><td >供应商与银行同业自2022年12月1日以来有类似项目的合作案例。其中在邯郸地区代理银行诉讼案件（终审胜诉）合作案例一个得3分；为银行同业提供非诉服务或代理邯郸地区外诉讼案例（终审胜诉）每个2分，最高分15分。（响应文件中提供合同复印件并加盖公章，诉讼案件需提供委托协议和案件终审胜诉判决书）</td><td
+    >15</td></tr><tr><td rowspan=\"13\">3</td><td rowspan=\"13\">服务\n部分\n（65分）</td><td
+    rowspan=\"6\">服务\n方案\n（30分）</td><td >供应商为本项目提供的服务团队负责人资质、与本项目类似的从业经验等。\n优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。</td><td
+    >5</td></tr><tr><td >供应商律师团队情况及拟提供给本项目的律师团队人员数量、人员资质、与本项目类似的从业经验、角色分配等。\n优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。</td><td
+    >5</td></tr><tr><td >综合考虑供应商诉讼服务方案的完整性、合理性、可操作性。\n优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。</td><td
+    >5</td></tr><tr><td >综合考虑供应商非诉服务方案的完整性、合理性、可操作性。\n优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。</td><td
+    >5</td></tr><tr><td >综合考虑供应商与有权机关进行有效沟通的能力等对项目的有利程度。\n优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。</td><td
+    >5</td></tr><tr><td >综合考虑供应商在邯郸市内、河北省内分支机构设置及人员情况等。\n优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。</td><td
+    >5</td></tr><tr><td rowspan=\"4\">项目管理与实施\n（20分）</td><td >综合考虑供应商项目管理实施方案的科学性、合理性及对项目有利程度。\n优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。</td><td
+    >5</td></tr><tr><td >综合考虑供应商质量控制措施的科学性、有效性。\n优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。</td><td
+    >5</td></tr><tr><td >综合考虑供应商保密管理方案及措施的合理性和有效性。；\n优秀得8-10分，良好得5-7.99分，一般得0-4.99分。</td><td
+    >5</td></tr><tr><td >供应商应急处理预案的科学性、合理性、可行性及对项目的有利程度，包括但不限于人员变更等突发事件出现后对业务连续性的保证措施。\n优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。</td><td
+    >5</td></tr><tr><td >知识\n转移\n（5分）</td><td >综合考虑案件资料转移方案，包括相关文档、项目实施过程中产生的相关文档、报告等。\n优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。</td><td
+    >5</td></tr><tr><td >培训\n服务\n（5分）</td><td >对内部人员的培训计划及对业主方的基础培训，考虑培训方案的针对性、可行性、有效性，考虑培训内容、方式和水平等。\n优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。</td><td
+    >5</td></tr><tr><td >优于需求的服务承诺\n（5分）</td><td >供应商优于技术需求的服务承诺，包括但不限于服务质量承诺、其他更好的技术支持等。\n优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。</td><td
+    >5</td></tr><tr><td colspan=\"4\">合计</td><td >100</td></tr></table>"], "data":
+    {"技术评分": {"技术评分(65分)": {"服务方案(30分)": {"供应商为本项目提供的服务团队负责人资质、与本项目类似的从业经验等。": [{"评分":
+    "5分", "要求": "供应商为本项目提供的服务团队负责人资质、与本项目类似的从业经验等。优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。"}],
+    "供应商律师团队情况及拟提供给本项目的律师团队人员数量、人员资质、与本项目类似的从业经验、角色分配等。": [{"评分": "5分", "要求": "供应商律师团队情况及拟提供给本项目的律师团队人员数量、人员资质、与本项目类似的从业经验、角色分配等。优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。"}],
+    "综合考虑供应商诉讼服务方案的完整性、合理性、可操作性。": [{"评分": "5分", "要求": "综合考虑供应商诉讼服务方案的完整性、合理性、可操作性。优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。"}],
+    "综合考虑供应商非诉服务方案的完整性、合理性、可操作性。": [{"评分": "5分", "要求": "综合考虑供应商非诉服务方案的完整性、合理性、可操作性。优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。"}],
+    "综合考虑供应商与有权机关进行有效沟通的能力等对项目的有利程度。": [{"评分": "5分", "要求": "综合考虑供应商与有权机关进行有效沟通的能力等对项目的有利程度。优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。"}],
+    "综合考虑供应商在邯郸市内、河北省内分支机构设置及人员情况等。": [{"评分": "5分", "要求": "综合考虑供应商在邯郸市内、河北省内分支机构设置及人员情况等。优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。"}]},
+    "项目管理与实施(20分)": {"综合考虑供应商项目管理实施方案的科学性、合理性及对项目有利程度。": [{"评分": "5分", "要求": "综合考虑供应商项目管理实施方案的科学性、合理性及对项目有利程度。优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。"}],
+    "综合考虑供应商质量控制措施的科学性、有效性。": [{"评分": "5分", "要求": "综合考虑供应商质量控制措施的科学性、有效性。优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。"}],
+    "综合考虑供应商保密管理方案及措施的合理性和有效性。": [{"评分": "5分", "要求": "综合考虑供应商保密管理方案及措施的合理性和有效性。；优秀得8-10分，良好得5-7.99分，一般得0-4.99分。"}],
+    "供应商应急处理预案的科学性、合理性、可行性及对项目的有利程度，包括但不限于人员变更等突发事件出现后对业务连续性的保证措施。": [{"评分": "5分",
+    "要求": "供应商应急处理预案的科学性、合理性、可行性及对项目的有利程度，包括但不限于人员变更等突发事件出现后对业务连续性的保证措施。优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。"}]},
+    "知识转移(5分)": [{"评分": "5分", "要求": "综合考虑案件资料转移方案，包括相关文档、项目实施过程中产生的相关文档、报告等。优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。"}],
+    "培训服务(5分)": [{"评分": "5分", "要求": "对内部人员的培训计划及对业主方的基础培训，考虑培训方案的针对性、可行性、有效性，考虑培训内容、方式和水平等。优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。"}],
+    "优于需求的服务承诺(5分)": [{"评分": "5分", "要求": "供应商优于技术需求的服务承诺，包括但不限于服务质量承诺、其他更好的技术支持等。优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。"}],
+    "备注": "注：1. 计算得分应四舍五入，精确到小数点后两位。2.如供应商开具可抵扣的增值税专用发票，按不含增值税报价计算评审价格，否则按含增值税报价计算评审价格。3.在谈判及评审过程中，评审委员会认为供应商的报价明显低于其他合格供应商的报价，有可能影响产品质量或者不能诚信履约的，有权要求该供应商在评审委员会规定合理的时间内提供书面说明，必要时提交相关证明材料；供应商不能证明其报价合理性的，评审委员会有权将其作为无效应答处理。4.供应商按本章中的评分要求逐项说明在应答文件中的装订页码，并将该页装订在应答文件的首页。"}}}}'
+  fileType: null
+  fileUrl: null
+  generateOverview: '{"catalog_overview": "    项目介绍: \"中国银行河北省分行邯郸地区法律服务选型入围项目旨在通过公开采购方式，遴选15家具备专业资质和综合服务能力的律师事务所，作为未来三年内邯郸分行及其辖属机构在诉讼与非诉法律事务方面的合格服务供应商。该项目属于中国银行河北省分行为加强区域法律风险管理、提升案件处理效率而实施的重要制度性安排。随着银行业务复杂度不断提升，尤其是在信贷资产保全、金融创新产品合规、跨区域纠纷解决等领域面临日益严峻的法律挑战，建立稳定、高效、可信赖的外部法律顾问服务体系已成为保障业务稳健运行的关键环节。本次选型采取‘资格入围+后续择优聘用’的管理模式，即先通过严格的评审程序确定入围名单，在实际发生具体法律服务需求时，再根据项目性质、预算金额和服务匹配度从入围名单中依法依规选定具体服务机构。该模式既保证了服务资源的广泛储备，又兼顾了采购灵活性与合规性要求。项目不承诺最低业务量，体现了市场化导向原则，也对供应商持续服务能力提出更高要求。整个采购流程由瑞和安惠项目管理集团有限公司代理执行，采用多轮谈判磋商机制，重点考察供应商的技术方案、服务响应能力及报价合理性，确保最终入选机构能够切实满足中国银行在法律专业性、保密管理、利益冲突规避以及应急响应等方面的高标准要求。本项目虽不属于法定必须招标或政府采购范畴，但仍严格参照集中采购规范操作，突出公平竞争、透明公正的原则，充分反映国有金融机构在合规治理和风险防控方面的审慎态度。\",\n    项目技术背景:
+    \"本项目的‘技术’并非传统意义上的信息技术或工程技术，而是指法律服务领域的专业技术体系与实务操作能力所构成的服务支撑架构。其技术背景根植于现代商业银行在复杂经营环境中对专业化、精细化法律支持的高度依赖。特别是在当前金融监管趋严、司法实践不断演进的大背景下，银行面临的法律问题已从单一合同纠纷扩展至包括银团贷款结构设计、跨境交易法律适用、不良资产处置中的执行难、刑事民事交叉案件应对、数据合规与客户信息保护等多层次、跨法域的综合性挑战。因此，本项目所依托的技术背景强调的是律师事务所在民商事诉讼、仲裁程序、非诉专项服务（如尽职调查、法律意见书出具）、风险代理定价模型、法院沟通协调机制等方面的专业积累与实战经验。尤其值得注意的是，项目明确要求供应商具备处理涉及外国法或港澳特别行政区法律适用的能力，这表明采购方预期将面对具有国际因素的金融业务场景，需要律所能整合涉外法律资源并提供准确的法律分析。此外，技术背景还包括律所内部的质量控制流程、团队协作机制、知识管理体系以及信息化办公水平——这些软性技术要素直接影响服务交付的一致性和响应速度。项目还隐含了对律所数据安全管理能力的要求，特别是当接触银行客户数据时，必须符合《银行保险机构数据安全管理办法》等相关监管规定，体现出金融服务外包中信息安全已成为不可忽视的技术维度。综上所述，该项目的技术背景是以法律专业知识为核心，融合实务操作技能、组织管理能力和信息安全保障于一体的复合型技术服务生态。\",\n    项目需求:
+    \"项目核心需求为遴选15家符合条件的律师事务所进入为期三年的服务资格名录，为其提供覆盖诉讼与非诉两大类别的全方位法律服务。具体技术层面的需求包括：第一，必须能代理各类诉讼（仲裁）业务，涵盖民商事纠纷（如借贷、担保、票据等）、劳动争议、行政诉讼及刑事案件中的相关法律事务；第二，须具备提供非诉专项法律服务的能力，具体包括但不限于：参与银团贷款、固定资产贷款、金融创新产品设计、资产重组等复杂交易的法律尽职调查、合同起草与谈判、法律意见书出具等工作；第三，有能力处理涉及适用外国法律或香港、澳门特别行政区法律的业务事项，体现对跨境法律服务的支持需求；第四，可开展针对债务人的财产调查工作，为资产保全和执行提供前置支持；第五，建立快速响应机制，确保服务团队能主动对接银行各业务部门，及时回应咨询与紧急诉求；第六，具备良好的法院沟通协调能力，熟悉基层法院实务运作流程，协助完善证据材料、规划诉讼节奏，避免程序延误；第七，严格执行保密义务，制定内部保密制度，签订保密协议，并在受控环境下开展工作，防止信息泄露；第八，承诺在邯郸地区设立固定办公场所，保障本地化服务能力；第九，近三年内需有与银行类金融机构合作的法律服务案例，证明具备服务金融客户的实际经验和行业理解力；第十，注册专职执业律师不少于10人，确保人力资源充足，能够组建专门服务于中国银行项目的稳定团队。\",\n    项目技术:
+    \"本项目所需采用的技术主要体现在法律专业服务的方法论、工具体系与管理机制上。首先，在诉讼代理方面，需运用系统的案件评估技术，包括诉前可行性分析、诉讼策略制定、证据链构建、庭审应对预案设计等，结合大数据判例检索工具进行类案比对，提升胜诉率预测准确性。其次，在非诉服务领域，需掌握标准化的法律尽职调查流程和技术文档模板体系，熟练使用合同管理系统进行条款审查与版本控制，并能基于交易结构设计出具逻辑严密、依据充分的法律意见书。第三，对于涉外法律事务，需具备国际私法适用规则的理解能力，能够协调境外法律顾问资源，完成准据法选择、法律查明报告撰写及跨境文件认证等技术动作。第四，在服务管理方面，需建立项目管理制度，包括任务分配、进度跟踪、质量复核、客户反馈闭环等流程，确保服务过程可追溯、可监督。第五，需配备专业的知识转移与培训机制，定期向银行内部法务或业务人员通报最新司法动态、典型案例及合规要点，增强协同效能。第六，在信息安全技术方面，需落实物理与数字双重防护措施，如使用加密存储设备、设置访问权限、部署监控系统等，确保在处理敏感信息时符合金融行业数据安全标准。第七，需建立利益冲突筛查系统，通过数据库比对机制实时排查潜在的利益冲突情形，保障服务独立性。第八，在报价与成本控制方面，需应用风险代理费率测算模型，合理设定清收激励比例，同时具备计时收费、计件收费等多种计价技术支持能力，以适应不同类型的委托需求。\",\n    供应商资质要求:
+    \"供应商须为中国境内依法设立并有效存续的律师事务所，持有司法行政部门颁发的《律师事务所执业许可证》；注册专职执业律师人数不得少于10人，并须提交全体专职律师名单及其执业证书复印件作为证明材料；自2022年12月1日起至应答截止日止，须至少拥有一份与银行类金融机构签署的法律服务合作案例合同，并提供合同关键页复印件；须承诺入围后在邯郸地区设有固定办公场所，以便开展本地化服务；须符合采购人关于利益冲突的管理要求，不得存在可能影响独立履职的情形；未被列入‘信用中国’网站失信被执行人、重大税收违法失信主体及政府采购严重违法失信行为记录名单；近3年内无重大违法违规记录，包括未受到刑事处罚、责令停产停业、吊销证照或200万元以上罚款等行政处罚；未处于中国银行供应商不良行为禁止准入期内；不得与采购人或其他参与方存在关联关系，如同一法定代表人、直接控股或管理关系的企业不得同时参选；不得将本项目内容进行转包或分包；须具备健全的财务会计制度和良好的商业信誉；须依法诚信参与采购活动，不得提供虚假资料、串通报价或行贿谋取成交。\",\n    服务团队与人员要求:
+    \"供应商应组建专门服务于中国银行邯郸分行项目的法律服务团队，团队成员应具备处理金融类法律事务的丰富经验，尤其是熟悉银行信贷、担保、资产管理、合规风控等业务流程；主责律师应具有五年以上执业经历，并主导过类似规模的诉讼或非诉项目；团队须指定一名项目经理负责统筹协调，确保与银行各部门之间的沟通顺畅；所有参与服务的律师均须签署保密协议，接受采购人关于信息安全和职业道德的约束；团队人员应保持相对稳定，若发生主要合伙人或核心律师离职情况，须及时向采购人报备并更换同等资质人员；供应商不得指派已被采购人列入限制使用名单的律师承办具体事务；团队应具备7×24小时应急响应能力，能够在突发法律事件中迅速介入并提供专业支持。\",\n    保密与数据安全要求:
+    \"供应商须对在服务过程中知悉的所有采购人信息承担永久保密义务，无论合同是否终止，该责任持续有效；严禁向任何第三方披露银行经营信息、客户资料、案件细节及其他未公开内容；须制定书面的保密管理制度，并与所有参与项目的工作人员签订保密协议；所有工作应在安装视频监控的办公场所内进行，确保操作过程可追溯；禁止将涉密资料带离指定工作区域或通过非加密渠道传输；如因供应商原因导致信息泄露，须赔偿由此造成的全部经济损失，并承担相应法律责任；若接触采购人客户数据，须严格遵守《银行保险机构数据安全管理办法》及相关监管要求，配合采购人在合同中明确数据处理权责边界；不得利用获取的数据从事与本项目无关的活动，不得用于营销、招揽客户或其他商业用途；一旦发现泄密隐患或事件，须立即通知采购人并采取补救措施。\",\n    报价与费用管理要求:
+    \"本项目实行风险代理费率上限管控机制，原告类案件的风险代理服务费不得超过实际清收金额的12%，被告类案件的代理费率不得超过标的金额的18%；后续实际采购中可根据项目特点采用计件收费、按比例收费、计时收费或混合模式结算，但均须遵循国家有关律师服务收费管理规定；供应商不得通过拆分合同（如同时签订委托代理合同和咨询服务合同）变相提高收费标准；不得临时加价、拖延工作进度以胁迫涨价，也不得要求提前打包支付差旅费或其他杂项费用；所有报价须以人民币计价，包含完成服务所需的全部税费及成本支出；谈判过程中需填写统一格式的报价一览表，前后报价不一致时按照规定的修正顺序调整；增值税发票类型须与报价承诺一致，且须在开票后20个自然日内提交给采购人；如存在代扣代缴情形，双方应协商明确责任方，并确保采购人可抵扣进项税额。\",\n    谈判与评审技术要求:
+    \"供应商须参加不少于两轮的现场谈判磋商，每轮结束后需递交更新后的报价文件和服务承诺函；谈判过程中须就技术方案、服务响应机制、团队配置、过往业绩等内容进行陈述，并接受评审委员会质询；应答文件中须包含点对点的技术偏离表，逐项说明是否响应采购需求书的各项条款；须提交完整的服务方案、项目管理方案及知识转移培训计划；电子版应答文件须提供Word和PDF两种格式，存储于U盘并与纸质正本一同密封递交；文件合计大小不得超过500MB；正本须注明‘正本’字样并加盖公章及签字，副本为复印件；如正副本或电子版内容不一致，以正本为准；评审委员会有权对报价明显偏低的供应商要求其在规定时间内提供成本构成说明及相关证明材料，无法合理解释者将被视为无效应答；所有应答文件有效期须不少于三年，否则视为非实质性响应。\",\n    不良行为与退出机制:
+    \"供应商若出现以下行为之一，将被认定为不良行为，并视情节轻重给予警示谈话、暂停使用、取消入围资格或禁止准入等处罚：连续三次及以上无故不响应服务需求；在后续采购中存在围标、串标行为；收费不合理或通过合同拆分变相增收；律师资源配置不足导致服务质量下降；超越授权范围行事或进行不当宣传损害银行声誉；隐瞒利益冲突或违反承诺；泄露保密信息；协助债务人逃废债；近三年内被政府机关或律师协会通报批评或处罚；律师事务所发生停业、解散、主要合伙人离职且无法替换等情况导致服务能力严重削弱；内部团队之间因服务产生纠纷影响履约；违反禁止招揽条款；恶意提起诉讼损害银行利益。上述情形一经查实，采购人有权单方面终止合作，追究经济与法律责任，并将其列入供应商不良行为名单。\",\n    合同与履约管理要求:
+    \"入围不代表自动获得具体项目委托，每次实际采购需另行履行立项审批和选聘流程；合同签订依据为采购邀请文件、供应商应答文件及谈判过程中形成的澄清补充文件；履约保证金条款不适用本项目；授予合同供应商须在收到成交通知书后按规定时间签订合同，逾期未签视为放弃资格；不得提出附加条件或拒绝签约；成交后不得转包或违法分包；供应商须保证所提供的服务在中国境内合法使用，不存在侵犯第三方知识产权或其他民事权利的情形；如因使用其服务引发侵权指控，由供应商依法承担全部责任；供应商发生合并、分立、破产等重大变化时，须及时书面告知采购人；所有服务交付成果须符合采购人内部归档标准，重要文书需经审核确认后方可对外提交。\"",
+    "main_overview": "项目介绍: \"中国银行河北省分行邯郸地区法律服务选型入围项目旨在通过公开、公平、公正的采购流程，遴选具备专业能力、良好信誉和稳定服务能力的律师事务所，构建长期稳定的法律服务合作机制。该项目聚焦于提升中国银行在邯郸地区的法律风险防控能力和诉讼案件处理效率，确保银行业务在复杂多变的法律环境中稳健运行。随着金融业务的不断拓展与创新，银行面临的法律纠纷日益多样化和复杂化，涵盖民商事诉讼、劳动争议、行政复议、刑事合规等多个领域，同时非诉法律事务如银团贷款、资产重组、跨境交易等也对法律支持提出了更高要求。因此，建立一个资质优良、响应迅速、管理规范的律所资源池，成为保障银行合法权益、优化法律资源配置的重要举措。本次选型入围不直接产生具体合同义务或业务委托，而是形成一个为期三年的服务供应商资格库，后续实际法律服务需求将根据项目预算金额，在入围名单内按照分散或集中采购流程择优聘用。该模式既保证了服务供给的灵活性与竞争性，又强化了对服务质量、响应速度和合规水平的管控。采购人强调全过程的风险控制与合规管理，尤其重视利益冲突审查、数据安全保护、保密责任落实以及供应商履约行为的持续监督。整个项目体现了金融机构在法治化、规范化治理背景下，对法律服务专业化、标准化和可追溯性的高标准追求，也为参与机构提供了展示综合法律服务能力的平台。\",\n\n项目技术背景:
+    \"本项目的“技术”背景并非传统意义上的设备或系统集成类技术，而是指法律服务实施过程中所需的专业知识体系、服务流程设计、质量控制机制、信息安全管理规范以及跨机构协作的技术支撑能力。其核心在于如何通过科学的服务方案设计和技术手段保障法律服务的高效性、安全性与合规性。首先，在服务交付层面，要求供应商具备完善的案件管理系统（CMS），能够实现案件全流程跟踪、时间节点提醒、文档版本控制、多人协同作业等功能，确保诉讼时效管理精准无误。其次，在信息安全方面，鉴于银行涉及大量客户隐私、信贷信息及内部决策资料，供应商必须建立符合《银行保险机构数据安全管理办法》的信息安全管理体系，包括但不限于访问权限控制、加密传输存储、操作日志审计、物理环境监控等措施，并能提供相应的技术证明和管理制度文件。再次，在知识管理和培训转移方面，要求供应商具备系统的知识沉淀机制，能够为采购人提供定期的法律动态解读、典型案例分析、合规培训课程等内容输出，提升银行内部法务团队的专业能力。此外，谈判评审环节明确要求供应商提交技术方案、项目管理方案和培训方案，说明其在组织架构、人员配置、沟通机制、应急响应等方面的技术性安排。这些内容共同构成了本项目的技术实现基础——即以制度化、流程化、信息化的方式保障法律服务质量的一致性和可持续性。最后，电子化应答文件提交、中银智采平台的操作使用、数字签名与扫描件真实性验证等也体现出采购过程本身对信息技术应用的要求，进一步凸显了现代法律服务采购中技术要素的重要性。\",\n\n货物需求:
+    [],\n\n项目需求: \"本项目为法律服务资格入围项目，不涉及实物货物采购，核心是通过竞争性谈判方式筛选出15家符合条件的律师事务所进入服务资格库。服务内容包括代理诉讼（仲裁）业务和提供非诉专项法律服务两大类。诉讼业务覆盖民商事、劳动、行政及刑事案件；非诉服务则聚焦于复杂金融业务、涉外法律适用、财产调查及其他需外聘律师处理的事项。供应商须承诺入围后在邯郸地区设立固定办公场所，并配备不少于10名注册专职执业律师。服务过程中需严格遵守采购人的利益冲突管理规定，确保服务独立性和公正性。后续实际采购时，将依据费用开支立项审批结果，在入围单位中择优选聘。供应商需具备健全的服务响应机制，主动对接业务部门，合理配置律师资源，保障服务质量与时效。特别强调在法院沟通协调中的桥梁作用，协助完善证据材料，规避程序风险。保密要求极为严格，所有涉密信息不得向第三方泄露，工作过程应在监控下进行，保密责任永久有效。供应商若出现无故拒接需求、围标串标、不合理收费、泄密、损害银行声誉等行为，将面临警告、暂停资格乃至取消入围资格的处罚。项目采用资格入围管理模式，三年服务期内不承诺具体业务量，体现采购灵活性与风险共担原则。\",\n\n项目技术:
+    \"本项目所涉及的技术主要体现在法律服务实施过程中的专业化工具、信息系统应用与管理流程设计。首先，供应商应具备成熟的案件管理系统（CMS），用于实现案件登记、进度追踪、文书归档、期限预警、任务分配等全流程数字化管理，提升服务效率与准确性。其次，在信息安全技术方面，要求采取数据加密（传输与存储）、访问权限分级控制、操作留痕与日志审计、物理场所视频监控等技术手段，防止敏感信息泄露。再次，知识管理技术要求供应商建立内部知识库，支持法律研究成果、判例汇编、模板文书的积累与共享，并可通过线上培训系统向采购人提供法律知识转移服务。此外，远程会议系统、电子签章工具、云端协作平台等也被视为提升服务响应速度与跨区域协作能力的关键技术支持。虽然服务本身属于人力密集型，但现代化法律服务机构普遍依赖上述信息技术提升服务标准化水平和过程可控性。投标方还需展示其在使用中银智采平台完成注册、获取文件、递交电子版应答材料等方面的技术执行能力，表明其具备参与数字化采购流程的基本素养。整体而言，本项目的技术重点在于‘软性技术’的应用，即通过制度+流程+信息系统的组合，实现法律服务的高质量交付与合规运营。\",\n\n质量标准和认证要求:
+    \"供应商须持有有效的《律师事务所执业许可证》，并在中华人民共和国境内依法设立并持续有效存续。律师团队需具备良好的职业道德和执业纪律记录，近三年内未被政府主管部门、律师协会通报批评或行政处罚。服务质量需满足采购人关于响应时效、文书质量、庭审表现、沟通反馈等方面的内部评价标准。服务成果应符合国家法律法规、司法解释及行业执业规范的要求，确保法律意见的合法性、准确性和实用性。供应商须接受采购人对其服务过程和服务结果的监督检查，并配合开展服务质量评估。对于因服务瑕疵导致银行损失的情形，供应商应依法承担责任。所有服务人员须签署保密协议，工作过程须在可追溯的环境下进行，确保服务行为可审计、可追责。\",\n\n供货期限和交货方式:
+    \"\",\n\n售后服务要求: \"本项目虽为资格入围，但“售后服务”实质体现为入围后的持续服务能力与履约保障。供应商须在三年入围期内始终保持符合初始应答时的资质条件，包括律师人数、办公场所、无重大违法违规记录等。一旦发生合并、分立、破产等重大变化，须立即书面告知采购人。供应商应确保服务团队稳定性，主要合伙人或核心律师离职时应及时提出替代人选并经采购人认可。对于采购人发出的实际服务邀请，应在规定时间内积极响应，不得无故拒绝或拖延。若因资源配置不足、内部管理混乱等原因导致无法按时完成委托事项，将被视为违约行为。供应商还需建立快速响应机制，针对突发法律事件提供紧急支援服务。此外，须定期向采购人汇报服务情况，接受服务质量回访与满意度调查，并根据反馈持续改进服务水平。\",\n\n技术文件要求:
+    \"供应商须按统一格式提交多项技术性文件，作为评审的重要依据。其中包括：附件3《技术需求偏离表》，用于逐条回应采购需求书中各项条款的响应情况；附件6《技术规格及要求及点对点应答》，需包含详细的服务方案、项目管理方案和知识转移/培训方案；附件7《保密承诺书》；附件12《合规承诺函》；附件14《项目人员一览表》；附件18《中国银行股份有限公司采购供应商廉洁从业行为承诺书》等。所有技术文件须使用中文编写，A4纸胶装成册，正本一份、副本六份，并同步提供Word和PDF格式的电子版，存储于U盘并与纸质文件一同密封递交。电子文件不得超过500MB。技术文件内容应实质性响应采购邀请文件全部要求，不得缺漏。任何修改均须由同一签署人签字或盖章确认。文件中若存在虚假陈述或与事实不符的情况，将导致应答无效。\",\n\n验收标准:
+    \"本项目不设一次性验收环节，而是采取动态考核与阶段性评估相结合的方式进行服务效果认定。验收标准主要体现在以下几个方面：一是资格条件的持续符合性，即供应商在整个三年入围期内始终满足注册律师人数、办公场所、信用状况等基本要求；二是服务响应的及时性与合规性，是否能在接到实际采购邀请后按规定时间响应并启动服务；三是服务质量的过程控制，包括法律文书质量、庭审表现、沟通效率、问题解决能力等；四是保密义务履行情况，是否存在信息泄露或违规使用数据的行为；五是是否存在被列入失信名单、受到监管处罚或发生重大负面舆情等情况。采购人有权根据上述标准对入围供应商进行定期或不定期评估，对于不符合要求的单位，可依据不良行为处理机制采取警示、暂停使用或取消资格等措施。最终的服务‘验收’体现为是否能够在后续具体项目中被持续选用以及合作关系的延续性。\","}'
+  id: '4797'
+  isBid: 1
+  isCompleted: '1'
+  jishuStarDeviation: '{}'
+  legal: 企业未上传法人信息
+  lineUpTime: '2026-01-22 10:17:25'
+  origin: null
+  pageNum: null
+  pageSize: null
+  procurementDocumentName: null
+  projectCode: BOC-00004-20250731
+  projectName: 中国银行河北省分行邯郸地区法律服务选型入围项目
+  projectProposalName: null
+  projectProposalUrl: null
+  proofMaterials: '{"证明材料": ["《律师事务所执业许可证》：有效，复印件加盖供应商公章", "供应商承诺函（附件15）：有效，加盖供应商公章",
+    "供应商注册专职执业律师人数在10人及以上。承诺入围后在邯郸地区有固定办公场所：提供人员名单、执业证书及盖章承诺函，能够满足要求", "响应保证金：按规定要求缴纳，并提供缴费证明",
+    "自2022年12月1日至应答文件递交截止时间前，供应商需具备与银行签订的法律服务的合作案例合同：有效，复印件加盖供应商公章", "截至应答文件递交截止日（含），供应商未被“信用中国”网站列入失信被执行人、重大税收违法失信主体和政府采购严重违法失信行为记录名单：供应商需按附件要求提供查询截图",
+    "不存在单位法定代表人/负责人为同一人或者存在控股、管理关系的不同单位同时参加本项目：由招标代理机构评审时现场查询", "采购文件规定要求签署、盖章：按要求签署盖章齐全",
+    "响应文件完整性：响应文件完整", "响应文件对采购文件的响应程度：实质响应", "响应函中的服务期限等：实质响应", "不存在采购文件中规定的采购文件被否决的其他情形：不存在被否决的其他情形",
+    "合作案例：与银行同业自2022年12月1日以来有类似项目的合作案例，提供合同复印件并加盖公章，诉讼案件需提供委托协议和案件终审胜诉判决书"]}'
+  remark: null
+  reviewRequirements: '["<table><tr><td >序号</td><td colspan=\"2\">评分项目</td><td >评分标准</td><td
+    >得分</td></tr><tr><td >1</td><td colspan=\"2\">价格<br>(15分）</td><td >供应商报价得分=原告类风险代理费率价格得分+被告类代理费率价格得分<br>1.1原告类风险代理费率价格得分=(基准价/供应商报价）*15*50%。<br>1.2被告类代理费率价格得分=(基准价/供应商报价）*15*50%。<br>为基准价为进入评审阶段供应商最低报价（以不含税价格计算），其中原告类风险代理费率、被告类代理费率价格分权重分别占50%。</td><td
+    >15</td></tr><tr><td rowspan=\"2\">2</td><td rowspan=\"2\">商务<br>（20分）</td><td
+    >供应商实力<br>（5分）</td><td >供应商实力、企业规模、组织机构及场地设施环境、资信状况，和公司财务报表情况等。<br>优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。</td><td
+    >5</td></tr><tr><td >合作<br>案例<br>（15分）</td><td >供应商与银行同业自2022年12月1日以来有类似项目的合作案例。其中在邯郸地区代理银行诉讼案件（终审胜诉）合作案例一个得3分；为银行同业提供非诉服务或代理邯郸地区外诉讼案例（终审胜诉）每个2分，最高分15分。（响应文件中提供合同复印件并加盖公章，诉讼案件需提供委托协议和案件终审胜诉判决书）</td><td
+    >15</td></tr><tr><td rowspan=\"13\">3</td><td rowspan=\"13\">服务<br>部分<br>（65分）</td><td
+    rowspan=\"6\">服务<br>方案<br>（30分）</td><td >供应商为本项目提供的服务团队负责人资质、与本项目类似的从业经验等。<br>优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。</td><td
+    >5</td></tr><tr><td >供应商律师团队情况及拟提供给本项目的律师团队人员数量、人员资质、与本项目类似的从业经验、角色分配等。<br>优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。</td><td
+    >5</td></tr><tr><td >综合考虑供应商诉讼服务方案的完整性、合理性、可操作性。<br>优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。</td><td
+    >5</td></tr><tr><td >综合考虑供应商非诉服务方案的完整性、合理性、可操作性。<br>优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。</td><td
+    >5</td></tr><tr><td >综合考虑供应商与有权机关进行有效沟通的能力等对项目的有利程度。<br>优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。</td><td
+    >5</td></tr><tr><td >综合考虑供应商在邯郸市内、河北省内分支机构设置及人员情况等。<br>优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。</td><td
+    >5</td></tr><tr><td rowspan=\"4\">项目管理与实施<br>（20分）</td><td >综合考虑供应商项目管理实施方案的科学性、合理性及对项目有利程度。<br>优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。</td><td
+    >5</td></tr><tr><td >综合考虑供应商质量控制措施的科学性、有效性。<br>优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。</td><td
+    >5</td></tr><tr><td >综合考虑供应商保密管理方案及措施的合理性和有效性。；<br>优秀得8-10分，良好得5-7.99分，一般得0-4.99分。</td><td
+    >5</td></tr><tr><td >供应商应急处理预案的科学性、合理性、可行性及对项目的有利程度，包括但不限于人员变更等突发事件出现后对业务连续性的保证措施。<br>优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。</td><td
+    >5</td></tr><tr><td >知识<br>转移<br>（5分）</td><td >综合考虑案件资料转移方案，包括相关文档、项目实施过程中产生的相关文档、报告等。<br>优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。</td><td
+    >5</td></tr><tr><td >培训<br>服务<br>（5分）</td><td >对内部人员的培训计划及对业主方的基础培训，考虑培训方案的针对性、可行性、有效性，考虑培训内容、方式和水平等。<br>优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。</td><td
+    >5</td></tr><tr><td >优于需求的服务承诺<br>（5分）</td><td >供应商优于技术需求的服务承诺，包括但不限于服务质量承诺、其他更好的技术支持等。<br>优秀得3.5-5分，良好得1.5-3.49分，一般得0-1.49分。</td><td
+    >5</td></tr><tr><td colspan=\"4\">合计</td><td >100</td></tr></table>"]'
+  sectionName: 中国银行河北省分行邯郸地区法律服务选型入围项目
+  shangwuDeviation: '{"商务要求": ["后续实际采购项目发生时，供应商及服务律师需未被列入采购人限制使用名单且符合采购人有关利益冲突的管理要求。",
+    "供应商提供服务团队及人员应主动对接业务需求部门，保持顺畅沟通，积极快速回应业务需求部门需求与关切问题。", "根据业务需求部门的实际情况，合理配置律师资源，保证服务质量。",
+    "在采购人与管辖法院之间最大限度发挥“桥梁”、“纽带”作用，掌握基层法院工作实务中的具体要求和管理要求，及时、完整地向基层机构做好解释，协助完善案件证据材料，协助基层机构提前准备、实现规划，避免与法院工作周期冲突，尽可能确保诉讼各环节进展顺利。",
+    "保密要求：采购人所提供的任何形式的信息，供应商不得向服务人员以外的任何人透露。供应商需承诺对服务过程中涉及的保密信息进行保护，否则需赔偿由此造成的全部损失。",
+    "保密要求：供应商在服务中获得的数据，只能用于本项目相关工作，不能用于其他用途，否则将承担相关法律责任并赔偿由此造成的全部损失。", "保密要求：供应商须制定严格的保密守则与从事此项业务的所有人员签订保密协议。所有工作环节应在监控设备下有序进行。如出现泄密情况，供应商应赔偿由此造成的全部损失。采购人除追究供应商经济和法律责任外，将立即终止服务、解除合同并由供应商承担由此引起的一切法律责任。",
+    "保密要求：供应商的保密责任永久存在，不因本合同的终止而解除。", "暂停使用或退出入围：服务期内无故不响应我行的服务需求3次及以上的拒绝遵守我行律师管理要求，或者无合理理由单方终止我行委托事项；",
+    "暂停使用或退出入围：在后续实际采购流程中，发生围标、串标等违规行为的。", "暂停使用或退出入围：收费定价明显不合理，就同一诉讼仲裁案件通过既签订委托代理合同又签订咨询服务合同等方式变相拆分委托事项，增加不合理收费项目，临时加价、拖延工作要求涨价，要求我行提前打包支付差旅费或其他杂费；",
+    "暂停使用或退出入围：律师资源配备和投入不足，不能按时完成委托事项或保障服务质量；", "暂停使用或退出入围：违反委托合同约定或超越委托权限，或就其为我行提供服务进行不当宣传，损害我行利益和声誉；",
+    "暂停使用或退出入围：隐瞒利益冲突或违反对我行的利益冲突承诺；", "暂停使用或退出入围：违反保密约定，泄露委托事项相关信息、我行商业秘密或内部信息；",
+    "暂停使用或退出入围：恶意对我行提起诉讼或以其它不当形式损害我行利益和声誉；", "暂停使用或退出入围：协助债务人或诉讼对手恶意逃废我行债务或实施类似不良行为；",
+    "暂停使用或退出入围：近三年被政府机构、律师协会纳入不良行为名单、通报批评或处罚；", "暂停使用或退出入围：违反我行委托合同中禁止招揽条款约定；", "暂停使用或退出入围：律师事务所发生停业、歇业、解散、分立、律师大量离职等情况而导致无法继续提供法律服务或服务能力大幅下降；",
+    "暂停使用或退出入围：律师事务所中与我行合作的主要合伙人、律师团队涉及重大法律纠纷、不良执业记录、无法有效协调本所律师、或离开律师事务所的，且律师事务所不能更换符合我行要求的主要合伙人或律师团队；",
+    "暂停使用或退出入围：律师事务所不同合伙人或团队在为我行提供服务中发生内部纠纷且不能及时协调解决，影响为我行提供服务；", "暂停使用或退出入围：其他对我行利益造成损害的行为。",
+    "主要业务限价：原告类风险代理费率上限不超过清收金额的12%。", "主要业务限价：被告类代理费率上限不超过标的金额的18%。", "付款安排：后续实际采购中付款安排将参考国家有关律师服务收费管理规定制定，可以根据委托事项，采取计件收费、按金额比例收费、计时收费、风险代理或其它适当方式。采购人及供应商应严格按照实际采购结果通知中列明的付款安排执行。"]}'
+  shangwuStarDeviation: '{"商务要求带星": []}'
+  standardOfReviewName: null
+  standardOfReviewUrl: null
+  taskId: 0545e9d0-fa68-4ec8-ae27-21b52627a435
+  tenderAgent: 瑞和安惠项目管理集团有限公司
+  tenderCompanyName: 中国银行股份有限公司河北省分行
+  tenderId: '176904824255300000'
+  tenderIdStr: '176904824255300000'
+  tenderName: 中国银行河北省分行邯郸地区法律服务.docx
+  tenderPdfUrl: null
+  tenderPerson: 中国银行股份有限公司河北省分行
+  tenderPersonName: 中国银行股份有限公司河北省分行
+  tenderPhone: 0311-69699210
+  tenderProjectAddress: ''
+  tenderProjectBudget: ''
+  tenderType: 服务类
+  tenderUrl: tender/file1769048241824.docx
+  tenderWeb: 本公告同时在中国银行中银智采平台（https://ctpch.fmscop.bankofchina.com） 、中国采购与招标网(www.chinabidding.com.cn)、中国招标投标公共服务平台（http://www.cebpubservice.com）上进行发布。
+  updateBy: null
+  updateTime: '2026-01-22 10:19:56'
+  uploadTime: '2026-01-22 10:17:23'
+  userId: '399'
+  userName: null
+  zigeDeviation: '{"资格审查": {"资格性检查": ["具有有效的《律师事务所执业许可证》，复印件加盖供应商公章。", "提供供应商承诺函（附件15），加盖供应商公章。",
+    "注册专职执业律师人数在10人及以上，提供人员名单、执业证书及盖章承诺函，并承诺入围后在邯郸地区有固定办公场所。", "按规定要求缴纳响应保证金，并提供缴费证明。",
+    "自2022年12月1日至应答文件递交截止时间前，具备与银行签订的法律服务的合作案例合同，复印件加盖供应商公章。", "截至应答文件递交截止日（含），未被“信用中国”网站列入失信被执行人、重大税收违法失信主体和政府采购严重违法失信行为记录名单，需提供查询截图，评审委员会在谈判当日进行核实。",
+    "不存在单位法定代表人/负责人为同一人或者存在控股、管理关系的不同单位同时参加本项目，由招标代理机构评审时现场查询。"], "符合性检查": ["按要求签署盖章齐全",
+    "响应文件完整", "实质响应采购文件的响应程度", "响应函中的服务期限等实质响应"]}}'
+total_companies_count: 4
+used_busi_as_id_for_final_gen: null
+used_busi_as_id_for_generation: '176904874336100000'
+used_company_id_for_download_check: null
+used_company_id_for_fill_check: '112233'
+used_company_id_for_fill_company: '112233'
+used_company_id_for_final_gen: null
+used_company_id_for_generation: '358'
+used_company_id_for_save_company: '358'
+used_tender_id_for_download_check: '176904824255300000'
+used_tender_id_for_fill_check: '176904824255300000'
+used_tender_id_for_fill_company: '176904824255300000'
+used_tender_id_for_final_gen: '176904824255300000'
+used_tender_id_for_generation: '176904824255300000'
+used_tender_id_for_save_company: '176904824255300000'
+used_user_id_for_fill_check: '399'

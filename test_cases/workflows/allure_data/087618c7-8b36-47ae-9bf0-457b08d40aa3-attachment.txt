@@ -1,0 +1,10 @@
+
+==================================================
+步骤23: 查询是否可下载
+==================================================
+Using type: busi_gen
+Using tender ID: 176904824255300000
+Using company ID: None
+Query Is Down Response: {'code': 200, 'msg': None, 'data': False}
+Successfully queried download status: False for type: busi_gen, tenderId: 176904824255300000, companyId: None
+Download status saved: False

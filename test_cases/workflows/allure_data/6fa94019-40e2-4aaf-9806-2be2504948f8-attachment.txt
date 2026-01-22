@@ -1,0 +1,9 @@
+
+==================================================
+步骤32: 填充业务公司信息
+==================================================
+Using tender ID: 176904824255300000
+Using company ID: 112233
+Fill Busi Company Response: {'code': 200, 'msg': None, 'data': '176904874336100000'}
+Successfully filled company information, busiId: 176904874336100000
+Company fill information saved, busiId: 176904874336100000

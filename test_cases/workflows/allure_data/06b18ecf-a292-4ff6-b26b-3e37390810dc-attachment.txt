@@ -1,0 +1,1 @@
+DEBUG    urllib3.connectionpool:connectionpool.py:544 https://test.intellibid.cn:443 "GET /prod-api/bid/company/selectAllCompany HTTP/1.1" 200 None

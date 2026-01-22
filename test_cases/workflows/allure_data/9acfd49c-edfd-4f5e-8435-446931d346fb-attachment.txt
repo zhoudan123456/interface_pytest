@@ -1,0 +1,3 @@
+DEBUG    urllib3.connectionpool:connectionpool.py:544 https://test.intellibid.cn:443 "GET /prod-api/bid/gen/busi/status?tenderId=176904824255300000&companyId=112233 HTTP/1.1" 200 None
+DEBUG    urllib3.connectionpool:connectionpool.py:1049 Starting new HTTPS connection (2): test.intellibid.cn:443
+DEBUG    urllib3.connectionpool:connectionpool.py:544 https://test.intellibid.cn:443 "GET /prod-api/bid/gen/busi/status?tenderId=176904824255300000&companyId=112233 HTTP/1.1" 200 None

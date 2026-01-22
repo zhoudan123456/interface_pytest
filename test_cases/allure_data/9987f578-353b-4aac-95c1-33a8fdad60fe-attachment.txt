@@ -1,0 +1,3 @@
+Manual Upload Response Status: 200
+Manual Upload Response: {"code":200,"msg":null,"data":"176889124604700000"}
+Manual upload API test passed!
