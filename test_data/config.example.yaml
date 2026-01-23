@@ -1,0 +1,135 @@
+# ============================================
+# 测试数据配置示例文件
+# ============================================
+# 说明：
+# 1. 复制此文件为 login.yaml 或其他实际的 YAML 文件
+# 2. 填入真实的测试数据
+# 3. 请勿将包含敏感信息的文件提交到 Git
+
+# ============================================
+# 登录配置示例
+# ============================================
+-
+  login:
+    method: post
+    path: /prod-api/auth/register/loginByPassword
+    json:
+      loginType: pc
+      phone: YOUR_PHONE_NUMBER      # 修改为真实手机号
+      code: ""
+      password: YOUR_PASSWORD        # 修改为真实密码
+      key: ""
+      value: ""
+      shareCode: ""
+      uuid: ""
+      companyName: ""
+      agreeCheckbox: true
+      verifyEnable: true
+      visitUrl: https://test.intellibid.cn/home
+      username: YOUR_PHONE_NUMBER      # 修改为真实手机号
+
+# ============================================
+# 上传文件配置示例
+# ============================================
+  upload:
+    method: post
+    path: /prod-api/bid/ua/upload/tender
+    files:
+      file: E:\招标文件\示例文件.pdf  # 修改为实际文件路径
+    data:
+      type: "服务类"
+
+# ============================================
+# 其他接口配置示例
+# ============================================
+  check_bid_file:
+    method: get
+    path: /prod-api/bid/ua/check/bid/file
+
+  analyze_tender:
+    method: post
+    path: /prod-api/bid/ua/analysis/tender/sync
+
+  query_tender_progress:
+    method: post
+    path: /prod-api/bid/ua/query/oneTenderProgressUser
+
+  init_business:
+    method: POST
+    path: /prod-api/bid/init/busi
+
+  query_one_tender_user:
+    method: POST
+    path: /prod-api/bid/ua/query/oneTenderUser
+
+  query_catalogue:
+    method: POST
+    path: /prod-api/bid/query/catalogue
+
+  query_new_bid_as:
+    method: POST
+    path: /prod-api/bid/query/new/bidAs
+
+  gen_busi_task:
+    method: POST
+    path: /prod-api/bid/gen/busi/task
+
+  gen_busi_status:
+    method: GET
+    path: /prod-api/bid/gen/busi/status
+
+  query_new_company_id:
+    method: GET
+    path: /prod-api/bid/query/new/company/id
+
+  query_busi_fill_company_is_fill:
+    method: GET
+    path: /prod-api/bid/query/busiFillCompanyIsFill
+
+  query_new_final_gen:
+    method: GET
+    path: /prod-api/bid/query/new/finalGen
+
+  query_is_down:
+    method: GET
+    path: /prod-api/bid/query/is/down
+
+  select_all_company:
+    method: GET
+    path: /prod-api/bid/company/selectAllCompany
+
+  query_fill_company_list:
+    method: GET
+    path: /prod-api/bid/query/fill/company/list
+
+  query_all_person_no_page:
+    method: POST
+    path: /prod-api/bid/query/allPerson/noPage
+
+  query_bid_filling_list:
+    method: GET
+    path: /prod-api/bid/query/bidFillingList
+
+  query_all_company_performance:
+    method: POST
+    path: /prod-api/bid/query/allCompanyPerformance
+
+  query_company_file_page:
+    method: POST
+    path: /prod-api/bid/query/companyFilePage
+
+  query_financial_page:
+    method: POST
+    path: /prod-api/bid/query/financialPage
+
+  gen_save_company:
+    method: POST
+    path: /prod-api/bid/genSaveCompany
+
+  fill_busi_company:
+    method: POST
+    path: /prod-api/bid/fill/busi/company
+
+  generate_catalogue_and_page_stream:
+    method: POST
+    path: /prod-api/bid/generate/busi/catalogueAndPage/stream
