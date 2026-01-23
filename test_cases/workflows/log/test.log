@@ -1,3 +1,0 @@
-DEBUG 2026-01-23 09:26:13 connectionpool.py connectionpool _new_conn 1049 : Starting new HTTPS connection (1): test.intellibid.cn:443
-DEBUG 2026-01-23 09:26:13 connectionpool.py connectionpool _make_request 544 : https://test.intellibid.cn:443 "POST /prod-api/auth/register/loginByPassword HTTP/1.1" 200 None
-DEBUG 2026-01-23 09:26:13 connectionpool.py connectionpool _make_request 544 : https://test.intellibid.cn:443 "POST /prod-api/bid/generate/busi/catalogueAndPage/stream HTTP/1.1" 200 None
