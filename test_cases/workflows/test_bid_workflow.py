@@ -1658,169 +1658,33 @@ class TestBidGenerateWorkflow:
     def test_22_gen_save_company(self, api, data):
         """
         步骤31: 生成保存公司信息
+        数据来源：
+        - 公司信息：test_15_select_all_company
+        - 人员信息：test_17_query_all_person_no_page
+        - 业绩信息：test_19_query_all_company_performance
+        - 财务信息：test_21_query_financial_page
         接口: /prod-api/bid/genSaveCompany
         """
         print("\n" + "=" * 50)
         print("步骤31: 生成保存公司信息")
         print("=" * 50)
 
-        # 从bid_generate.yaml中读取所需参数
+        # 加载数据
         extract_file_path = '../../test_data/bid_generate.yaml'
-        if os.path.exists(extract_file_path):
-            with open(extract_file_path, 'r', encoding='utf-8') as f:
-                extract_data = yaml.safe_load(f)
-                
-                # 尝试从已有数据中获取tenderId和companyId
-                tender_id = extract_data.get('document_id', '176887627456900000')  # 使用文档ID或默认值
-                company_id = extract_data.get('company_id', '358')  # 使用已有公司ID或默认值
-                
-                # 如果tender_id仍然未设置，尝试从其他地方获取
-                if not tender_id and extract_data.get('tender_user_info'):
-                    tender_info = extract_data['tender_user_info']
-                    if isinstance(tender_info, dict) and 'tenderId' in tender_info:
-                        tender_id = tender_info['tenderId']
-                    elif isinstance(tender_info, dict) and 'id' in tender_info:
-                        tender_id = tender_info['id']
-                
-                # 如果company_id仍然未设置，尝试从其他地方获取
-                if not company_id and extract_data.get('new_company_id'):
-                    company_id = extract_data['new_company_id']
-                elif not company_id and extract_data.get('all_companies'):
-                    companies = extract_data['all_companies']
-                    if companies and len(companies) > 0:
-                        first_company = companies[0]
-                        company_id = first_company.get('companyId')
-                
-        else:
-            # 使用HAR数据中的默认值
-            tender_id = '176887627456900000'
-            company_id = '358'
+        extract_data = self._load_yaml_data(extract_file_path)
+
+        # 获取基础参数
+        tender_id = self._get_value_from_data(extract_data, 'document_id', '176887627456900000')
+        company_id = self._get_company_id_from_data(extract_data)
 
         print(f"Using tender ID: {tender_id}")
         print(f"Using company ID: {company_id}")
 
-        # 准备请求参数 - 这是一个POST请求，参数在请求体中
-        # 使用从bid_generate.yaml中获取的实际数据
-        # 获取今天的日期
-        today_date = datetime.now().strftime('%Y-%m-%d')
-        
-        # 从bid_generate.yaml中获取公司信息
-        company_name = self._get_company_name_from_yaml('358')
+        # ✨ 从前面接口的返回数据中动态构建请求数据
+        json_data = self._build_gen_save_company_request(extract_data, company_id, tender_id)
 
-        json_data = {
-            "companyName": company_name,
-            "legal": "曹志勇",
-            "legalCard": None,
-            "authPersonId": 187,
-            "projectPersonId": 187,
-            "techPersonId": 188,
-            "constructPersonId": 189,
-            "designPersonId": 190,
-            "bidDate": today_date,
-            "financialList": [
-                {
-                    "financialId": "187",
-                    "financialTime": "2025-11",
-                    "financialType": "缴纳社保证明",
-                    "financialName": "2025-11缴纳社保证明",
-                    "entryTime": "2025-10-31 15:47:03",
-                    "financialFileUrl": "https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/financialFile/358/%E7%BC%B4%E7%BA%B3%E7%A4%BE%E4%BF%9D%E8%AF%81%E6%98%8E/file1762135002782.pdf?Expires=1769016723&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=SjC5ifVmoU1s51uPnKrElYZbe1c%3D",
-                    "note": "2025-11缴纳社保证明的备注信息",
-                    "companyId": "358",
-                    "createId": "399",
-                    "updateTime": "2025-11-03 09:56:43",
-                    "financialFileName": "缴纳社保证明.pdf"
-                },
-                {
-                    "financialId": "186",
-                    "financialTime": "2025-06",
-                    "financialType": "缴纳税收证明",
-                    "financialName": "2025-06缴纳税收证明",
-                    "entryTime": "2025-10-31 15:18:15",
-                    "financialFileUrl": "https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/financialFile/358/%E7%BC%B4%E7%BA%B3%E7%A8%8E%E6%94%B6%E8%AF%81%E6%98%8E/file1762134460684.pdf?Expires=1769016723&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=Lw%2BHkr2pccnrkburN17VC89ixRA%3D",
-                    "note": "2025-06缴纳税收证明的备注信息",
-                    "companyId": "358",
-                    "createId": "399",
-                    "updateTime": "2025-11-03 09:47:41",
-                    "financialFileName": "税收完税证明.pdf"
-                },
-                {
-                    "financialId": "185",
-                    "financialTime": "2025",
-                    "financialType": "财务审计报告",
-                    "financialName": "2019年财务审计报告",
-                    "entryTime": "2025-10-31 14:38:39",
-                    "financialFileUrl": "https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/financialFile/358/%E8%B4%A2%E5%8A%A1%E5%AE%A1%E8%AE%A1%E6%8A%A5%E5%91%8A/file1762134390679.pdf?Expires=1769016723&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=EoAddPBppkFBBKfA83KFRn%2BtY4c%3D",
-                    "note": "2019年财务审计报告的备注",
-                    "companyId": "358",
-                    "createId": "399",
-                    "updateTime": "2025-11-03 09:46:31",
-                    "financialFileName": "财务审计报告.pdf"
-                }
-            ],
-            "entFinanceRequire": [
-                "开标前连续3个月社保证明（不含开标当月）"
-            ],
-            "entPerRequire": [
-                "投标人提供自2023年1月15日至2026年1月15日前（以签订合同时间为准）的同类业绩，每提供1个业绩得3分，本项最高得9分。评审依据：投标文件中须提供同类业绩合同或中标（成交）通知书彩色复印件并加盖投标人公章，原件现场备查；未提供或提供不符不得分。"
-            ],
-            "performanceList": [
-                {
-                    "createBy": None,
-                    "createTime": "2025-10-31 14:17:38",
-                    "updateBy": None,
-                    "updateTime": None,
-                    "remark": None,
-                    "beginTime": None,
-                    "endTime": None,
-                    "pageNum": None,
-                    "pageSize": None,
-                    "companyId": "358",
-                    "projectId": "108",
-                    "projectName": "浙川县昌汇商贸有限公司门窗安装工程",
-                    "contractAmount": "178",
-                    "constructionOrganizationName": "浙川县昌汇商贸有限公司",
-                    "projectLead": "187",
-                    "projectLeadName": "曹志勇",
-                    "technicalLead": "188",
-                    "technicalLeadName": "方继京",
-                    "performanceClassification": "民用建筑/商业设施",
-                    "projectDate": ["2024-10-01", "2026-11-30"],
-                    "constructionOrganizationPhone": "13807337777",
-                    "status": "已验",
-                    "projectCode": "111222666",
-                    "projectAddress": "南阳市浙川县昌汇商贸",
-                    "constructionOrganizationPerson": "13807336666",
-                    "completionRegistrationNumber": "NY-JSBF-2023-06721",
-                    "tenderAmount": "185",
-                    "bidAmount": "178",
-                    "settlementAmount": "178",
-                    "actualArea": "4500",
-                    "projectQuality": "优良",
-                    "projectCost": "178",
-                    "otherEngineeringFeatures": "使用80系列断桥铝合金型材，中空钢化玻璃。",
-                    "note": "浙川县昌汇商贸有限公司门窗安装工程的备注信息",
-                    "beginDate": "2024-10-01",
-                    "endDate": "2026-11-30",
-                    "noticeOfSuccessfulBidResultRes": "https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/companyPerformance/358/%E6%B5%99%E5%B7%9D%E5%8E%BF%E6%98%8C%E6%B1%87%E5%95%86%E8%B4%B8%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E9%97%A8%E7%AA%97%E5%AE%89%E8%A3%85%E5%B7%A5%E7%A8%8B/noticeOfSuccessfulBidResult/noticeOfSuccessfulBidResult1761896532902.png?Expires=1769011055&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=H%2B9f5y0kVjGiynVHOiPKDqUuAG0%3D",
-                    "noticeOfSuccessfulBidResultFileName": "中标结果通知书.png",
-                    "constructionPermitRes": None,
-                    "contractRes": "https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/companyPerformance/358/%E6%B5%99%E5%B7%9D%E5%8E%BF%E6%98%8C%E6%B1%87%E5%95%86%E8%B4%B8%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E9%97%A8%E7%AA%97%E5%AE%89%E8%A3%85%E5%B7%A5%E7%A8%8B/contract/contract1762135246801.pdf?Expires=1769011055&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=IskRRybuPfMI4Bj73Wi8IRWYZCw%3D",
-                    "acceptanceReportRes": "https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/companyPerformance/358/%E6%B5%99%E5%B7%9D%E5%8E%BF%E6%98%8C%E6%B1%87%E5%95%86%E8%B4%B8%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E9%97%A8%E7%AA%97%E5%AE%89%E8%A3%85%E5%B7%A5%E7%A8%8B/acceptanceReport/acceptanceReport1762139394796.pdf?Expires=1769011055&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=K2WTb5PT2mevltKAUcERBqI%2BMt4%3D",
-                    "contractFileName": "供货合同1.pdf",
-                    "acceptanceReportFileName": "验收报告.pdf",
-                    "amountRange": None
-                }
-            ],
-            "entCerRequire": [
-                "投标人拟派本项目负责人具有机械设备、机械设计或电气类中级及以上的技术职称的得3分，投标人拟派本项目负责人具有机械设备  、机械设计或电气类初级职称得1.5分，本项最高得3分。评审依据：提供项目负责人职称证书、劳动合同原件彩色复印件、开标前连续3个月社保证明（不含开标当月），未提供或提供不符不得分。",
-                "获得有效的“高新技术企业证书 ”得2分;2、获得“安全生产标准化认证证书 ”三级及以上得2.5分;3、获得省级及以上“科学技术奖 ”的得2.5分;评审依据：投标人提供以上证书彩色复印件加盖投标人公章，未提供或提供不符不得分；",
-                "投标人同时提供有效期内的质量管理体系认证、环境管理体系认证、职业健康安全管理体系认证的得6分，每少一个证扣2分；本项最高得6分；未提供或提供不符不得分。评审依据：投标人提供以上证书彩色复印件加盖投标人公章，未提供或提供不符不得分；",
-                "投标人具有脉冲滤尘器、高效混合机同时具有实用新型专利证书的得12分；具有其中一项专利证书的得6分；本项最高得12分；未提供或提供不符不得分。评审依据：须提供国家知识产权局审核通过的证书原件加盖投标人公章佐证。"
-            ],
-            "companyId": company_id,
-            "tenderId": tender_id
-        }
+        print(f"📊 数据来源统计：财务数据 {len(json_data.get('financialList', []))} 条，"
+              f"业绩数据 {len(json_data.get('performanceList', []))} 条")
 
         # 发送请求
         res = api.request(
@@ -1839,23 +1703,17 @@ class TestBidGenerateWorkflow:
         response_data = res.json()
         if response_data.get('code') == 200:
             saved_company_id = response_data.get('data')
-            print(f"Successfully saved company information, company ID: {saved_company_id}")
-            
+            print(f"✅ Successfully saved company information, company ID: {saved_company_id}")
+
             # 更新bid_generate.yaml文件
-            existing_data = {}
-            if os.path.exists(extract_file_path):
-                with open(extract_file_path, 'r', encoding='utf-8') as f:
-                    existing_data = yaml.safe_load(f) or {}
-            
-            existing_data['saved_company_info'] = response_data
-            existing_data['saved_company_id'] = saved_company_id
-            existing_data['save_company_request_data'] = json_data
-            existing_data['used_tender_id_for_save_company'] = tender_id
-            existing_data['used_company_id_for_save_company'] = company_id
-            
-            with open(extract_file_path, 'w', encoding='utf-8') as f:
-                yaml.dump(existing_data, f, allow_unicode=True)
-            
+            self._update_yaml_data(extract_file_path, {
+                'saved_company_info': response_data,
+                'saved_company_id': saved_company_id,
+                'save_company_request_data': json_data,
+                'used_tender_id_for_save_company': tender_id,
+                'used_company_id_for_save_company': company_id
+            })
+
             print(f"Company information saved, company ID: {saved_company_id}")
         else:
             print(f"Failed to save company information: {response_data}")
@@ -1865,58 +1723,41 @@ class TestBidGenerateWorkflow:
     def test_23_fill_busi_company(self, api, data):
         """
         步骤32: 填充业务公司信息
+        数据来源：
+        - 公司信息：test_15_select_all_company
+        - 人员信息：test_17_query_all_person_no_page
+        - 业绩信息：test_19_query_all_company_performance
+        - 财务信息：test_21_query_financial_page
         接口: /prod-api/bid/fill/busi/company
         """
         print("\n" + "=" * 50)
-        print("步骤23: 填充业务公司信息")
+        print("步骤32: 填充业务公司信息")
         print("=" * 50)
 
-        # 从bid_generate.yaml中读取所需参数
+        # 加载数据
         extract_file_path = '../../test_data/bid_generate.yaml'
-        if os.path.exists(extract_file_path):
-            with open(extract_file_path, 'r', encoding='utf-8') as f:
-                extract_data = yaml.safe_load(f)
+        extract_data = self._load_yaml_data(extract_file_path)
 
-                # 尝试从已有数据中获取必要参数
-                tender_id = extract_data.get('document_id', '176838149284700000')  # 使用文档ID或默认值
-                company_id = extract_data.get('company_id', '112233')  # 使用已有公司ID或默认值
-                
-                # 如果tender_id仍然未设置，尝试从其他地方获取
-                if not tender_id and extract_data.get('tender_user_info'):
-                    tender_info = extract_data['tender_user_info']
-                    if isinstance(tender_info, dict) and 'tenderId' in tender_info:
-                        tender_id = tender_info['tenderId']
-                    elif isinstance(tender_info, dict) and 'id' in tender_info:
-                        tender_id = tender_info['id']
-
-                # 如果company_id仍然未设置，尝试从其他地方获取
-                if not company_id and extract_data.get('new_company_id'):
-                    company_id = extract_data['new_company_id']
-                elif not company_id and extract_data.get('all_companies'):
-                    companies = extract_data['all_companies']
-                    if companies and len(companies) > 0:
-                        first_company = companies[0]
-                        company_id = first_company.get('companyId')
-                
-        else:
-            # 使用HAR数据中的默认值
-            tender_id = '176838149284700000'
-            company_id = '112233'
+        # 获取基础参数
+        tender_id = self._get_value_from_data(extract_data, 'document_id', '176838149284700000')
+        company_id = 358
 
         print(f"Using tender ID: {tender_id}")
-        print(f"Using company ID: {company_id}")
 
-        # 准备请求参数 - 这是一个POST请求，参数在请求体中
-        # 使用从bid_generate.yaml中获取的实际数据
-        # 获取今天的日期
+
+        # ✨ 从前面接口的返回数据中动态构建请求数据
         today_date = datetime.now().strftime('%Y-%m-%d')
-        
-        # 从bid_generate.yaml中获取公司信息
-        company_name = self._get_company_name_from_yaml('358')
+
+        # 获取动态数据
+        financial_list = self._get_financial_list(extract_data, limit=3)
+        performance_list = self._get_performance_list(extract_data, limit=1)
+        company_file_ids = self._get_company_files(extract_data, limit=2)
+        financial_ids = self._get_financial_ids(extract_data, limit=3)
+        project_ids = self._get_project_ids(extract_data, limit=1)
 
         json_data = {
-            "companyName": company_name,
-            "legal": "曹志勇",
+            "companyName": self._get_company_name_from_yaml(company_id, extract_data),
+            "legal": self._get_company_legal(company_id, extract_data),
             "legalCard": None,
             "authPersonId": 188,
             "projectPersonId": 187,
@@ -1924,109 +1765,32 @@ class TestBidGenerateWorkflow:
             "constructPersonId": 189,
             "designPersonId": 190,
             "bidDate": today_date,
-            "financialList": [
-                {
-                    "financialId": "187",
-                    "financialTime": "2025-11",
-                    "financialType": "缴纳社保证明",
-                    "financialName": "2025-11缴纳社保证明",
-                    "entryTime": "2025-10-31 15:47:03",
-                    "financialFileUrl": "https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/financialFile/358/%E7%BC%B4%E7%BA%B3%E7%A4%BE%E4%BF%9D%E8%AF%81%E6%98%8E/file1762135002782.pdf?Expires=1769020198&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=VNPJTEwFByTVImCOxnQYs6qH2Xo%3D",
-                    "note": "2025-11缴纳社保证明的备注信息",
-                    "companyId": "358",
-                    "createId": "399",
-                    "updateTime": "2025-11-03 09:56:43",
-                    "financialFileName": "缴纳社保证明.pdf"
-                },
-                {
-                    "financialId": "186",
-                    "financialTime": "2025-06",
-                    "financialType": "缴纳税收证明",
-                    "financialName": "2025-06缴纳税收证明",
-                    "entryTime": "2025-10-31 15:18:15",
-                    "financialFileUrl": "https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/financialFile/358/%E7%BC%B4%E7%BA%B3%E7%A8%8E%E6%94%B6%E8%AF%81%E6%98%8E/file1762134460684.pdf?Expires=1769020198&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=vmrGA5%2B7HRDxooKH%2FUef2p%2FN%2FGI%3D",
-                    "note": "2025-06缴纳税收证明的备注信息",
-                    "companyId": "358",
-                    "createId": "399",
-                    "updateTime": "2025-11-03 09:47:41",
-                    "financialFileName": "税收完税证明.pdf"
-                },
-                {
-                    "financialId": "185",
-                    "financialTime": "2025",
-                    "financialType": "财务审计报告",
-                    "financialName": "2019年财务审计报告",
-                    "entryTime": "2025-10-31 14:38:39",
-                    "financialFileUrl": "https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/financialFile/358/%E8%B4%A2%E5%8A%A1%E5%AE%A1%E8%AE%A1%E6%8A%A5%E5%91%8A/file1762134390679.pdf?Expires=1769020198&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=DhsgZ7uk8E%2B7xgN0kDYcunLHXMs%3D",
-                    "note": "2019年财务审计报告的备注",
-                    "companyId": "358",
-                    "createId": "399",
-                    "updateTime": "2025-11-03 09:46:31",
-                    "financialFileName": "财务审计报告.pdf"
-                }
-            ],
-
-            "performanceList": [
-                {
-                    "createBy": None,
-                    "createTime": "2025-10-31 14:17:38",
-                    "updateBy": None,
-                    "updateTime": None,
-                    "remark": None,
-                    "beginTime": None,
-                    "endTime": None,
-                    "pageNum": None,
-                    "pageSize": None,
-                    "companyId": "358",
-                    "projectId": "108",
-                    "projectName": "浙川县昌汇商贸有限公司门窗安装工程",
-                    "contractAmount": "178",
-                    "constructionOrganizationName": "浙川县昌汇商贸有限公司",
-                    "projectLead": "187",
-                    "projectLeadName": "曹志勇",
-                    "technicalLead": "188",
-                    "technicalLeadName": "方继京",
-                    "performanceClassification": "民用建筑/商业设施",
-                    "projectDate": ["2024-10-01", "2026-11-30"],
-                    "constructionOrganizationPhone": "13807337777",
-                    "status": "已验",
-                    "projectCode": "111222666",
-                    "projectAddress": "南阳市浙川县昌汇商贸",
-                    "constructionOrganizationPerson": "13807336666",
-                    "completionRegistrationNumber": "NY-JSBF-2023-06721",
-                    "tenderAmount": "185",
-                    "bidAmount": "178",
-                    "settlementAmount": "178",
-                    "actualArea": "4500",
-                    "projectQuality": "优良",
-                    "projectCost": "178",
-                    "otherEngineeringFeatures": "使用80系列断桥铝合金型材，中空钢化玻璃。",
-                    "note": "浙川县昌汇商贸有限公司门窗安装工程的备注信息",
-                    "beginDate": "2024-10-01",
-                    "endDate": "2026-11-30",
-                    "noticeOfSuccessfulBidResultRes": "https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/companyPerformance/358/%E6%B5%99%E5%B7%9D%E5%8E%BF%E6%98%8C%E6%B1%87%E5%95%86%E8%B4%B8%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E9%97%A8%E7%AA%97%E5%AE%89%E8%A3%85%E5%B7%A5%E7%A8%8B/noticeOfSuccessfulBidResult/noticeOfSuccessfulBidResult1761896532902.png?Expires=1769020190&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=lAV2G0D6RVDkhqwSDOEKLeTRKqo%3D",
-                    "noticeOfSuccessfulBidResultFileName": "中标结果通知书.png",
-                    "constructionPermitRes": None,
-                    "contractRes": "https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/companyPerformance/358/%E6%B5%99%E5%B7%9D%E5%8E%BF%E6%98%8C%E6%B1%87%E5%95%86%E8%B4%B8%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E9%97%A8%E7%AA%97%E5%AE%89%E8%A3%85%E5%B7%A5%E7%A8%8B/contract/contract1762135246801.pdf?Expires=1769020190&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=QYQs3vioL1iElBCSn2mCVyaLJVw%3D",
-                    "acceptanceReportRes": "https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/companyPerformance/358/%E6%B5%99%E5%B7%9D%E5%8E%BF%E6%98%8C%E6%B1%87%E5%95%86%E8%B4%B8%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E9%97%A8%E7%AA%97%E5%AE%89%E8%A3%85%E5%B7%A5%E7%A8%8B/acceptanceReport/acceptanceReport1762139394796.pdf?Expires=1769020190&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=CX09N%2BZo89DrRMH4GzQgrniZ8O8%3D",
-                    "contractFileName": "供货合同1.pdf",
-                    "acceptanceReportFileName": "验收报告.pdf",
-                    "amountRange": None
-                }
-            ],
-
-            "companyId": company_id,
-            "tenderId": tender_id,
-            "projectIds": ["108"],
-            "companyFileIds": ["199", "200"],
-            "financialIds": ["187", "186", "185"],
-            "tenderProjectCode": "JLZX-JSHT-ZBCG-24173-14-V",
-            "tenderProjectName": "中国邮政集团有限公司贵州省分公司2025年全省广告制作安装印制和会展服务供应商采购项目",
-            "tenderCompanyName": "中国邮政集团有限公司贵州省分公司",
-            "tenderProjectBudget": "1000000",
-            "newCompanyId": "358",
+            "financialList": financial_list if financial_list else [],
+            "performanceList": performance_list if performance_list else [],
+            "companyId": str(company_id),
+            "tenderId": str(tender_id),
+            "projectIds": project_ids if project_ids else ["108"],
+            "companyFileIds": company_file_ids if company_file_ids else ["199", "200"],
+            "financialIds": financial_ids if financial_ids else ["187", "186", "185"],
+            "tenderProjectCode": "",
+            "tenderProjectName": "",
+            "tenderCompanyName": "",
+            "tenderProjectBudget": "",
+            "newCompanyId": str(company_id),
             "skipCompany": "1"
         }
+
+        print(f"📊 数据来源统计：财务数据 {len(json_data.get('financialList', []))} 条，"
+              f"业绩数据 {len(json_data.get('performanceList', []))} 条，"
+              f"文件ID {len(json_data.get('companyFileIds', []))} 个")
+        print(f"🔍 调试信息：json_data中的companyId = {json_data['companyId']}, newCompanyId = {json_data['newCompanyId']}")
+
+        # 输出完整的json_data
+        print("\n" + "=" * 80)
+        print("📋 完整的请求数据 (json_data):")
+        print("=" * 80)
+        print(json.dumps(json_data, indent=2, ensure_ascii=False))
+        print("=" * 80 + "\n")
 
         # 发送请求
         res = api.request(
@@ -2045,23 +1809,17 @@ class TestBidGenerateWorkflow:
         response_data = res.json()
         if response_data.get('code') == 200:
             busiId = response_data.get('data')
-            print(f"Successfully filled company information, busiId: {busiId}")
-            
+            print(f"✅ Successfully filled company information, busiId: {busiId}")
+
             # 更新bid_generate.yaml文件
-            existing_data = {}
-            if os.path.exists(extract_file_path):
-                with open(extract_file_path, 'r', encoding='utf-8') as f:
-                    existing_data = yaml.safe_load(f) or {}
-            
-            existing_data['filled_company_info'] = response_data
-            existing_data['busiId'] = busiId
-            existing_data['fill_company_request_data'] = json_data
-            existing_data['used_tender_id_for_fill_company'] = tender_id
-            existing_data['used_company_id_for_fill_company'] = company_id
-            
-            with open(extract_file_path, 'w', encoding='utf-8') as f:
-                yaml.dump(existing_data, f, allow_unicode=True)
-            
+            self._update_yaml_data(extract_file_path, {
+                'filled_company_info': response_data,
+                'busiId': busiId,
+                'fill_company_request_data': json_data,
+                'used_tender_id_for_fill_company': tender_id,
+                'used_company_id_for_fill_company': company_id
+            })
+
             print(f"Company fill information saved, busiId: {busiId}")
         else:
             print(f"Failed to fill company information: {response_data}")
@@ -2351,28 +2109,298 @@ class TestBidGenerateWorkflow:
         # 如果所有方法都失败，返回原文本
         return text
     
-    def _get_company_name_from_yaml(self, company_id):
+    def _get_company_name_from_yaml(self, company_id, extract_data=None):
         """
         从bid_generate.yaml文件中获取指定companyId的companyName
+
+        Args:
+            company_id: 公司ID
+            extract_data: 可选，如果提供则直接使用，避免重复加载文件
         """
-        extract_file_path = '../../test_data/bid_generate.yaml'
-        if os.path.exists(extract_file_path):
-            with open(extract_file_path, 'r', encoding='utf-8') as f:
-                extract_data = yaml.safe_load(f)
-                
-                # 如果存在all_companies列表，从中查找指定companyId的公司
-                if extract_data and 'all_companies' in extract_data:
-                    all_companies = extract_data['all_companies']
-                    if isinstance(all_companies, list):
-                        for company in all_companies:
-                            if company.get('companyId') == company_id:
-                                return company.get('companyName', f'Company_{company_id}')
-                
-                # 如果在all_companies中未找到，尝试直接从extract_data中查找
-                if extract_data and extract_data.get('companyId') == company_id:
-                    return extract_data.get('companyName', f'Company_{company_id}')
-        
-        # 如果文件不存在或未找到对应公司，返回默认值
+        # 如果没有提供extract_data，自己加载
+        if extract_data is None:
+            extract_file_path = '../../test_data/bid_generate.yaml'
+            if os.path.exists(extract_file_path):
+                with open(extract_file_path, 'r', encoding='utf-8') as f:
+                    extract_data = yaml.safe_load(f)
+            else:
+                return f'Company_{company_id}'
+
+        # 从extract_data中查找公司名称
+        if extract_data and 'all_companies' in extract_data:
+            all_companies = extract_data['all_companies']
+            if isinstance(all_companies, list):
+                for company in all_companies:
+                    if str(company.get('companyId')) == str(company_id):
+                        return company.get('companyName', f'Company_{company_id}')
+
+        # 如果在all_companies中未找到，尝试直接从extract_data中查找
+        if extract_data and str(extract_data.get('companyId')) == str(company_id):
+            return extract_data.get('companyName', f'Company_{company_id}')
+
+        # 如果未找到对应公司，返回默认值
         return f'Company_{company_id}'
+
+    def _get_company_legal(self, company_id, extract_data=None):
+        """
+        从all_companies中获取指定companyId的legal（法人）值
+
+        Args:
+            company_id: 公司ID
+            extract_data: 可选，如果提供则直接使用
+        """
+        # 如果没有提供extract_data，自己加载
+        if extract_data is None:
+            extract_file_path = '../../test_data/bid_generate.yaml'
+            if os.path.exists(extract_file_path):
+                with open(extract_file_path, 'r', encoding='utf-8') as f:
+                    extract_data = yaml.safe_load(f)
+            else:
+                return ""
+
+        # 从extract_data中查找公司的legal值
+        if extract_data and 'all_companies' in extract_data:
+            all_companies = extract_data['all_companies']
+            if isinstance(all_companies, list):
+                for company in all_companies:
+                    if str(company.get('companyId')) == str(company_id):
+                        return company.get('legal', '')
+
+        # 如果未找到，返回空字符串
+        return ""
+
+    def _load_yaml_data(self, file_path):
+        """加载YAML文件数据"""
+        if os.path.exists(file_path):
+            with open(file_path, 'r', encoding='utf-8') as f:
+                return yaml.safe_load(f) or {}
+        return {}
+
+    def _get_value_from_data(self, data, key, default=None):
+        """从数据中获取值，支持多层级查找"""
+        if data and key in data:
+            return data[key]
+        return default
+
+    def _get_company_id_from_data(self, extract_data):
+        """从数据中获取公司ID"""
+        # 尝试从多个地方获取company_id
+        company_id = self._get_value_from_data(extract_data, 'company_id')
+        if not company_id:
+            company_id = self._get_value_from_data(extract_data, 'new_company_id')
+        if not company_id and extract_data.get('all_companies'):
+            companies = extract_data['all_companies']
+            if companies and len(companies) > 0:
+                company_id = companies[0].get('companyId')
+        return company_id if company_id else '358'
+
+    def _get_persons_by_role(self, extract_data, role_name=None):
+        """从人员列表中获取指定角色的人员，如果未指定角色则返回第一个"""
+        persons = extract_data.get('all_persons_list', [])
+        if not persons:
+            return None
+
+        if role_name:
+            # 查找指定角色的人员
+            for person in persons:
+                if role_name in person.get('personName', ''):
+                    return person
+            # 如果未找到，返回第一个
+            return persons[0] if persons else None
+        return persons[0] if persons else None
+
+    def _get_financial_list(self, extract_data, limit=3):
+        """从财务数据中获取财务列表"""
+        financial_data = extract_data.get('financial_page_data', {})
+        if financial_data:
+            rows = financial_data.get('rows', [])
+            # 转换为API需要的格式
+            financial_list = []
+            for item in rows[:limit]:
+                financial_list.append({
+                    "financialId": str(item.get('financialId', '')),
+                    "financialTime": item.get('financialTime', ''),
+                    "financialType": item.get('financialType', ''),
+                    "financialName": item.get('financialName', ''),
+                    "entryTime": item.get('entryTime', ''),
+                    "financialFileUrl": item.get('financialFileUrl', ''),
+                    "note": item.get('note', ''),
+                    "companyId": str(item.get('companyId', '')),
+                    "createId": str(item.get('createId', '')),
+                    "updateTime": item.get('updateTime', ''),
+                    "financialFileName": item.get('financialFileName', '')
+                })
+            return financial_list
+        return []
+
+    def _get_performance_list(self, extract_data, limit=1):
+        """从业绩数据中获取业绩列表"""
+        performance_data = extract_data.get('all_company_performance', {})
+        if performance_data:
+            rows = performance_data.get('rows', [])
+            # 转换为API需要的格式
+            performance_list = []
+            for item in rows[:limit]:
+                performance_list.append({
+                    "createBy": item.get('createBy'),
+                    "createTime": item.get('createTime'),
+                    "updateBy": item.get('updateBy'),
+                    "updateTime": item.get('updateTime'),
+                    "remark": item.get('remark'),
+                    "beginTime": item.get('beginTime'),
+                    "endTime": item.get('endTime'),
+                    "pageNum": item.get('pageNum'),
+                    "pageSize": item.get('pageSize'),
+                    "companyId": str(item.get('companyId', '')),
+                    "projectId": str(item.get('projectId', '')),
+                    "projectName": item.get('projectName', ''),
+                    "contractAmount": str(item.get('contractAmount', '')),
+                    "constructionOrganizationName": item.get('constructionOrganizationName', ''),
+                    "projectLead": str(item.get('projectLead', '')),
+                    "projectLeadName": item.get('projectLeadName', ''),
+                    "technicalLead": str(item.get('technicalLead', '')),
+                    "technicalLeadName": item.get('technicalLeadName', ''),
+                    "performanceClassification": item.get('performanceClassification', ''),
+                    "projectDate": item.get('projectDate', []),
+                    "constructionOrganizationPhone": item.get('constructionOrganizationPhone', ''),
+                    "status": item.get('status', ''),
+                    "projectCode": item.get('projectCode', ''),
+                    "projectAddress": item.get('projectAddress', ''),
+                    "constructionOrganizationPerson": item.get('constructionOrganizationPerson', ''),
+                    "completionRegistrationNumber": item.get('completionRegistrationNumber', ''),
+                    "tenderAmount": str(item.get('tenderAmount', '')),
+                    "bidAmount": str(item.get('bidAmount', '')),
+                    "settlementAmount": str(item.get('settlementAmount', '')),
+                    "actualArea": str(item.get('actualArea', '')),
+                    "projectQuality": item.get('projectQuality', ''),
+                    "projectCost": str(item.get('projectCost', '')),
+                    "otherEngineeringFeatures": item.get('otherEngineeringFeatures', ''),
+                    "note": item.get('note', ''),
+                    "beginDate": item.get('beginDate', ''),
+                    "endDate": item.get('endDate', ''),
+                    "noticeOfSuccessfulBidResultRes": item.get('noticeOfSuccessfulBidResultRes'),
+                    "noticeOfSuccessfulBidResultFileName": item.get('noticeOfSuccessfulBidResultFileName'),
+                    "constructionPermitRes": item.get('constructionPermitRes'),
+                    "contractRes": item.get('contractRes'),
+                    "acceptanceReportRes": item.get('acceptanceReportRes'),
+                    "contractFileName": item.get('contractFileName'),
+                    "acceptanceReportFileName": item.get('acceptanceReportFileName'),
+                    "amountRange": item.get('amountRange')
+                })
+            return performance_list
+        return []
+
+    def _get_company_files(self, extract_data, limit=2):
+        """从公司文件数据中获取文件ID列表"""
+        file_data = extract_data.get('company_file_page_data', {})
+        if file_data:
+            rows = file_data.get('rows', [])
+            file_ids = []
+            for item in rows[:limit]:
+                file_ids.append(str(item.get('companyFileId', '')))
+            return file_ids
+        return []
+
+    def _get_financial_ids(self, extract_data, limit=3):
+        """从财务数据中获取财务ID列表"""
+        financial_data = extract_data.get('financial_page_data', {})
+        if financial_data:
+            rows = financial_data.get('rows', [])
+            financial_ids = []
+            for item in rows[:limit]:
+                financial_ids.append(str(item.get('financialId', '')))
+            return financial_ids
+        return []
+
+    def _get_project_ids(self, extract_data, limit=1):
+        """从业绩数据中获取项目ID列表"""
+        performance_data = extract_data.get('all_company_performance', {})
+        if performance_data:
+            rows = performance_data.get('rows', [])
+            project_ids = []
+            for item in rows[:limit]:
+                project_ids.append(str(item.get('projectId', '')))
+            return project_ids
+        return []
+
+    def _build_gen_save_company_request(self, extract_data, company_id, tender_id):
+        """
+        构建gen_save_company接口的请求数据
+        从前面接口的返回数据中动态获取
+        """
+        today_date = datetime.now().strftime('%Y-%m-%d')
+
+        # 获取公司名称
+        company_name = self._get_company_name_from_yaml(company_id)
+
+        # 获取人员信息（如果有的话）
+        auth_person = self._get_persons_by_role(extract_data)
+        project_person = self._get_persons_by_role(extract_data, '项目')
+        tech_person = self._get_persons_by_role(extract_data, '技术')
+
+        # 获取财务列表
+        financial_list = self._get_financial_list(extract_data, limit=3)
+        # 如果没有财务数据，使用默认示例
+        if not financial_list:
+            financial_list = [
+                {
+                    "financialId": "",
+                    "financialTime": "2025-11",
+                    "financialType": "缴纳社保证明",
+                    "financialName": "2025-11缴纳社保证明",
+                    "entryTime": "",
+                    "financialFileUrl": "",
+                    "note": "",
+                    "companyId": str(company_id),
+                    "createId": "",
+                    "updateTime": "",
+                    "financialFileName": ""
+                }
+            ]
+
+        # 获取业绩列表
+        performance_list = self._get_performance_list(extract_data, limit=1)
+        # 如果没有业绩数据，使用默认示例
+        if not performance_list:
+            performance_list = [
+                {
+                    "companyId": str(company_id),
+                    "projectId": "",
+                    "projectName": "",
+                    "contractAmount": "",
+                    "constructionOrganizationName": "",
+                    "status": ""
+                }
+            ]
+
+        # 构建请求数据
+        json_data = {
+            "companyName": company_name,
+            "legal": "",
+            "legalCard": None,
+            "authPersonId": auth_person.get('personId') if auth_person else 187,
+            "projectPersonId": project_person.get('personId') if project_person else 187,
+            "techPersonId": tech_person.get('personId') if tech_person else 188,
+            "constructPersonId": 189,
+            "designPersonId": 190,
+            "bidDate": today_date,
+            "financialList": financial_list,
+            "entFinanceRequire": [],
+            "entPerRequire": [],
+            "performanceList": performance_list,
+            "entCerRequire": [],
+            "companyId": str(company_id),
+            "tenderId": str(tender_id)
+        }
+
+        return json_data
+
+    def _update_yaml_data(self, file_path, update_data):
+        """更新YAML文件数据"""
+        existing_data = self._load_yaml_data(file_path)
+        existing_data.update(update_data)
+
+        with open(file_path, 'w', encoding='utf-8') as f:
+            yaml.dump(existing_data, f, allow_unicode=True)
 
 
