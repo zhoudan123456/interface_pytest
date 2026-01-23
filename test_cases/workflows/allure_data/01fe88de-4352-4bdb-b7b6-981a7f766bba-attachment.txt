@@ -1,1 +1,0 @@
-DEBUG    urllib3.connectionpool:connectionpool.py:544 https://test.intellibid.cn:443 "GET /prod-api/bid/query/new/company/id?busiId=176904824255300000 HTTP/1.1" 200 None

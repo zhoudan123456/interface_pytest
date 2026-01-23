@@ -1,9 +1,0 @@
-
-==================================================
-步骤31: 生成保存公司信息
-==================================================
-Using tender ID: 176904824255300000
-Using company ID: 358
-Gen Save Company Response: {'code': 200, 'msg': None, 'data': '358'}
-Successfully saved company information, company ID: 358
-Company information saved, company ID: 358

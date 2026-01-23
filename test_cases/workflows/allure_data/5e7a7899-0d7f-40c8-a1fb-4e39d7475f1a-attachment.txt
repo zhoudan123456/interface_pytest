@@ -1,1 +1,0 @@
-DEBUG    urllib3.connectionpool:connectionpool.py:544 https://test.intellibid.cn:443 "POST /prod-api/bid/ua/analysis/tender/sync HTTP/1.1" 200 None

@@ -24,6 +24,31 @@ def api(request):
     yield api
 
 
+@pytest.fixture(scope="session", autouse=True)
+def auto_login(api):
+    """Session级别自动登录：整个测试会话只登录一次，token保存到server.ini"""
+    from conf.set_conf import read_yaml, write_conf
+
+    # 读取登录数据
+    login_data_list = read_yaml('../../test_data/login.yaml')
+
+    if login_data_list and 'login' in login_data_list[0]:
+        login_info = login_data_list[0]['login']
+
+        # 发送登录请求
+        res = api.request(save_cookie=True, **login_info)
+
+        # 提取并保存token到server.ini
+        access_token = api.get_values(res.json(), 'access_token')
+        if access_token:
+            # 保存token到配置文件 [data] section，添加Bearer前缀
+            token_with_bearer = f"Bearer {access_token}"
+            write_conf('data', 'token', token_with_bearer)
+            print(f"\n✅ 自动登录成功，token已保存到server.ini")
+
+    yield
+
+
 @pytest.fixture()
 def clean_test_data(request):
     """Fixture to clean up test data after test execution"""
@@ -47,14 +72,14 @@ def api_teardown(request):
 
     request.addfinalizer(api_teardown_finalizer)
 
-@pytest.fixture(autouse=True)  # autouse=True 表示自动使用，无需在测试函数中声明
-def clear_extract_data():
-    """在每个测试开始前，自动清空存储临时参数的extract.yaml文件。"""
-    file_path = pathlib.Path(__file__).parents[1].resolve() / 'test_data/extract.yaml'
-    # 测试开始前 (setup)
-    if os.path.exists(file_path):
-        os.remove(file_path)
-        print(f"已清理旧数据文件: {file_path}")
-    yield  # 在这里暂停，执行测试函数
-    # 测试结束后 (teardown) 如果需要也可以做清理
-    # print("测试完毕")
+# @pytest.fixture(autouse=True)  # autouse=True 表示自动使用，无需在测试函数中声明
+# def clear_extract_data():
+#     """在每个测试开始前，自动清空存储临时参数的extract.yaml文件。"""
+#     file_path = pathlib.Path(__file__).parents[1].resolve() / 'test_data/extract.yaml'
+#     # 测试开始前 (setup)
+#     if os.path.exists(file_path):
+#         os.remove(file_path)
+#         print(f"已清理旧数据文件: {file_path}")
+#     yield  # 在这里暂停，执行测试函数
+#     # 测试结束后 (teardown) 如果需要也可以做清理
+#     # print("测试完毕")

@@ -1,2 +1,0 @@
-Using document ID: 176904824255300000
-Check Bid File Response: {'code': 200, 'msg': '验证结果', 'data': {'msg': '验证通过', 'isBid': 1}}

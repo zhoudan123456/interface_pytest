@@ -1,9 +1,0 @@
-
-==================================================
-步骤18: 生成业务任务
-==================================================
-Using document ID: 176904824255300000
-Using company ID: 112233
-Gen Busi Task Response: {'code': 200, 'msg': '创建任务成功', 'data': 'export_combine_docx_34722309-4b9c-4cc9-9e23-3f33eb610979'}
-Successfully generated business task for tenderId: 176904824255300000 and companyId: 112233
-Gen busi task info saved

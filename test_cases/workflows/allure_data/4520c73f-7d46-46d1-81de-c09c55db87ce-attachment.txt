@@ -1,9 +1,0 @@
-
-==================================================
-步骤29: 查询公司文件分页
-==================================================
-Using company ID: 358
-Query Company File Page Response: {'total': '2', 'rows': [{'companyFileId': '199', 'companyFileType': '资质证书', 'companyFileUrl': 'companyFile/358/资质证书/file1761895938694.png', 'companyId': '358', 'companyFileName': '建筑业企业资质证书', 'issueDate': '2025-10-01 08:00:00', 'validDate': '2026-10-31 08:00:00', 'status': '有效', 'companyFileCode': '123456123', 'authority': '武汉市城乡建设局', 'updateTime': None, 'createId': '399', 'isValid': '有限期', 'fileName': 'https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/companyFile/358/%E8%B5%84%E8%B4%A8%E8%AF%81%E4%B9%A6/file1761895938694.png?Expires=1769091755&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=u1NVqC%2FaDRXOM7zGd50Ao2d7W%2B4%3D'}, {'companyFileId': '200', 'companyFileType': '资质证书', 'companyFileUrl': 'companyFile/358/资质证书/file1761896002370.png', 'companyId': '358', 'companyFileName': '高新技术企业证书', 'issueDate': '2025-09-01 08:00:00', 'validDate': '2027-10-31 08:00:00', 'status': '有效', 'companyFileCode': '123456789333', 'authority': '国家专业技能标准委员会', 'updateTime': None, 'createId': '399', 'isValid': '有限期', 'fileName': 'https://intellibid-company.oss-cn-hangzhou.aliyuncs.com/companyFile/358/%E8%B5%84%E8%B4%A8%E8%AF%81%E4%B9%A6/file1761896002370.png?Expires=1769091755&OSSAccessKeyId=REMOVED_ACCESS_KEY&Signature=Vv7L5%2BVXp1lYx5g1Foi6T4UEmk0%3D'}], 'code': 200, 'msg': '查询成功'}
-Successfully queried company file page, total: 2, found 2 records
-Company file page saved, total: 2, records: 2
-First file - Name: 建筑业企业资质证书, Type: 资质证书, Status: 有效
