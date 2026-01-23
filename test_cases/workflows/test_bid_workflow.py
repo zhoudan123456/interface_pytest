@@ -1675,7 +1675,7 @@ class TestBidGenerateWorkflow:
 
         # 获取基础参数
         tender_id = self._get_value_from_data(extract_data, 'document_id', '176887627456900000')
-        company_id = self._get_company_id_from_data(extract_data)
+        company_id = '358'
 
         print(f"Using tender ID: {tender_id}")
         print(f"Using company ID: {company_id}")
@@ -1751,9 +1751,19 @@ class TestBidGenerateWorkflow:
         # 获取动态数据
         financial_list = self._get_financial_list(extract_data, limit=3)
         performance_list = self._get_performance_list(extract_data, limit=1)
+        company_file_list = self._get_company_file_list(extract_data, limit=2)
         company_file_ids = self._get_company_files(extract_data, limit=2)
         financial_ids = self._get_financial_ids(extract_data, limit=3)
         project_ids = self._get_project_ids(extract_data, limit=1)
+        person_ids = self._get_all_person_ids(extract_data)
+
+        # 从bid_filling_list中获取要求信息
+        ent_finance_require = self._get_finance_require(extract_data)
+        ent_per_require = self._get_per_require(extract_data)
+        ent_cer_require = self._get_cer_require(extract_data)
+
+        # 从tender_user_info中获取招标项目信息
+        tender_info = self._get_tender_project_info(extract_data)
 
         json_data = {
             "companyName": self._get_company_name_from_yaml(company_id, extract_data),
@@ -1765,25 +1775,51 @@ class TestBidGenerateWorkflow:
             "constructPersonId": 189,
             "designPersonId": 190,
             "bidDate": today_date,
+            "personIds": person_ids if person_ids else [],
+            "companyFileList": company_file_list if company_file_list else [],
             "financialList": financial_list if financial_list else [],
+            "entFinanceRequire": ent_finance_require if ent_finance_require else [],
+            "entPerRequire": ent_per_require if ent_per_require else [],
+
             "performanceList": performance_list if performance_list else [],
-            "companyId": str(company_id),
+            "entCerRequire": ent_cer_require if ent_cer_require else [],
+
+            "companyId": '112233',
             "tenderId": str(tender_id),
             "projectIds": project_ids if project_ids else ["108"],
-            "companyFileIds": company_file_ids if company_file_ids else ["199", "200"],
+            "companyFileIds": company_file_ids if company_file_ids else [],
+
             "financialIds": financial_ids if financial_ids else ["187", "186", "185"],
-            "tenderProjectCode": "",
-            "tenderProjectName": "",
-            "tenderCompanyName": "",
-            "tenderProjectBudget": "",
+            "tenderProjectCode": tender_info.get('tenderProjectCode', ''),
+            "tenderProjectName": tender_info.get('tenderProjectName', ''),
+            "tenderCompanyName": tender_info.get('tenderCompanyName', ''),
+            "tenderProjectBudget": tender_info.get('tenderProjectBudget', ''),
             "newCompanyId": str(company_id),
             "skipCompany": "1"
         }
 
         print(f"📊 数据来源统计：财务数据 {len(json_data.get('financialList', []))} 条，"
               f"业绩数据 {len(json_data.get('performanceList', []))} 条，"
-              f"文件ID {len(json_data.get('companyFileIds', []))} 个")
+              f"公司文件 {len(json_data.get('companyFileList', []))} 个，"
+              f"人员ID {len(json_data.get('personIds', []))} 个")
         print(f"🔍 调试信息：json_data中的companyId = {json_data['companyId']}, newCompanyId = {json_data['newCompanyId']}")
+        print(f"👥 人员ID列表：{json_data.get('personIds', [])}")
+        print(f"📁 公司文件列表：{len(json_data.get('companyFileList', []))} 个文件")
+        print(f"🆔 公司文件ID列表：{json_data.get('companyFileIds', [])}")
+        print(f"💰 财务要求：{len(json_data.get('entFinanceRequire', []))} 条")
+        print(f"👨‍💼 人员要求：{len(json_data.get('entPerRequire', []))} 条")
+        print(f"📜 证书要求：{len(json_data.get('entCerRequire', []))} 条")
+        print(f"📋 招标项目信息：")
+        print(f"   - tenderProjectCode: {tender_info.get('tenderProjectCode')}")
+        print(f"   - tenderProjectName: {tender_info.get('tenderProjectName')}")
+        print(f"   - tenderCompanyName: {tender_info.get('tenderCompanyName')}")
+        print(f"   - tenderProjectBudget: {tender_info.get('tenderProjectBudget')}")
+
+        # 调试：打印tender_user_info中的原始字段
+        print(f"🔍 调试信息（YAML原始字段）：")
+        tender_user_info = extract_data.get('tender_user_info', {})
+        print(f"   - projectCode: {tender_user_info.get('projectCode', 'NOT_FOUND')}")
+        print(f"   - projectName: {tender_user_info.get('projectName', 'NOT_FOUND')}")
 
         # 输出完整的json_data
         print("\n" + "=" * 80)
@@ -1792,12 +1828,53 @@ class TestBidGenerateWorkflow:
         print(json.dumps(json_data, indent=2, ensure_ascii=False))
         print("=" * 80 + "\n")
 
-        # 发送请求
-        res = api.request(
-            method=data['fill_busi_company']['method'],
-            path=data['fill_busi_company']['path'],
-            json=json_data
-        )
+        # 发送请求（带重试机制）
+        max_retries = 3
+        res = None
+        request_success = False
+
+        for attempt in range(max_retries):
+            try:
+                print(f"🔄 发送请求（尝试 {attempt + 1}/{max_retries}）...")
+                res = api.request(
+                    method=data['fill_busi_company']['method'],
+                    path=data['fill_busi_company']['path'],
+                    json=json_data
+                )
+
+                # 检查响应状态
+                if res.status_code == 200:
+                    print(f"✅ 请求成功（状态码: {res.status_code}）")
+                    request_success = True
+                    break
+                elif res.status_code == 502:
+                    print(f"⚠️  服务器返回 502 Bad Gateway")
+                    if attempt < max_retries - 1:
+                        wait_time = 5
+                        print(f"⏳ 等待 {wait_time} 秒后重试...")
+                        time.sleep(wait_time)
+                    else:
+                        print(f"❌ 已达到最大重试次数 ({max_retries})，放弃重试")
+                else:
+                    print(f"❌ 请求失败（状态码: {res.status_code}）")
+                    break
+
+            except Exception as e:
+                print(f"❌ 请求异常: {e}")
+                if attempt < max_retries - 1:
+                    wait_time = 5
+                    print(f"⏳ 等待 {wait_time} 秒后重试...")
+                    time.sleep(wait_time)
+                else:
+                    print(f"❌ 已达到最大重试次数 ({max_retries})，放弃重试")
+                    break
+
+        # 检查请求是否最终成功
+        if not request_success or res is None:
+            error_msg = f"请求失败，状态码: {res.status_code if res else 'N/A'}"
+            if res and res.status_code == 502:
+                error_msg += "（服务器502错误，可能是服务器过载或网络问题）"
+            pytest.fail(error_msg)
 
         # 打印响应结果
         print("Fill Busi Company Response:", res.json())
@@ -2169,6 +2246,79 @@ class TestBidGenerateWorkflow:
         # 如果未找到，返回空字符串
         return ""
 
+    def _get_tender_project_info(self, extract_data):
+        """
+        从tender_user_info中获取招标项目信息
+
+        Args:
+            extract_data: bid_generate.yaml中的数据
+
+        Returns:
+            dict: 包含tenderProjectCode, tenderProjectName, tenderCompanyName, tenderProjectBudget的字典
+        """
+        tender_user_info = extract_data.get('tender_user_info', {})
+
+        # 如果tender_user_info是字典，尝试获取字段
+        if isinstance(tender_user_info, dict):
+            # 优先使用不带前缀的字段名（YAML中的实际字段名）
+            project_info = {
+                'tenderProjectCode': (
+                    tender_user_info.get('projectCode', '') or
+                    tender_user_info.get('tenderProjectCode', '')
+                ),
+                'tenderProjectName': (
+                    tender_user_info.get('projectName', '') or
+                    tender_user_info.get('tenderProjectName', '')
+                ),
+                'tenderCompanyName': (
+                    tender_user_info.get('tenderCompanyName', '') or
+                    tender_user_info.get('bidCompanyName', '')
+                ),
+                'tenderProjectBudget': (
+                    tender_user_info.get('tenderProjectBudget', '') or
+                    tender_user_info.get('bidBond', '')
+                )
+            }
+
+            # 如果直接获取为空，尝试从嵌套的列表中获取（如果有projectList或类似的字段）
+            if not any(project_info.values()):
+                # 尝试从可能的列表字段中获取第一个项目的信息
+                for list_key in ['projectList', 'projects', 'tenderProjects', 'list']:
+                    if list_key in tender_user_info and isinstance(tender_user_info[list_key], list):
+                        project_list = tender_user_info[list_key]
+                        if project_list and len(project_list) > 0:
+                            first_project = project_list[0]
+                            if isinstance(first_project, dict):
+                                project_info = {
+                                    'tenderProjectCode': (
+                                        first_project.get('projectCode', '') or
+                                        first_project.get('tenderProjectCode', '')
+                                    ),
+                                    'tenderProjectName': (
+                                        first_project.get('projectName', '') or
+                                        first_project.get('tenderProjectName', '')
+                                    ),
+                                    'tenderCompanyName': (
+                                        first_project.get('tenderCompanyName', '') or
+                                        first_project.get('bidCompanyName', '')
+                                    ),
+                                    'tenderProjectBudget': (
+                                        first_project.get('tenderProjectBudget', '') or
+                                        first_project.get('bidBond', '')
+                                    )
+                                }
+                                break
+
+            return project_info
+
+        # 如果tender_user_info不是字典或为空，返回空值
+        return {
+            'tenderProjectCode': '',
+            'tenderProjectName': '',
+            'tenderCompanyName': '',
+            'tenderProjectBudget': ''
+        }
+
     def _load_yaml_data(self, file_path):
         """加载YAML文件数据"""
         if os.path.exists(file_path):
@@ -2301,6 +2451,41 @@ class TestBidGenerateWorkflow:
             return file_ids
         return []
 
+    def _get_company_file_list(self, extract_data, limit=2):
+        """
+        从公司文件数据中获取完整的文件对象列表
+
+        Args:
+            extract_data: bid_generate.yaml中的数据
+            limit: 最多获取多少个文件
+
+        Returns:
+            list: 包含完整文件对象的列表
+        """
+        file_data = extract_data.get('company_file_page_data', {})
+        if file_data:
+            rows = file_data.get('rows', [])
+            file_list = []
+            for item in rows[:limit]:
+                file_list.append({
+                    "companyFileId": str(item.get('companyFileId', '')),
+                    "companyFileType": item.get('companyFileType', ''),
+                    "companyFileUrl": item.get('companyFileUrl', ''),
+                    "companyId": str(item.get('companyId', '')),
+                    "companyFileName": item.get('companyFileName', ''),
+                    "issueDate": item.get('issueDate', ''),
+                    "validDate": item.get('validDate', ''),
+                    "status": item.get('status', ''),
+                    "companyFileCode": item.get('companyFileCode', ''),
+                    "authority": item.get('authority', ''),
+                    "updateTime": item.get('updateTime', ''),
+                    "createId": str(item.get('createId', '')),
+                    "isValid": item.get('isValid', ''),
+                    "fileName": item.get('fileName', '')
+                })
+            return file_list
+        return []
+
     def _get_financial_ids(self, extract_data, limit=3):
         """从财务数据中获取财务ID列表"""
         financial_data = extract_data.get('financial_page_data', {})
@@ -2321,6 +2506,85 @@ class TestBidGenerateWorkflow:
             for item in rows[:limit]:
                 project_ids.append(str(item.get('projectId', '')))
             return project_ids
+        return []
+
+    def _get_all_person_ids(self, extract_data):
+        """
+        从all_persons_list中获取所有人员ID列表
+
+        Args:
+            extract_data: bid_generate.yaml中的数据
+
+        Returns:
+            list: 包含所有人员ID的列表
+        """
+        persons_list = extract_data.get('all_persons_list', [])
+
+        if isinstance(persons_list, list) and persons_list:
+            person_ids = []
+            for person in persons_list:
+                person_id = person.get('人员ID')
+                if person_id:
+                    person_ids.append(str(person_id))
+            return person_ids
+
+        return []
+
+    def _get_finance_require(self, extract_data):
+        """
+        从bid_filling_list中获取财务要求entFinanceRequire
+
+        Args:
+            extract_data: bid_generate.yaml中的数据
+
+        Returns:
+            list: 财务要求列表
+        """
+        bid_filling_list = extract_data.get('bid_filling_list', {})
+
+        if isinstance(bid_filling_list, dict):
+            ent_finance_require = bid_filling_list.get('entFinanceRequire', [])
+            if isinstance(ent_finance_require, list):
+                return ent_finance_require
+
+        return []
+
+    def _get_per_require(self, extract_data):
+        """
+        从bid_filling_list中获取人员要求entPerRequire
+
+        Args:
+            extract_data: bid_generate.yaml中的数据
+
+        Returns:
+            list: 人员要求列表
+        """
+        bid_filling_list = extract_data.get('bid_filling_list', {})
+
+        if isinstance(bid_filling_list, dict):
+            ent_per_require = bid_filling_list.get('entPerRequire', [])
+            if isinstance(ent_per_require, list):
+                return ent_per_require
+
+        return []
+
+    def _get_cer_require(self, extract_data):
+        """
+        从bid_filling_list中获取证书要求entCerRequire
+
+        Args:
+            extract_data: bid_generate.yaml中的数据
+
+        Returns:
+            list: 证书要求列表
+        """
+        bid_filling_list = extract_data.get('bid_filling_list', {})
+
+        if isinstance(bid_filling_list, dict):
+            ent_cer_require = bid_filling_list.get('entCerRequire', [])
+            if isinstance(ent_cer_require, list):
+                return ent_cer_require
+
         return []
 
     def _build_gen_save_company_request(self, extract_data, company_id, tender_id):
