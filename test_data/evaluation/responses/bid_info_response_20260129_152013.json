@@ -1,0 +1,15 @@
+{
+  "code": 200,
+  "msg": null,
+  "data": {
+    "id": 278,
+    "taskId": "9a16789a-6877-45f9-999a-3f343429b4a2",
+    "infoData": "{\"project_name\": {\"content\": \"2023年-2025年泰州联通核心机房值守服务项目【第二次】\", \"location\": {\"file_id\": \"7953abed-63bb-4759-b2f8-3a9236b05860\", \"position\": [{\"page\": 12, \"coord\": \"60.98,204.14,534.48,770.74\"}], \"file_type\": \"pdf\"}}}",
+    "progress": 100.0,
+    "status": "SUCCESS",
+    "createdAt": "2026-01-29T07:16:09.000+08:00",
+    "updatedAt": "2026-01-29T07:18:15.000+08:00",
+    "fileId": "7953abed-63bb-4759-b2f8-3a9236b05860",
+    "fileUrl": "http://36.213.69.240:9000/private-saas/intellibid-openb/bidCheck/399/file1769670963208.pdf"
+  }
+}
