@@ -1,0 +1,14 @@
+# 招标文件解析准确度测试框架依赖包
+
+# 核心依赖
+pytest>=7.0.0
+PyYAML>=6.0
+requests>=2.28.0
+
+# 可选依赖(用于文档处理)
+python-docx>=0.8.11  # 处理Word文档
+PyPDF2>=3.0.0        # 处理PDF文档
+
+# 现有项目依赖
+allure-pytest>=2.13.0
+jsonpath>=0.82
