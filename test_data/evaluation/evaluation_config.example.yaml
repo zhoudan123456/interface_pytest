@@ -1,0 +1,17 @@
+# 招标文件解析评估配置示例
+# 复制此文件为 evaluation_config.yaml 并填入你的实际配置
+
+# Claude API配置
+claude_api_key: ${CLAUDE_API_KEY}  # 从环境变量读取，或直接填入API密钥
+
+# 算法API环境
+algorithm_env: Test_Env  # 或 Prod_Env
+
+# 输出目录
+output_dir: ./test_data/evaluation/output
+
+# 评估阈值
+evaluation:
+  min_overall_score: 60
+  min_completeness_score: 60
+  min_accuracy_score: 60

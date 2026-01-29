@@ -1,0 +1,52 @@
+# HAR文件分析配置示例
+# 复制此文件为 har_analysis_config.yaml 并填入你的实际配置
+
+# Claude API配置
+claude_api_key: "${CLAUDE_API_KEY}"  # 从环境变量读取，或直接填入API密钥
+
+# 输出配置
+output_dir: ./test_data/har/output
+export_formats:
+  - json      # JSON格式导出
+  - markdown  # Markdown文档导出
+
+# HAR解析配置
+har_processing:
+  filter_static: true        # 是否过滤静态资源请求
+  min_action_count: 1        # 最少操作数量
+  max_actions_to_save: 100   # 保存的最大操作数量
+
+# 需求生成配置
+requirement_generation:
+  claude_model: claude-3-5-sonnet-20241022
+  max_narrative_length: 8000  # 叙述文本最大长度
+  temperature: 0.3            # 生成温度参数
+
+# 业务关键词配置
+business_keywords:
+  login: [login, signin, auth, token]
+  logout: [logout, signout]
+  register: [register, signup]
+  search: [search, query, filter, list]
+  add: [add, create, new, save]
+  edit: [edit, update, modify]
+  delete: [delete, remove, destroy]
+  view: [view, detail, info, get]
+  download: [download, export, csv, excel]
+  upload: [upload, import, file, attachment]
+  submit: [submit, approve, confirm]
+  check: [check, validate, verify]
+
+# 静态资源后缀
+static_extensions:
+  - .js
+  - .css
+  - .png
+  - .jpg
+  - .jpeg
+  - .gif
+  - .ico
+  - .svg
+  - .woff
+  - .woff2
+  - .ttf

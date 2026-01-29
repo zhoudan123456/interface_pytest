@@ -1,0 +1,38 @@
+{
+  "task_name": "test_zb_document.pdf",
+  "evaluation_type": "check_points",
+  "timestamp": "20260129_152422",
+  "algorithm_result": [
+    {
+      "category": "",
+      "check_point": "",
+      "requirement": "",
+      "result": "",
+      "is_compliant": false
+    },
+    {
+      "category": "",
+      "check_point": "",
+      "requirement": "",
+      "result": "",
+      "is_compliant": false
+    },
+    {
+      "category": "",
+      "check_point": "",
+      "requirement": "",
+      "result": "",
+      "is_compliant": false
+    }
+  ],
+  "claude_reference": [],
+  "evaluation_metrics": {
+    "total_algorithm_check_points": 3,
+    "total_claude_check_points": 0,
+    "matched": 0,
+    "partial_matched": 0,
+    "accuracy_rate": 0,
+    "recall_rate": 0.0,
+    "details": []
+  }
+}

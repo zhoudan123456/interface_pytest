@@ -1,0 +1,65 @@
+{
+  "task_name": "test_zb_document.pdf",
+  "evaluation_type": "bid_info",
+  "timestamp": "20260129_152422",
+  "algorithm_result": {
+    "company_name": "",
+    "bid_amount": "",
+    "bid_validity": "",
+    "project_period": "",
+    "qualifications": [],
+    "key_personnel": [],
+    "technical_proposal": "",
+    "commercial_proposal": ""
+  },
+  "claude_reference": {},
+  "evaluation_metrics": {
+    "total_fields": 6,
+    "matched_fields": 0,
+    "accuracy_rate": 0.0,
+    "details": [
+      {
+        "field": "company_name",
+        "algorithm_value": "",
+        "claude_value": "",
+        "similarity": 0.0,
+        "is_match": false
+      },
+      {
+        "field": "bid_amount",
+        "algorithm_value": "",
+        "claude_value": "",
+        "similarity": 0.0,
+        "is_match": false
+      },
+      {
+        "field": "bid_validity",
+        "algorithm_value": "",
+        "claude_value": "",
+        "similarity": 0.0,
+        "is_match": false
+      },
+      {
+        "field": "project_period",
+        "algorithm_value": "",
+        "claude_value": "",
+        "similarity": 0.0,
+        "is_match": false
+      },
+      {
+        "field": "technical_proposal",
+        "algorithm_value": "",
+        "claude_value": "",
+        "similarity": 0.0,
+        "is_match": false
+      },
+      {
+        "field": "commercial_proposal",
+        "algorithm_value": "",
+        "claude_value": "",
+        "similarity": 0.0,
+        "is_match": false
+      }
+    ]
+  }
+}
