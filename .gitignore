@@ -16,6 +16,14 @@ test_data/*.yaml
 conf/server.ini
 conf/*.local
 
+# HAR分析配置文件（包含API密钥）
+test_data/har/har_analysis_config.yaml
+!test_data/har/har_analysis_config.example.yaml
+
+# 评估配置文件（包含API密钥）
+test_data/evaluation/evaluation_config.yaml
+!test_data/evaluation/evaluation_config.example.yaml
+
 # ============================================
 # Python 相关
 # ============================================

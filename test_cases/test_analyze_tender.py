@@ -7,7 +7,7 @@ from conf.set_conf import read_yaml, read_conf
 
 
 class TestAnalyzeTender:
-    @pytest.mark.parametrize('data', read_yaml('../test_data/login.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/login.yaml'))
     def test_analyze_tender_sync(self, api, data):
         """测试解析招标文件接口"""
         # 获取分析招标文件的配置数据
@@ -16,7 +16,7 @@ class TestAnalyzeTender:
         print(f"Using type: {type_param}")
 
         # 从extract.yaml中读取上传后保存的文档ID
-        extract_file_path = '../test_data/extract.yaml'
+        extract_file_path = './test_data/extract.yaml'
         if os.path.exists(extract_file_path):
             with open(extract_file_path, 'r', encoding='utf-8') as f:
                 extract_data = yaml.safe_load(f)

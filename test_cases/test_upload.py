@@ -5,7 +5,7 @@ from conf.set_conf import read_yaml, read_conf, write_conf, write_yaml
 
 
 class TestUploadDocument:
-    @pytest.mark.parametrize('data', read_yaml('../test_data/login.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/login.yaml'))
     def test_01_upload_document(self, api, data):
         # 获取文件路径和类型参数
         file_path = data['upload']['files']['file']
@@ -46,7 +46,7 @@ class TestUploadDocument:
                 document_id = response_data['data']
                 # 保存文档ID到extract.yaml文件，供后续接口使用
                 document_data = {'document_id': str(document_id)}
-                write_yaml('../test_data/extract.yaml', document_data)
+                write_yaml('./test_data/extract.yaml', document_data)
                 print(f"Document ID saved: {document_id}")
             else:
                 pytest.fail(f"Upload failed with response: {response_data}")

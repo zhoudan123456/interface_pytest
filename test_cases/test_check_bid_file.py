@@ -5,11 +5,11 @@ import os
 
 
 class TestCheckBidFile:
-    @pytest.mark.parametrize('data', read_yaml('../test_data/login.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/login.yaml'))
     def test_check_bid_file(self, api, data):
         """检查招标文件"""
         # 从extract.yaml中读取上传后保存的文档ID
-        extract_file_path = '../test_data/extract.yaml'
+        extract_file_path = './test_data/extract.yaml'
         if os.path.exists(extract_file_path):
             with open(extract_file_path, 'r', encoding='utf-8') as f:
                 extract_data = yaml.safe_load(f)

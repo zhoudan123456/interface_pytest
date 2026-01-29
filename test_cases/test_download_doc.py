@@ -12,8 +12,8 @@ failed_count = 0
 
 @pytest.mark.parametrize(
     "test_case",
-    read_yaml("../test_data/task_ids.yaml"),  # 数据源：YAML文件中的测试用例
-    ids=[case["case_name"] for case in read_yaml("../test_data/task_ids.yaml")]  # 用例名称（测试报告中显示）
+    read_yaml("./test_data/task_ids.yaml"),  # 数据源：YAML文件中的测试用例
+    ids=[case["case_name"] for case in read_yaml("./test_data/task_ids.yaml")]  # 用例名称（测试报告中显示）
 
 )
 def test_download_doc(test_case):

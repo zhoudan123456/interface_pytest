@@ -30,7 +30,7 @@ def auto_login(api):
     from conf.set_conf import read_yaml, write_conf
 
     # 读取登录数据
-    login_data_list = read_yaml('../../test_data/login.yaml')
+    login_data_list = read_yaml('./test_data/login.yaml')
 
     if login_data_list and 'login' in login_data_list[0]:
         login_info = login_data_list[0]['login']

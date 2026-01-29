@@ -1,42 +1,23 @@
-import requests
-import json
+from zhipuai import ZhipuAI
 
-# -------------------------- 1. 接口基础配置 --------------------------
-# 完整接口URL
-full_url = "https://test.intellibid.cn/prod-api/bid/ua/analysis/tender/sync"
+# 初始化客户端
+client = ZhipuAI(api_key="cd3b673bfa3041b489b92f9188c314e4.9UAWLn2qUTdIjS8C")
 
-# form-data请求参数（对应截图中的tenderId和type）
-form_data = {
-    "tenderId": "176491566034300000",  # 与截图参数值一致
-    "type": "服务类"                     # 与截图参数值一致
-}
-
-
-# -------------------------- 2. 加载登录后的Cookie --------------------------
-def load_login_cookies(cookie_file="cookies.json"):
-    """加载之前保存的登录Cookie（字典格式）"""
-    try:
-        with open(cookie_file, "r", encoding="utf-8") as f:
-            return json.load(f)
-    except Exception as e:
-        print(f"加载Cookie失败：{e}")
-        return {}
-
-
-# -------------------------- 3. 发送POST请求 --------------------------
-response = requests.post(
-    url=full_url,
-    data=form_data,    # 传递form-data格式的普通参数
-    cookies=load_login_cookies()  # 携带登录态Cookie
+# 创建聊天完成请求
+response = client.chat.completions.create(
+    model="glm-4.7",
+    messages=[
+        {
+            "role": "system",
+            "content": "你是一个有用的AI助手。"
+        },
+        {
+            "role": "user",
+            "content": "你好，请介绍一下自己。"
+        }
+    ],
+    temperature=0.6
 )
 
-
-# -------------------------- 4. 处理响应 --------------------------
-print(f"请求状态码：{response.status_code}")
-# 打印原始响应内容（避免JSON解析失败时报错）
-print(f"响应内容：{response.text}")
-# 若接口返回JSON格式，可解析为字典
-try:
-    print(f"响应JSON解析：{response.json()}")
-except Exception as e:
-    print(f"JSON解析失败：{e}")
+# 获取回复
+print(response.choices[0].message.content)

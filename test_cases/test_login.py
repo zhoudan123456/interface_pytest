@@ -5,7 +5,7 @@ import os
 
 
 class TestLogin:
-    @pytest.mark.parametrize('data', read_yaml('../test_data/login.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/login.yaml'))
     @pytest.mark.login
     @pytest.mark.priority_P0
     def test_01_login(self, api, data):
@@ -17,7 +17,7 @@ class TestLogin:
         if access_token:
             # 保存token到extract.yaml文件
             token_data = {'token': str(access_token)}
-            write_yaml('../test_data/extract.yaml', token_data)
+            write_yaml('./test_data/extract.yaml', token_data)
 
         
 

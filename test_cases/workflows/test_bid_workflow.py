@@ -11,7 +11,7 @@ from conf.set_conf import read_yaml, write_yaml
 
 
 class TestBidGenerateWorkflow:
-    @pytest.mark.parametrize('data', read_yaml('../../test_data/bid_generate_workflow.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/bid_generate_workflow.yaml'))
     def test_01_upload_document(self, api, data):
         # 获取文件路径和类型参数
         file_path = data['upload']['files']['file']
@@ -52,7 +52,7 @@ class TestBidGenerateWorkflow:
                 document_id = response_data['data']
                 # 保存文档ID到bid_generate.yaml文件，供后续接口使用
                 document_data = {'document_id': str(document_id)}
-                write_yaml('../../test_data/bid_generate.yaml', document_data)
+                write_yaml('./test_data/bid_generate.yaml', document_data)
                 print(f"Document ID saved: {document_id}")
             else:
                 pytest.fail(f"Upload failed with response: {response_data}")
@@ -61,11 +61,11 @@ class TestBidGenerateWorkflow:
             # 确保文件句柄被关闭
             files['file'].close()
 
-    @pytest.mark.parametrize('data', read_yaml('../../test_data/bid_generate_workflow.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/bid_generate_workflow.yaml'))
     def test_02_check_bid_file(self, api, data):
         """检查招标文件"""
         # 从bid_generate.yaml中读取上传后保存的文档ID
-        extract_file_path = '../../test_data/bid_generate.yaml'
+        extract_file_path = './test_data/bid_generate.yaml'
         if os.path.exists(extract_file_path):
             with open(extract_file_path, 'r', encoding='utf-8') as f:
                 extract_data = yaml.safe_load(f)
@@ -98,7 +98,7 @@ class TestBidGenerateWorkflow:
         # 验证响应状态码
         assert res.status_code == 200, f"Check bid file failed with status code: {res.status_code}"
 
-    @pytest.mark.parametrize('data', read_yaml('../../test_data/bid_generate_workflow.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/bid_generate_workflow.yaml'))
     def test_03_analyze_tender_sync(self, api, data):
         """测试解析招标文件接口"""
         # 获取分析招标文件的配置数据
@@ -108,7 +108,7 @@ class TestBidGenerateWorkflow:
         print(f"Using type: {type_param}")
 
         # 从bid_generate.yaml中读取上传后保存的文档ID
-        extract_file_path = '../../test_data/bid_generate.yaml'
+        extract_file_path = './test_data/bid_generate.yaml'
         if os.path.exists(extract_file_path):
             with open(extract_file_path, 'r', encoding='utf-8') as f:
                 extract_data = yaml.safe_load(f)
@@ -138,7 +138,7 @@ class TestBidGenerateWorkflow:
         # 验证响应状态码
         assert res.status_code == 200, f"Analyze tender failed with status code: {res.status_code}, response: {res.json()}"
 
-    @pytest.mark.parametrize('data', read_yaml('../../test_data/bid_generate_workflow.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/bid_generate_workflow.yaml'))
     def test_04_poll_parse_progress(self, api, data):
         """
         步骤4: 轮询解析进度
@@ -149,7 +149,7 @@ class TestBidGenerateWorkflow:
         print("=" * 50)
 
         # 从bid_generate.yaml中读取上传后保存的文档ID
-        extract_file_path = '../../test_data/bid_generate.yaml'
+        extract_file_path = './test_data/bid_generate.yaml'
         if os.path.exists(extract_file_path):
             with open(extract_file_path, 'r', encoding='utf-8') as f:
                 extract_data = yaml.safe_load(f)
@@ -250,7 +250,7 @@ class TestBidGenerateWorkflow:
         if not parse_completed:
             pytest.fail("解析进度轮询超时或未能完成，无法执行后续的目录生成步骤")
 
-    @pytest.mark.parametrize('data', read_yaml('../../test_data/bid_generate_workflow.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/bid_generate_workflow.yaml'))
     def test_05_init_business(self, api, data):
         """
         步骤14: 初始化业务
@@ -261,7 +261,7 @@ class TestBidGenerateWorkflow:
         print("=" * 50)
 
         # 从bid_generate.yaml中读取文档ID和公司ID
-        extract_file_path = '../../test_data/bid_generate.yaml'
+        extract_file_path = './test_data/bid_generate.yaml'
         if os.path.exists(extract_file_path):
             with open(extract_file_path, 'r', encoding='utf-8') as f:
                 extract_data = yaml.safe_load(f)
@@ -323,7 +323,7 @@ class TestBidGenerateWorkflow:
         else:
             print(f"Failed to initialize business: {response_data}")
 
-    @pytest.mark.parametrize('data', read_yaml('../../test_data/bid_generate_workflow.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/bid_generate_workflow.yaml'))
     def test_06_query_one_tender_user(self, api, data):
         """
         步骤15: 查询单个招标用户信息
@@ -334,7 +334,7 @@ class TestBidGenerateWorkflow:
         print("=" * 50)
 
         # 从bid_generate.yaml中读取文档ID和公司ID
-        extract_file_path = '../../test_data/bid_generate.yaml'
+        extract_file_path = './test_data/bid_generate.yaml'
         if os.path.exists(extract_file_path):
             with open(extract_file_path, 'r', encoding='utf-8') as f:
                 extract_data = yaml.safe_load(f)
@@ -396,7 +396,7 @@ class TestBidGenerateWorkflow:
         else:
             print(f"Failed to query tender user info: {response_data}")
 
-    @pytest.mark.parametrize('data', read_yaml('../../test_data/bid_generate_workflow.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/bid_generate_workflow.yaml'))
     def test_07_query_catalogue(self, api, data):
         """
         步骤16: 查询目录
@@ -407,7 +407,7 @@ class TestBidGenerateWorkflow:
         print("=" * 50)
 
         # 从bid_generate.yaml中读取文档ID和公司ID
-        extract_file_path = '../../test_data/bid_generate.yaml'
+        extract_file_path = './test_data/bid_generate.yaml'
         if os.path.exists(extract_file_path):
             with open(extract_file_path, 'r', encoding='utf-8') as f:
                 extract_data = yaml.safe_load(f)
@@ -469,7 +469,7 @@ class TestBidGenerateWorkflow:
         else:
             print(f"Failed to query catalogue: {response_data}")
 
-    @pytest.mark.parametrize('data', read_yaml('../../test_data/bid_generate_workflow.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/bid_generate_workflow.yaml'))
     def test_08_query_new_bid_as(self, api, data):
         """
         步骤17: 查询新的投标报价
@@ -480,7 +480,7 @@ class TestBidGenerateWorkflow:
         print("=" * 50)
 
         # 从bid_generate.yaml中读取文档ID和公司ID
-        extract_file_path = '../../test_data/bid_generate.yaml'
+        extract_file_path = './test_data/bid_generate.yaml'
         if os.path.exists(extract_file_path):
             with open(extract_file_path, 'r', encoding='utf-8') as f:
                 extract_data = yaml.safe_load(f)
@@ -541,7 +541,7 @@ class TestBidGenerateWorkflow:
         else:
             print(f"Failed to query new bid as: {response_data}")
 
-    @pytest.mark.parametrize('data', read_yaml('../../test_data/bid_generate_workflow.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/bid_generate_workflow.yaml'))
     def test_09_gen_busi_task(self, api, data):
         """
         步骤18: 生成业务任务
@@ -552,7 +552,7 @@ class TestBidGenerateWorkflow:
         print("=" * 50)
 
         # 从bid_generate.yaml中读取文档ID和公司ID
-        extract_file_path = '../../test_data/bid_generate.yaml'
+        extract_file_path = './test_data/bid_generate.yaml'
         if os.path.exists(extract_file_path):
             with open(extract_file_path, 'r', encoding='utf-8') as f:
                 extract_data = yaml.safe_load(f)
@@ -613,7 +613,7 @@ class TestBidGenerateWorkflow:
         else:
             print(f"Failed to generate business task: {response_data}")
 
-    @pytest.mark.parametrize('data', read_yaml('../../test_data/bid_generate_workflow.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/bid_generate_workflow.yaml'))
     def test_10_gen_busi_status(self, api, data):
         """
         步骤19: 查询业务任务状态
@@ -624,7 +624,7 @@ class TestBidGenerateWorkflow:
         print("=" * 50)
 
         # 从bid_generate.yaml中读取文档ID和公司ID
-        extract_file_path = '../../test_data/bid_generate.yaml'
+        extract_file_path = './test_data/bid_generate.yaml'
         if os.path.exists(extract_file_path):
             with open(extract_file_path, 'r', encoding='utf-8') as f:
                 extract_data = yaml.safe_load(f)
@@ -740,7 +740,7 @@ class TestBidGenerateWorkflow:
                 else:
                     pytest.fail(f"轮询过程中持续出现异常: {str(e)}")
 
-    @pytest.mark.parametrize('data', read_yaml('../../test_data/bid_generate_workflow.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/bid_generate_workflow.yaml'))
     def test_11_query_new_company_id(self, api, data):
         """
         步骤20: 查询新的公司ID
@@ -751,7 +751,7 @@ class TestBidGenerateWorkflow:
         print("=" * 50)
 
         # 从bid_generate.yaml中读取文档ID
-        extract_file_path = '../../test_data/bid_generate.yaml'
+        extract_file_path = './test_data/bid_generate.yaml'
         if os.path.exists(extract_file_path):
             with open(extract_file_path, 'r', encoding='utf-8') as f:
                 extract_data = yaml.safe_load(f)
@@ -812,7 +812,7 @@ class TestBidGenerateWorkflow:
             print(f"Failed to query new company ID: {response_data}")
             pytest.fail(f"Failed to query new company ID: {response_data}")
 
-    @pytest.mark.parametrize('data', read_yaml('../../test_data/bid_generate_workflow.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/bid_generate_workflow.yaml'))
     def test_12_query_busi_fill_company_is_fill(self, api, data):
         """
         步骤21: 查询业务填充公司是否填充
@@ -824,7 +824,7 @@ class TestBidGenerateWorkflow:
 
 
         # 从bid_generate.yaml中读取所需参数
-        extract_file_path = '../../test_data/bid_generate.yaml'
+        extract_file_path = './test_data/bid_generate.yaml'
         if os.path.exists(extract_file_path):
             with open(extract_file_path, 'r', encoding='utf-8') as f:
                 extract_data = yaml.safe_load(f)
@@ -893,7 +893,7 @@ class TestBidGenerateWorkflow:
             print(f"Failed to query busi fill company is fill: {response_data}")
             pytest.fail(f"Failed to query busi fill company is fill: {response_data}")
 
-    @pytest.mark.parametrize('data', read_yaml('../../test_data/bid_generate_workflow.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/bid_generate_workflow.yaml'))
     def test_13_query_new_final_gen(self, api, data):
         """
         步骤22: 查询新的最终生成状态
@@ -904,7 +904,7 @@ class TestBidGenerateWorkflow:
         print("=" * 50)
 
         # 从bid_generate.yaml中读取所需参数
-        extract_file_path = '../../test_data/bid_generate.yaml'
+        extract_file_path = './test_data/bid_generate.yaml'
         if os.path.exists(extract_file_path):
             with open(extract_file_path, 'r', encoding='utf-8') as f:
                 extract_data = yaml.safe_load(f)
@@ -994,7 +994,7 @@ class TestBidGenerateWorkflow:
             print(f"Failed to query new final gen: {response_data}")
             pytest.fail(f"Failed to query new final gen: {response_data}")
 
-    @pytest.mark.parametrize('data', read_yaml('../../test_data/bid_generate_workflow.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/bid_generate_workflow.yaml'))
     def test_14_query_is_down(self, api, data):
         """
         步骤23: 查询是否可下载
@@ -1005,7 +1005,7 @@ class TestBidGenerateWorkflow:
         print("=" * 50)
 
         # 从bid_generate.yaml中读取所需参数
-        extract_file_path = '../../test_data/bid_generate.yaml'
+        extract_file_path = './test_data/bid_generate.yaml'
         if os.path.exists(extract_file_path):
             with open(extract_file_path, 'r', encoding='utf-8') as f:
                 extract_data = yaml.safe_load(f)
@@ -1078,7 +1078,7 @@ class TestBidGenerateWorkflow:
             print(f"Failed to query is down: {response_data}")
             pytest.fail(f"Failed to query is down: {response_data}")
 
-    @pytest.mark.parametrize('data', read_yaml('../../test_data/bid_generate_workflow.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/bid_generate_workflow.yaml'))
     def test_15_select_all_company(self, api, data):
         """
         步骤24: 查询所有公司
@@ -1089,7 +1089,7 @@ class TestBidGenerateWorkflow:
         print("=" * 50)
 
         # 从bid_generate.yaml中读取所需参数
-        extract_file_path = '../../test_data/bid_generate.yaml'
+        extract_file_path = './test_data/bid_generate.yaml'
         if os.path.exists(extract_file_path):
             with open(extract_file_path, 'r', encoding='utf-8') as f:
                 extract_data = yaml.safe_load(f)
@@ -1147,7 +1147,7 @@ class TestBidGenerateWorkflow:
             print(f"Failed to query all companies: {response_data}")
             pytest.fail(f"Failed to query all companies: {response_data}")
 
-    @pytest.mark.parametrize('data', read_yaml('../../test_data/bid_generate_workflow.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/bid_generate_workflow.yaml'))
     def test_16_query_fill_company_list(self, api, data):
         """
         步骤25: 查询填充公司列表
@@ -1158,7 +1158,7 @@ class TestBidGenerateWorkflow:
         print("=" * 50)
 
         # 从bid_generate.yaml中读取所需参数
-        extract_file_path = '../../test_data/bid_generate.yaml'
+        extract_file_path = './test_data/bid_generate.yaml'
         if os.path.exists(extract_file_path):
             with open(extract_file_path, 'r', encoding='utf-8') as f:
                 extract_data = yaml.safe_load(f)
@@ -1226,7 +1226,7 @@ class TestBidGenerateWorkflow:
             print(f"Failed to query fill company list: {response_data}")
             pytest.fail(f"Failed to query fill company list: {response_data}")
 
-    @pytest.mark.parametrize('data', read_yaml('../../test_data/bid_generate_workflow.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/bid_generate_workflow.yaml'))
     def test_17_query_all_person_no_page(self, api, data):
         """
         步骤26: 查询所有人员不分页
@@ -1237,7 +1237,7 @@ class TestBidGenerateWorkflow:
         print("=" * 50)
 
         # 从bid_generate.yaml中读取所需参数
-        extract_file_path = '../../test_data/bid_generate.yaml'
+        extract_file_path = './test_data/bid_generate.yaml'
         if os.path.exists(extract_file_path):
             with open(extract_file_path, 'r', encoding='utf-8') as f:
                 extract_data = yaml.safe_load(f)
@@ -1300,7 +1300,7 @@ class TestBidGenerateWorkflow:
             print(f"Failed to query all person no page: {response_data}")
             pytest.fail(f"Failed to query all person no page: {response_data}")
 
-    @pytest.mark.parametrize('data', read_yaml('../../test_data/bid_generate_workflow.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/bid_generate_workflow.yaml'))
     def test_18_query_bid_filling_list(self, api, data):
         """
         步骤27: 查询投标填写列表
@@ -1311,7 +1311,7 @@ class TestBidGenerateWorkflow:
         print("=" * 50)
 
         # 从bid_generate.yaml中读取所需参数
-        extract_file_path = '../../test_data/bid_generate.yaml'
+        extract_file_path = './test_data/bid_generate.yaml'
         if os.path.exists(extract_file_path):
             with open(extract_file_path, 'r', encoding='utf-8') as f:
                 extract_data = yaml.safe_load(f)
@@ -1388,7 +1388,7 @@ class TestBidGenerateWorkflow:
             print(f"Failed to query bid filling list: {response_data}")
             pytest.fail(f"Failed to query bid filling list: {response_data}")
 
-    @pytest.mark.parametrize('data', read_yaml('../../test_data/bid_generate_workflow.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/bid_generate_workflow.yaml'))
     def test_19_query_all_company_performance(self, api, data):
         """
         步骤28: 查询所有公司业绩
@@ -1399,7 +1399,7 @@ class TestBidGenerateWorkflow:
         print("=" * 50)
 
         # 从bid_generate.yaml中读取所需参数
-        extract_file_path = '../../test_data/bid_generate.yaml'
+        extract_file_path = './test_data/bid_generate.yaml'
         if os.path.exists(extract_file_path):
             with open(extract_file_path, 'r', encoding='utf-8') as f:
                 extract_data = yaml.safe_load(f)
@@ -1474,7 +1474,7 @@ class TestBidGenerateWorkflow:
             print(f"Failed to query all company performance: {response_data}")
             pytest.fail(f"Failed to query all company performance: {response_data}")
 
-    @pytest.mark.parametrize('data', read_yaml('../../test_data/bid_generate_workflow.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/bid_generate_workflow.yaml'))
     def test_20_query_company_file_page(self, api, data):
         """
         步骤29: 查询公司文件分页
@@ -1485,7 +1485,7 @@ class TestBidGenerateWorkflow:
         print("=" * 50)
 
         # 从bid_generate.yaml中读取所需参数
-        extract_file_path = '../../test_data/bid_generate.yaml'
+        extract_file_path = './test_data/bid_generate.yaml'
         if os.path.exists(extract_file_path):
             with open(extract_file_path, 'r', encoding='utf-8') as f:
                 extract_data = yaml.safe_load(f)
@@ -1564,7 +1564,7 @@ class TestBidGenerateWorkflow:
             print(f"Failed to query company file page: {response_data}")
             pytest.fail(f"Failed to query company file page: {response_data}")
 
-    @pytest.mark.parametrize('data', read_yaml('../../test_data/bid_generate_workflow.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/bid_generate_workflow.yaml'))
     def test_21_query_financial_page(self, api, data):
         """
         步骤30: 查询财务分页
@@ -1575,7 +1575,7 @@ class TestBidGenerateWorkflow:
         print("=" * 50)
 
         # 从bid_generate.yaml中读取所需参数
-        extract_file_path = '../../test_data/bid_generate.yaml'
+        extract_file_path = './test_data/bid_generate.yaml'
         if os.path.exists(extract_file_path):
             with open(extract_file_path, 'r', encoding='utf-8') as f:
                 extract_data = yaml.safe_load(f)
@@ -1654,7 +1654,7 @@ class TestBidGenerateWorkflow:
             print(f"Failed to query financial page: {response_data}")
             pytest.fail(f"Failed to query financial page: {response_data}")
 
-    @pytest.mark.parametrize('data', read_yaml('../../test_data/bid_generate_workflow.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/bid_generate_workflow.yaml'))
     def test_22_gen_save_company(self, api, data):
         """
         步骤31: 生成保存公司信息
@@ -1670,7 +1670,7 @@ class TestBidGenerateWorkflow:
         print("=" * 50)
 
         # 加载数据
-        extract_file_path = '../../test_data/bid_generate.yaml'
+        extract_file_path = './test_data/bid_generate.yaml'
         extract_data = self._load_yaml_data(extract_file_path)
 
         # 获取基础参数
@@ -1719,7 +1719,7 @@ class TestBidGenerateWorkflow:
             print(f"Failed to save company information: {response_data}")
             pytest.fail(f"Failed to save company information: {response_data}")
 
-    @pytest.mark.parametrize('data', read_yaml('../../test_data/bid_generate_workflow.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/bid_generate_workflow.yaml'))
     def test_23_fill_busi_company(self, api, data):
         """
         步骤32: 填充业务公司信息
@@ -1735,7 +1735,7 @@ class TestBidGenerateWorkflow:
         print("=" * 50)
 
         # 加载数据
-        extract_file_path = '../../test_data/bid_generate.yaml'
+        extract_file_path = './test_data/bid_generate.yaml'
         extract_data = self._load_yaml_data(extract_file_path)
 
         # 获取基础参数
@@ -1902,7 +1902,7 @@ class TestBidGenerateWorkflow:
             print(f"Failed to fill company information: {response_data}")
             pytest.fail(f"Failed to fill company information: {response_data}")
 
-    @pytest.mark.parametrize('data', read_yaml('../../test_data/bid_generate_workflow.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/bid_generate_workflow.yaml'))
     def test_24_generate_catalogue_and_page_stream(self, api, data):
         """
         步骤33: 生成业务目录和页面流
@@ -1913,7 +1913,7 @@ class TestBidGenerateWorkflow:
         print("=" * 50)
 
         # 从bid_generate.yaml中读取所需参数
-        extract_file_path = '../../test_data/bid_generate.yaml'
+        extract_file_path = './test_data/bid_generate.yaml'
         if os.path.exists(extract_file_path):
             with open(extract_file_path, 'r', encoding='utf-8') as f:
                 extract_data = yaml.safe_load(f)
@@ -2196,7 +2196,7 @@ class TestBidGenerateWorkflow:
         """
         # 如果没有提供extract_data，自己加载
         if extract_data is None:
-            extract_file_path = '../../test_data/bid_generate.yaml'
+            extract_file_path = './test_data/bid_generate.yaml'
             if os.path.exists(extract_file_path):
                 with open(extract_file_path, 'r', encoding='utf-8') as f:
                     extract_data = yaml.safe_load(f)
@@ -2228,7 +2228,7 @@ class TestBidGenerateWorkflow:
         """
         # 如果没有提供extract_data，自己加载
         if extract_data is None:
-            extract_file_path = '../../test_data/bid_generate.yaml'
+            extract_file_path = './test_data/bid_generate.yaml'
             if os.path.exists(extract_file_path):
                 with open(extract_file_path, 'r', encoding='utf-8') as f:
                     extract_data = yaml.safe_load(f)

@@ -35,8 +35,8 @@ def merge(base, update):
 
 @pytest.mark.parametrize(
     "test_case",
-    read_yaml("../test_data/doc_busi_1.yaml"),  # 数据源：YAML文件中的测试用例
-    ids=[case["case_name"] for case in read_yaml("../test_data/doc_busi_1.yaml")]  # 用例名称（测试报告中显示）
+    read_yaml("./test_data/doc_busi_1.yaml"),  # 数据源：YAML文件中的测试用例
+    ids=[case["case_name"] for case in read_yaml("./test_data/doc_busi_1.yaml")]  # 用例名称（测试报告中显示）
 )
 def test_generate_document(test_case: dict):
     """测试文档生成接口，验证task_id返回逻辑"""
@@ -111,7 +111,7 @@ def test_generate_document(test_case: dict):
     test_cases = []
     test_cases.append({"case_name": case_name, "task_id": task_id})
     """将测试用例（case_name+task_id）写入YAML文件"""
-    with open("../test_data/task_ids.yaml", "a", encoding="utf-8") as f:
+    with open("./test_data/task_ids.yaml", "a", encoding="utf-8") as f:
         yaml.dump(
             test_cases,
             f,
@@ -121,7 +121,7 @@ def test_generate_document(test_case: dict):
 
         # try:
     #     task_id = response_json["task_id"]
-    #     with open("../test_data/task_ids.yaml", "a") as file:
+    #     with open("./test_data/task_ids.yaml", "a") as file:
     #         yaml.dump([task_id], file)
     # except (json.JSONDecodeError, KeyError) as e:
     #     print(f"解析任务ID失败: {str(e)}")

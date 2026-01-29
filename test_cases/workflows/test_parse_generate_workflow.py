@@ -17,7 +17,7 @@ from conf.set_conf import read_yaml, write_yaml
 class TestParseGenerateWorkflow:
     """解析生成完整流程测试"""
 
-    @pytest.mark.parametrize('data', read_yaml('../../test_data/login.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/login.yaml'))
     def test_01_upload_document(self, api, data):
         # 获取文件路径和类型参数
         file_path = data['upload']['files']['file']
@@ -58,7 +58,7 @@ class TestParseGenerateWorkflow:
                 document_id = response_data['data']
                 # 保存文档ID到extract.yaml文件，供后续接口使用
                 document_data = {'document_id': str(document_id)}
-                write_yaml('../../test_data/extract.yaml', document_data)
+                write_yaml('./test_data/extract.yaml', document_data)
                 print(f"Document ID saved: {document_id}")
             else:
                 pytest.fail(f"Upload failed with response: {response_data}")
@@ -67,11 +67,11 @@ class TestParseGenerateWorkflow:
             # 确保文件句柄被关闭
             files['file'].close()
 
-    @pytest.mark.parametrize('data', read_yaml('../../test_data/login.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/login.yaml'))
     def test_02_check_bid_file(self, api, data):
         """检查招标文件"""
         # 从extract.yaml中读取上传后保存的文档ID
-        extract_file_path = '../../test_data/extract.yaml'
+        extract_file_path = './test_data/extract.yaml'
         if os.path.exists(extract_file_path):
             with open(extract_file_path, 'r', encoding='utf-8') as f:
                 extract_data = yaml.safe_load(f)
@@ -105,7 +105,7 @@ class TestParseGenerateWorkflow:
         assert res.status_code == 200, f"Check bid file failed with status code: {res.status_code}"
 
 
-    @pytest.mark.parametrize('data', read_yaml('../../test_data/login.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/login.yaml'))
     def test_03_analyze_tender_sync(self, api, data):
         """测试解析招标文件接口"""
         # 获取分析招标文件的配置数据
@@ -116,7 +116,7 @@ class TestParseGenerateWorkflow:
         print(f"Using type: {type_param}")
 
         # 从extract.yaml中读取上传后保存的文档ID
-        extract_file_path = '../../test_data/extract.yaml'
+        extract_file_path = './test_data/extract.yaml'
         if os.path.exists(extract_file_path):
             with open(extract_file_path, 'r', encoding='utf-8') as f:
                 extract_data = yaml.safe_load(f)
@@ -147,7 +147,7 @@ class TestParseGenerateWorkflow:
         # 验证响应状态码
         assert res.status_code == 200, f"Analyze tender failed with status code: {res.status_code}, response: {res.json()}"
 
-    @pytest.mark.parametrize('data', read_yaml('../../test_data/login.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/login.yaml'))
     def test_04_poll_parse_progress(self, api, data):
         """
         步骤4: 轮询解析进度
@@ -158,7 +158,7 @@ class TestParseGenerateWorkflow:
         print("=" * 50)
 
         # 从extract.yaml中读取上传后保存的文档ID
-        extract_file_path = '../../test_data/extract.yaml'
+        extract_file_path = './test_data/extract.yaml'
         if os.path.exists(extract_file_path):
             with open(extract_file_path, 'r', encoding='utf-8') as f:
                 extract_data = yaml.safe_load(f)
@@ -265,7 +265,7 @@ class TestParseGenerateWorkflow:
         if not parse_completed:
             pytest.fail("解析进度轮询超时或未能完成，无法执行后续的目录生成步骤")
 
-    @pytest.mark.parametrize('data', read_yaml('../../test_data/login.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/login.yaml'))
     def test_05_generate_toc(self, api, data):
         """
         步骤3: 生成技术标目录
@@ -276,7 +276,7 @@ class TestParseGenerateWorkflow:
 
         # 检查解析是否已完成
         # 从extract.yaml中读取上传后保存的文档ID
-        extract_file_path = '../../test_data/extract.yaml'
+        extract_file_path = './test_data/extract.yaml'
         if os.path.exists(extract_file_path):
             with open(extract_file_path, 'r', encoding='utf-8') as f:
                 extract_data = yaml.safe_load(f)
@@ -320,7 +320,7 @@ class TestParseGenerateWorkflow:
         except Exception as e:
             pytest.fail(f"目录生成请求异常: {str(e)}")
 
-    @pytest.mark.parametrize('data', read_yaml('../../test_data/login.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/login.yaml'))
     def test_06_poll_toc_result(self, api, data):
         """
         步骤6: 轮询目录生成结果
@@ -333,7 +333,7 @@ class TestParseGenerateWorkflow:
 
 
         # 从extract.yaml中读取上传后保存的文档ID
-        extract_file_path = '../../test_data/extract.yaml'
+        extract_file_path = './test_data/extract.yaml'
         if os.path.exists(extract_file_path):
             with open(extract_file_path, 'r', encoding='utf-8') as f:
                 extract_data = yaml.safe_load(f)
@@ -398,10 +398,10 @@ class TestParseGenerateWorkflow:
         # 当progress为100时，会提前break跳出循环，然后执行下面的代码
         print("轮询结束，准备执行下一个测试用例")
 
-    @pytest.mark.parametrize('data', read_yaml('../../test_data/login.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/login.yaml'))
     def test_07_query_catalogue(self, api, data):
         # 从extract.yaml中读取上传后保存的文档ID
-        extract_file_path = '../../test_data/extract.yaml'
+        extract_file_path = './test_data/extract.yaml'
         if os.path.exists(extract_file_path):
             with open(extract_file_path, 'r', encoding='utf-8') as f:
                 extract_data = yaml.safe_load(f)
@@ -464,10 +464,10 @@ class TestParseGenerateWorkflow:
         
         print("技术标catalogue和tech_catalogue_id已保存到extract.yaml")
 
-    @pytest.mark.parametrize('data', read_yaml('../../test_data/login.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/login.yaml'))
     def test_08_query_one_tender_user(self, api, data):
         # 从extract.yaml中读取上传后保存的文档ID
-        extract_file_path = '../../test_data/extract.yaml'
+        extract_file_path = './test_data/extract.yaml'
         if os.path.exists(extract_file_path):
             with open(extract_file_path, 'r', encoding='utf-8') as f:
                 extract_data = yaml.safe_load(f)
@@ -583,7 +583,7 @@ class TestParseGenerateWorkflow:
         else:
             print("⚠️ 响应的data中未找到tenderProjectBudget字段")
 
-    @pytest.mark.parametrize('data', read_yaml('../../test_data/login.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/login.yaml'))
     def test_09_tech_content(self, api, data):
         """
         步骤9: 获取技术标内容
@@ -593,7 +593,7 @@ class TestParseGenerateWorkflow:
         print("=" * 50)
 
         # 从extract.yaml中读取所需参数
-        extract_file_path = '../../test_data/extract.yaml'
+        extract_file_path = './test_data/extract.yaml'
         if os.path.exists(extract_file_path):
             with open(extract_file_path, 'r', encoding='utf-8') as f:
                 extract_data = yaml.safe_load(f)
@@ -655,7 +655,7 @@ class TestParseGenerateWorkflow:
         print("=== 技术标内容响应 ===")
         print(json.dumps(resp_data, indent=2, ensure_ascii=False))
 
-    @pytest.mark.parametrize('data', read_yaml('../../test_data/login.yaml'))
+    @pytest.mark.parametrize('data', read_yaml('./test_data/login.yaml'))
     def test_10_content_progress(self, api, data):
         """
                 步骤10: 轮询文档生成结果
@@ -666,7 +666,7 @@ class TestParseGenerateWorkflow:
         print("=" * 50)
 
         # 从extract.yaml中读取上传后保存的文档ID
-        extract_file_path = '../../test_data/extract.yaml'
+        extract_file_path = './test_data/extract.yaml'
         if os.path.exists(extract_file_path):
             with open(extract_file_path, 'r', encoding='utf-8') as f:
                 extract_data = yaml.safe_load(f)
