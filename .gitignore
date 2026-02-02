@@ -98,3 +98,23 @@ desktop.ini
 *.cache
 nul
 .claude/
+
+# ============================================
+# AI测试生成的文件（不提交）
+# ============================================
+# 验证报告（自动生成）
+outputs/*.md
+outputs/*.html
+
+# API响应文件（运行时生成）
+test_data/evaluation/responses/*.json
+test_data/evaluation/results/*.json
+
+# 测试数据和标注文件（保留模板，忽略生成文件）
+test_data/ai_test/*_response_*.json
+test_data/ai_test/*_validation_*.md
+
+# 模板文件例外（保留）
+!test_data/ai_test/sample_*.xlsx
+!test_data/ai_test/sample_*.json
+!test_data/templates/*.xlsx
