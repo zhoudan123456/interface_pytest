@@ -16,31 +16,59 @@ from conf.set_conf import read_yaml, write_yaml
 class TestBidCheckWorkflow:
     """招标文件检查工作流测试"""
 
-    def _save_response_for_evaluation(self, response_type: str, response_data: dict):
+    def _save_response_for_evaluation(self, response_type: str, response_data: dict, zb_file_name: str = None):
         """
         保存API响应数据用于后续评估
 
         Args:
             response_type: 响应类型 ('check_point' 或 'bid_info')
             response_data: 响应数据字典
+            zb_file_name: 招标文件名（用于生成文件名）
         """
         output_dir = './test_data/evaluation/responses'
         os.makedirs(output_dir, exist_ok=True)
 
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-        filename = f"{response_type}_response_{timestamp}.json"
+
+        # 如果提供了招标文件名，使用"招标文件名_类型_时间"格式
+        if zb_file_name:
+            # 移除文件扩展名
+            zb_name_without_ext = os.path.splitext(zb_file_name)[0]
+            # 清理文件名中的非法字符（替换为下划线）
+            import re
+            zb_name_clean = re.sub(r'[<>:"/\\|?*]', '_', zb_name_without_ext)
+            # 限制长度，避免文件名过长
+            zb_name_clean = zb_name_clean[:100] if len(zb_name_clean) > 100 else zb_name_clean
+            filename = f"{zb_name_clean}_{response_type}_{timestamp}.json"
+        else:
+            filename = f"{response_type}_response_{timestamp}.json"
+
         filepath = os.path.join(output_dir, filename)
 
         with open(filepath, 'w', encoding='utf-8') as f:
             json.dump(response_data, f, ensure_ascii=False, indent=2)
 
-        print(f"✓ 响应已保存到: {filepath}")
+        print(f"[OK] 响应已保存到: {filepath}")
         return filepath
 
-    def test_01_upload_documents(self, api):
+    def test_01_upload_documents(self, api, request):
         """
         步骤1: 上传招标文件和投标文件
         接口: POST /prod-api/backend/bidCheck/upload
+
+        命令行参数:
+            --zb-file: 指定招标文件路径
+            --tb-file: 指定投标文件路径
+
+        使用示例:
+            # 使用默认配置文件
+            pytest test_cases/workflows/test_bid_check_workflow.py::TestBidCheckWorkflow::test_01_upload_documents
+
+            # 指定招标文件
+            pytest test_cases/workflows/test_bid_check_workflow.py::TestBidCheckWorkflow::test_01_upload_documents --zb-file=./test_data/files/new_zb.pdf
+
+            # 同时指定招标和投标文件
+            pytest test_cases/workflows/test_bid_check_workflow.py::TestBidCheckWorkflow::test_01_upload_documents --zb-file=./test_data/files/new_zb.pdf --tb-file=./test_data/files/new_tb.pdf
         """
         print("\n" + "=" * 60)
         print("步骤1: 上传文件（招标文件 + 投标文件）")
@@ -50,10 +78,19 @@ class TestBidCheckWorkflow:
         with open('./test_data/bid_check_workflow.yaml', 'r', encoding='utf-8') as f:
             config = yaml.safe_load(f)
 
+        # 获取命令行参数
+        cmd_zb_file = request.config.getoption("--zb-file")
+        cmd_tb_file = request.config.getoption("--tb-file")
+
         # 上传招标文件
         print("\n--- 上传招标文件 ---")
-        zb_file_path = config['zb_upload']['files']['file']
+        zb_file_path = cmd_zb_file or config['zb_upload']['files']['file']
         zb_type = config['zb_upload']['data']['type']
+
+        if cmd_zb_file:
+            print(f"[INFO] 使用命令行指定的招标文件: {zb_file_path}")
+        else:
+            print(f"[INFO] 使用配置文件的招标文件: {zb_file_path}")
 
         if not os.path.exists(zb_file_path):
             pytest.fail(f"招标文件不存在: {zb_file_path}")
@@ -83,8 +120,8 @@ class TestBidCheckWorkflow:
                 zb_file_name = zb_data.get('fileName', '')
                 zb_upload_url = zb_data.get('uploadUrl', '')
 
-                print(f"✓ 招标文件名: {zb_file_name}")
-                print(f"✓ 招标文件URL: {zb_upload_url}")
+                print(f"[OK] 招标文件名: {zb_file_name}")
+                print(f"[OK] 招标文件URL: {zb_upload_url}")
 
                 # 保存招标文件信息
                 config['zb_file_name'] = zb_file_name
@@ -96,8 +133,13 @@ class TestBidCheckWorkflow:
 
         # 上传投标文件
         print("\n--- 上传投标文件 ---")
-        tb_file_path = config['tb_upload']['files']['file']
+        tb_file_path = cmd_tb_file or config['tb_upload']['files']['file']
         tb_type = config['tb_upload']['data']['type']
+
+        if cmd_tb_file:
+            print(f"[INFO] 使用命令行指定的投标文件: {tb_file_path}")
+        else:
+            print(f"[INFO] 使用配置文件的投标文件: {tb_file_path}")
 
         if not os.path.exists(tb_file_path):
             pytest.fail(f"投标文件不存在: {tb_file_path}")
@@ -127,8 +169,8 @@ class TestBidCheckWorkflow:
                 tb_file_name = tb_data.get('fileName', '')
                 tb_upload_url = tb_data.get('uploadUrl', '')
 
-                print(f"✓ 投标文件名: {tb_file_name}")
-                print(f"✓ 投标文件URL: {tb_upload_url}")
+                print(f"[OK] 投标文件名: {tb_file_name}")
+                print(f"[OK] 投标文件URL: {tb_upload_url}")
 
                 # 保存投标文件信息
                 config['tb_file_name'] = tb_file_name
@@ -136,7 +178,7 @@ class TestBidCheckWorkflow:
 
                 # 保存所有上传信息到配置文件
                 write_yaml('./test_data/bid_check_workflow.yaml', config)
-                print(f"\n✓ 所有文件上传信息已保存")
+                print(f"\n[OK] 所有文件上传信息已保存")
             else:
                 pytest.fail(f"投标文件上传失败: {tb_response_data}")
         finally:
@@ -170,9 +212,9 @@ class TestBidCheckWorkflow:
         # 验证响应数据
         response_data = res.json()
         if response_data.get('code') == 200:
-            print("✓ Token刷新成功")
+            print("[OK] Token刷新成功")
         else:
-            print(f"⚠ Token刷新响应: {response_data}")
+            print(f"[WARN] Token刷新响应: {response_data}")
 
     def test_03_start_check_task(self, api):
         """
@@ -278,11 +320,11 @@ class TestBidCheckWorkflow:
                 # 保存taskId到测试数据文件
                 config['task_id'] = str(task_id)
                 write_yaml('./test_data/bid_check_workflow.yaml', config)
-                print(f"✓ Task ID saved: {task_id}")
+                print(f"[OK] Task ID saved: {task_id}")
             else:
-                print("⚠ Task ID not found in response")
+                print("[WARN] Task ID not found in response")
         else:
-            print(f"⚠ Start task response: {response_data}")
+            print(f"[WARN] Start task response: {response_data}")
 
     def test_04_query_analysis_status(self, api):
         """
@@ -349,7 +391,7 @@ class TestBidCheckWorkflow:
 
                     # 检查是否完成（parseProgress 为 100.0）
                     if parse_progress == 100.0:
-                        print(f"\n✓ 解析完成! (进度: {parse_progress}%)")
+                        print(f"\n[OK] 解析完成! (进度: {parse_progress}%)")
                         completed = True
                         break
 
@@ -359,7 +401,7 @@ class TestBidCheckWorkflow:
                 time.sleep(poll_interval)
 
         if not completed:
-            print(f"\n⚠ 轮询超时（{max_polls * poll_interval}秒），解析未完成")
+            print(f"\n[WARN] 轮询超时（{max_polls * poll_interval}秒），解析未完成")
 
         print("\n" + "=" * 60)
     def test_05_check_check_point(self, api):
@@ -403,7 +445,8 @@ class TestBidCheckWorkflow:
         assert res.status_code == 200, f"Check point failed with status code: {res.status_code}"
 
         # 保存响应用于评估
-        self._save_response_for_evaluation('check_point', response_json)
+        zb_file_name = config.get('zb_file_name', 'unknown')
+        self._save_response_for_evaluation('check_point', response_json, zb_file_name)
 
     
 
@@ -449,6 +492,7 @@ class TestBidCheckWorkflow:
         assert res.status_code == 200, f"Get bid info failed with status code: {res.status_code}"
 
         # 保存响应用于评估
-        self._save_response_for_evaluation('bid_info', response_json)
+        zb_file_name = config.get('zb_file_name', 'unknown')
+        self._save_response_for_evaluation('bid_info', response_json, zb_file_name)
 
     

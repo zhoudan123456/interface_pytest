@@ -5,6 +5,18 @@ import pathlib
 
 import pytest
 
+# 加载 .env 文件中的环境变量
+try:
+    from dotenv import load_dotenv
+    # 获取项目根目录
+    project_root = pathlib.Path(__file__).parents[1].resolve()
+    env_file = project_root / '.env'
+    if env_file.exists():
+        load_dotenv(env_file)
+        print(f"[OK] 已加载环境变量: {env_file}")
+except ImportError:
+    pass  # python-dotenv 未安装，跳过
+
 
 from api_keys.api_keys import ApiKeys
 from conf.set_conf import write_conf
@@ -44,7 +56,7 @@ def auto_login(api):
             # 保存token到配置文件 [data] section，添加Bearer前缀
             token_with_bearer = f"Bearer {access_token}"
             write_conf('data', 'token', token_with_bearer)
-            print(f"\n✅ 自动登录成功，token已保存到server.ini")
+            print(f"\n[SUCCESS] 自动登录成功，token已保存到server.ini")
 
     yield
 
@@ -83,3 +95,19 @@ def api_teardown(request):
 #     yield  # 在这里暂停，执行测试函数
 #     # 测试结束后 (teardown) 如果需要也可以做清理
 #     # print("测试完毕")
+
+
+def pytest_addoption(parser):
+    """添加自定义命令行参数"""
+    parser.addoption(
+        "--zb-file",
+        action="store",
+        default=None,
+        help="指定招标文件路径 (例如: --zb-file=./test_data/files/custom_zb.pdf)"
+    )
+    parser.addoption(
+        "--tb-file",
+        action="store",
+        default=None,
+        help="指定投标文件路径 (例如: --tb-file=./test_data/files/custom_tb.pdf)"
+    )

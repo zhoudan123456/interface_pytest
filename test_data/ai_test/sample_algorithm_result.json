@@ -1,0 +1,68 @@
+{
+  "code": 200,
+  "msg": null,
+  "data": [
+    {
+      "id": null,
+      "label": "响应性评审",
+      "value": "响应性评审",
+      "location": null,
+      "resultConclusion": null,
+      "children": [
+        {
+          "id": null,
+          "label": "符合性检查",
+          "value": "符合性检查",
+          "children": [
+            {
+              "id": 4353,
+              "label": "响应文件编制：未按磋商文件要求盖章或签字(签章)",
+              "value": "响应文件编制：未按磋商文件要求盖章或签字(签章)",
+              "location": "{}",
+              "resultConclusion": null,
+              "children": []
+            },
+            {
+              "id": 4350,
+              "label": "磋商报价：报价不存在缺项、漏项",
+              "value": "磋商报价：报价不存在缺项、漏项",
+              "location": "{}",
+              "resultConclusion": null,
+              "children": []
+            },
+            {
+              "id": 4349,
+              "label": "磋商报价：总报价不超过项目(分包)预算金额或最高限价",
+              "value": "磋商报价：总报价不超过项目(分包)预算金额或最高限价",
+              "location": "{}",
+              "resultConclusion": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": null,
+      "label": "资格评审",
+      "value": "资格评审",
+      "children": [
+        {
+          "id": null,
+          "label": "资格审查",
+          "value": "资格审查",
+          "children": [
+            {
+              "id": 4343,
+              "label": "满足《中华人民共和国政府采购法》第二十二条规定：提供孝昌县政府采购供应商资格信用承诺函（格式详见第六章）。",
+              "value": "满足《中华人民共和国政府采购法》第二十二条规定：提供孝昌县政府采购供应商资格信用承诺函（格式详见第六章）。",
+              "location": "{}",
+              "resultConclusion": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
