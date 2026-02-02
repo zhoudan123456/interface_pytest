@@ -130,3 +130,45 @@ test_data/*.xlsx
 
 # 文档文件
 test_data/*使用说明*.md
+
+# ============================================
+# AI开发工具配置（不提交）
+# ============================================
+# AI agents 和辅助工具
+.adal/
+.agent/
+.agents/
+.augment/
+.cline/
+.codebuddy/
+.codex/
+.commandcode/
+.continue/
+.crush/
+.cursor/
+.factory/
+.gemini/
+.goose/
+.iflow/
+.junie/
+.kilocode/
+.kiro/
+.kode/
+.mcpjam/
+.mux/
+.neovate/
+.openclaude/
+.opencode/
+.openhands/
+.pi/
+.pochi/
+.qoder/
+.qwen/
+.roo/
+.trae/
+.vibe/
+.windsurf/
+.zencoder/
+
+# Skills 工具（本地安装）
+skills/
