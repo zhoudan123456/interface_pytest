@@ -118,3 +118,15 @@ test_data/ai_test/*_validation_*.md
 !test_data/ai_test/sample_*.xlsx
 !test_data/ai_test/sample_*.json
 !test_data/templates/*.xlsx
+
+# ============================================
+# 测试数据和文档（不提交）
+# ============================================
+# 测试数据Excel文件
+test_data/*.xls
+test_data/*.xlsx
+!test_data/templates/*.xlsx
+!test_data/ai_test/sample_*.xlsx
+
+# 文档文件
+test_data/*使用说明*.md
