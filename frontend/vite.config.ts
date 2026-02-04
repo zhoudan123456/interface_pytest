@@ -14,7 +14,7 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'http://127.0.0.1:8001',  // 使用 127.0.0.1 确保指向本地服务器
+        target: 'http://127.0.0.1:8000',  // 后端运行在8000端口
         changeOrigin: true,
         ws: true,
         configure: (proxy, options) => {

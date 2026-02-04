@@ -24,6 +24,10 @@
             <el-icon class="el-icon--left"><Upload /></el-icon>
             开始验证
           </el-button>
+          <el-button type="success" size="large" @click="goToBatch">
+            <el-icon class="el-icon--left"><Files /></el-icon>
+            批量执行
+          </el-button>
         </div>
       </div>
     </el-card>
@@ -66,12 +70,16 @@
 
 <script setup lang="ts">
 import { useRouter } from 'vue-router'
-import { Document, Upload, MagicStick, Timer } from '@element-plus/icons-vue'
+import { Document, Upload, MagicStick, Timer, Files } from '@element-plus/icons-vue'
 
 const router = useRouter()
 
 function goToUpload() {
   router.push('/upload')
+}
+
+function goToBatch() {
+  router.push('/batch')
 }
 </script>
 

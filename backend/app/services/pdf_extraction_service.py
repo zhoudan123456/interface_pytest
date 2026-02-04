@@ -56,13 +56,14 @@ class PDFExtractionService:
                 "message": f"提取失败: {str(e)}"
             }
 
-    def extract_checkpoints_from_pdfs(self, zb_pdf_path: Optional[str] = None, tb_pdf_path: Optional[str] = None) -> Dict:
+    def extract_checkpoints_from_pdfs(self, zb_pdf_path: Optional[str] = None, tb_pdf_path: Optional[str] = None, output_dir: Optional[str] = None) -> Dict:
         """
         从招标文件和投标文件中提取检查点
 
         Args:
             zb_pdf_path: 招标文件PDF路径（可选）
             tb_pdf_path: 投标文件PDF路径（可选）
+            output_dir: 输出目录路径（可选，默认为test_data/evaluation/responses）
 
         Returns:
             包含提取结果的字典
@@ -91,7 +92,7 @@ class PDFExtractionService:
             task_id = str(uuid.uuid4())
 
             # 调用pytest工作流进行API提取
-            result = self._run_pytest_workflow_with_both_files(zb_pdf_path, tb_pdf_path, task_id)
+            result = self._run_pytest_workflow_with_both_files(zb_pdf_path, tb_pdf_path, task_id, output_dir)
 
             return {
                 "task_id": task_id,
@@ -151,7 +152,7 @@ class PDFExtractionService:
         except Exception as e:
             raise Exception(f"pytest工作流执行失败: {str(e)}")
 
-    def _run_pytest_workflow_with_both_files(self, zb_pdf_path: Optional[str] = None, tb_pdf_path: Optional[str] = None, task_id: str = None) -> Dict:
+    def _run_pytest_workflow_with_both_files(self, zb_pdf_path: Optional[str] = None, tb_pdf_path: Optional[str] = None, task_id: str = None, output_dir: Optional[str] = None) -> Dict:
         """
         运行pytest工作流提取检查点（使用招标文件和投标文件）
 
@@ -159,6 +160,7 @@ class PDFExtractionService:
             zb_pdf_path: 招标文件PDF路径（可选）
             tb_pdf_path: 投标文件PDF路径（可选）
             task_id: 任务ID
+            output_dir: 输出目录路径（可选）
 
         Returns:
             提取结果字典
@@ -180,11 +182,17 @@ class PDFExtractionService:
             if tb_pdf_path:
                 cmd.append(f"--tb-file={tb_pdf_path}")
 
+            # 设置环境变量，让pytest输出到指定目录
+            env = os.environ.copy()
+            if output_dir:
+                env['BID_CHECK_OUTPUT_DIR'] = output_dir
+
             result = subprocess.run(
                 cmd,
                 capture_output=True,
                 text=True,
-                timeout=300  # 5分钟超时
+                timeout=300,  # 5分钟超时
+                env=env
             )
 
             if result.returncode != 0:
@@ -283,8 +291,9 @@ class PDFExtractionService:
         if not response_dir.exists():
             return {}
 
-        check_point_files = sorted(response_dir.glob("*_check_point_*.json"))
-        bid_info_files = sorted(response_dir.glob("*_bid_info_*.json"))
+        # 按修改时间排序，获取最新的文件
+        check_point_files = sorted(response_dir.glob("*_check_point_*.json"), key=lambda f: f.stat().st_mtime)
+        bid_info_files = sorted(response_dir.glob("*_bid_info_*.json"), key=lambda f: f.stat().st_mtime)
 
         result = {}
 

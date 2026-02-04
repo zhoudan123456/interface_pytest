@@ -25,7 +25,8 @@ class TestBidCheckWorkflow:
             response_data: 响应数据字典
             zb_file_name: 招标文件名（用于生成文件名）
         """
-        output_dir = './test_data/evaluation/responses'
+        # 支持通过环境变量指定输出目录（用于批量执行）
+        output_dir = os.environ.get('BID_CHECK_OUTPUT_DIR', './test_data/evaluation/responses')
         os.makedirs(output_dir, exist_ok=True)
 
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')

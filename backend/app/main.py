@@ -12,7 +12,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from app.config import settings
-from app.api.v1 import upload, tasks, reports, websocket
+from app.api.v1 import upload, tasks, reports, websocket, batch, batch_ws
 
 # 创建FastAPI应用
 app = FastAPI(
@@ -37,6 +37,13 @@ app.include_router(upload.router, prefix=settings.API_V1_PREFIX, tags=["upload"]
 app.include_router(tasks.router, prefix=settings.API_V1_PREFIX, tags=["tasks"])
 app.include_router(reports.router, prefix=settings.API_V1_PREFIX + "/reports", tags=["reports"])
 app.include_router(websocket.router, prefix=settings.API_V1_PREFIX, tags=["websocket"])
+app.include_router(batch.router, prefix=settings.API_V1_PREFIX, tags=["batch"])
+
+# 注册批量任务WebSocket路由
+app.add_websocket_route(
+    f"{settings.API_V1_PREFIX}/batch/ws/{{task_id}}",
+    batch_ws.batch_websocket_endpoint
+)
 
 
 # 根路径

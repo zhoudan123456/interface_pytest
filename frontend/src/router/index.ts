@@ -18,6 +18,12 @@ const routes: RouteRecordRaw[] = [
     meta: { title: '文件上传' }
   },
   {
+    path: '/batch',
+    name: 'BatchExecution',
+    component: () => import('@/views/BatchExecution.vue'),
+    meta: { title: '批量执行' }
+  },
+  {
     path: '/processing/:taskId',
     name: 'Processing',
     component: () => import('@/views/Processing.vue'),
