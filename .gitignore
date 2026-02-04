@@ -172,3 +172,22 @@ test_data/*使用说明*.md
 
 # Skills 工具（本地安装）
 skills/
+
+# ============================================
+# Web应用（不提交）
+# ============================================
+# 前端构建产物
+frontend/dist/
+frontend/node_modules/
+
+# 后端上传文件
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# 后端输出文件
+backend/outputs/*
+!backend/outputs/.gitkeep
+
+# 环境变量
+backend/.env
+

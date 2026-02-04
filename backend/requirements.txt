@@ -1,0 +1,29 @@
+# FastAPI核心
+fastapi==0.110.0
+uvicorn[standard]==0.27.0
+python-multipart==0.0.9
+
+# Celery异步任务
+celery[redis]==5.3.6
+redis==5.0.1
+
+# 数据验证
+pydantic==2.6.0
+pydantic-settings==2.1.0
+
+# 智谱AI
+zhipuai==2.1.0.20240519
+
+# Excel处理
+openpyxl==3.1.2
+pandas==2.2.0
+
+# Pytest测试框架
+pytest==8.0.0
+pytest-asyncio==0.23.4
+
+# YAML配置
+pyyaml==6.0.1
+
+# 工具库
+python-dotenv==1.0.1
