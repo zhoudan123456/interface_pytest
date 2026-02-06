@@ -307,14 +307,18 @@ class BatchProcessor:
             处理结果
         """
         # ========== 步骤1: 查找PDF/DOCX文件并提取检查点 ==========
-        # 支持PDF和DOCX格式
-        zb_files = (
+        # 支持PDF和DOCX格式，跳过临时文件（以~$开头）
+        def filter_temp_files(files):
+            """过滤掉临时文件"""
+            return [f for f in files if not f.name.startswith('~$')]
+
+        zb_files = filter_temp_files(
             list(case_path.glob("*招标*.pdf")) +
             list(case_path.glob("*招标*.docx")) +
             list(case_path.glob("*zb*.pdf")) +
             list(case_path.glob("*zb*.docx"))
         )
-        tb_files = (
+        tb_files = filter_temp_files(
             list(case_path.glob("*投标*.pdf")) +
             list(case_path.glob("*投标*.docx")) +
             list(case_path.glob("*tb*.pdf")) +
@@ -323,13 +327,12 @@ class BatchProcessor:
 
         # 如果没有找到中文文件名，尝试通用PDF/DOCX
         if not zb_files:
-            zb_files = list(case_path.glob("*.pdf"))[:1] + list(case_path.glob("*.docx"))[:1]
-            if zb_files:
-                zb_files = [zb_files[0]]
-        if not tb_files:
-            tb_files = list(case_path.glob("*.pdf"))[1:2] + list(case_path.glob("*.docx"))[1:2]
-            if tb_files:
-                tb_files = [tb_files[0]]
+            all_files = filter_temp_files(list(case_path.glob("*.pdf")) + list(case_path.glob("*.docx")))
+            zb_files = all_files[:1] if all_files else []
+        if not tb_files and zb_files:
+            # 如果有招标文件，尝试找第二个文件作为投标文件
+            all_files = filter_temp_files(list(case_path.glob("*.pdf")) + list(case_path.glob("*.docx")))
+            tb_files = [f for f in all_files if f != zb_files[0]][:1]
 
         zb_doc_path = zb_files[0] if zb_files else None
         tb_doc_path = tb_files[0] if tb_files else None
@@ -353,8 +356,11 @@ class BatchProcessor:
         if extract_result['status'] != 'success':
             raise Exception(f"步骤1提取失败: {extract_result.get('message', '未知错误')}")
 
-        # 从case目录获取步骤1生成的JSON文件
-        step1_json_files = list(case_path.glob("*_check_point_*.json"))
+        # 从case目录获取步骤1生成的JSON文件，跳过临时文件
+        step1_json_files = [
+            f for f in case_path.glob("*_check_point_*.json")
+            if not f.name.startswith('~$')
+        ]
         if not step1_json_files:
             raise Exception("步骤1未生成JSON文件")
 
@@ -365,7 +371,14 @@ class BatchProcessor:
         print(f"[DEBUG] Step1 generated: {step1_filename}")
 
         # ========== 步骤2: 查找Excel文件并执行LLM验证 ==========
-        excel_files = list(case_path.glob("*.xlsx")) + list(case_path.glob("*.xls"))
+        # 查找Excel文件，跳过临时文件（以~$开头的是Excel打开时的临时文件）
+        excel_files = [
+            f for f in case_path.glob("*.xlsx")
+            if not f.name.startswith('~$')
+        ] + [
+            f for f in case_path.glob("*.xls")
+            if not f.name.startswith('~$')
+        ]
 
         if not excel_files:
             raise FileNotFoundError("未找到人工标注Excel文件")
@@ -467,9 +480,9 @@ class BatchProcessor:
                 if case_result.status == "success":
                     case_path = self.datasets_dir / task.dataset_name / case_result.case_name
 
-                    # 添加JSON文件（check_point和bid_info）
+                    # 添加JSON文件（check_point和bid_info），跳过临时文件
                     for file_path in case_path.rglob("*.json"):
-                        if "check_point" in file_path.name or "bid_info" in file_path.name:
+                        if ("check_point" in file_path.name or "bid_info" in file_path.name) and not file_path.name.startswith('~$'):
                             zipf.write(file_path, f"{case_result.case_name}/{file_path.name}")
 
                     # 添加Markdown验证报告
